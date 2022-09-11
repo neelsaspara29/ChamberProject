@@ -1,0 +1,358 @@
+/* Small Desktop ---------------------------------------------------*/
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    p.copyright {
+        padding-right: 75px;
+    }
+    #back_to_top {
+        right: 25px;
+        bottom: 25px;
+    }
+}
+
+/* Smaller Desktop ---------------------------------------------------*/
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    #main_menu>ul>li {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+    #main_menu>ul>li a {
+        font-size: 14px;
+    }
+    p.copyright {
+        padding-right: 75px;
+    }
+    #back_to_top {
+        right: 25px;
+        bottom: 25px;
+    }
+}
+
+/* Large Tablet ---------------------------------------------------*/
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+    p.copyright {
+        padding-right: 75px;
+    }
+    #back_to_top {
+        right: 25px;
+        bottom: 25px;
+    }
+    #content img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    #member_spotlight .top_row .memberBox {
+        width: 100%;
+    }
+}
+
+/* Small Tablet ---------------------------------------------------*/
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+    #main_menu {
+        display: none !important;
+    }
+    #mobile_menu,
+    #menu_toggle {
+        display: block;
+    }
+    #homepage_slideshow {
+        height: 650px;
+    }
+    #stats_columns {
+        padding: 30px 0;
+    }
+    #stats_columns .col4,
+    #stats_columns .col3_alt {
+        width: 50%;
+    }
+    p.copyright {
+        padding-right: 75px;
+    }
+    #back_to_top {
+        right: 25px;
+        bottom: 25px;
+    }
+    #about_icons .col2 {
+        width: 100%;
+        float: none;
+        margin: 0 0 25px;
+    }
+    .about_item {
+        text-align: center;
+        height: auto;
+    }
+    .about_icon {
+        position: static;
+        display: inline-block;
+    }
+    .about_desc {
+        padding: 10px 0 10px;
+    }
+    #content img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    #member_spotlight .top_row .memberBox {
+        width: 100%;
+    }
+    #login_signup_box .login_box {
+        width: 100%;
+    }
+    #login_signup_box .signup_box {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+/* Phone ---------------------------------------------------*/
+
+@media screen and (min-width: 20px) and (max-width: 749px) {
+    .mobile_only {
+        display: block !important;
+    }
+    .desktop_only {
+        display: none !important;
+    }
+    #main_menu {
+        display: none !important;
+    }
+    #mobile_menu,
+    #menu_toggle {
+        display: block;
+    }
+    #mobile_menu {
+        position: fixed;
+        width: 100%;
+        z-index: 20000;
+    }
+    .unfloat {
+        display: block;
+        width: 100% !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding: 0px;
+        float: none !important;
+        clear: both;
+    }
+    #placeholder {
+        height: 80px;
+    }
+    #header {
+        position: fixed;
+        top: 0px !important;
+        left: 0px;
+        background: #fff;
+        height: 80px;
+    }
+    #header .wrapper {}
+    #header #logo {
+        top: 5px;
+        bottom: 5px;
+        left: 60px;
+        right: 60px;
+        width: auto;
+        background-position: 50% 50%;
+        background-size: contain;
+    }
+    #menu_toggle {
+        top: 19px !important;
+    }
+    #social_header {
+        right: 50px;
+        top: 8px;
+        display: block !important;
+    }
+    #header #has_it_logo {
+        right: 50px;
+        top: 40px;
+        max-width: 156px;
+    }
+    #homepage_slideshow {
+        height: 450px;
+    }
+    #about_icons .col2,
+    #stats_columns .col3_alt,
+    #stats_columns .col4 {
+        width: 100%;
+        float: none;
+        margin: 0 auto 25px;
+    }
+    .about_item {
+        text-align: center;
+        height: auto;
+    }
+    .about_icon {
+        position: static;
+        display: inline-block;
+    }
+    .about_desc {
+        padding: 10px 0 10px;
+    }
+    .homepageStaff .carouselContainer {
+        width: 100%;
+    }
+    .homepageStaff .staffCarouselArrow {
+        display: none;
+    }
+    #testimonial_cycle {
+        height: 400px;
+    }
+    form#newsletter_form input[type="text"] {
+        margin: 25px 0;
+        box-sizing: border-box;
+    }
+    #newsletter_signup form textarea {
+        display: block;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #footer {
+        padding-bottom: 75px;
+    }
+    #social_menu {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #social_menu a span.fa {
+        margin: 0 4x;
+    }
+    p.copyright {
+        text-align: center;
+    }
+    body {
+        font-size: 15px;
+    }
+    #content {
+        min-height: none;
+    }
+    #content.rightpad {
+        padding-right: 0;
+    }
+    #sidebar {
+        position: static;
+        width: auto;
+    }
+    #content img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    #member_spotlight .top_row .memberBox {
+        width: 100%;
+    }
+    #login_signup_box .login_box {
+        width: 100%;
+    }
+    #login_signup_box .signup_box {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .membershipModule.moduleLister .listerItem {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+/* Phone Scaling ---------------------------------------------------*/
+
+@media screen and (min-width: 20px) and (max-width: 400px) {
+    #newsletter_signup form textarea,
+    #newsletter_signup form input[type="text"] {
+        width: 220px;
+    }
+    #header #logo {
+        left: 10px;
+        right: 215px;
+    }
+    #parallax_box3 a {
+        display: block;
+        float: none;
+        margin: 0 auto 30px;
+        max-width: 200px;
+    }
+    #member_spotlight .top_row .memberBox {
+        width: 100%;
+    }
+    #login_signup_box .login_box {
+        width: 100%;
+    }
+    #login_signup_box .signup_box {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 529px) {
+    #header #logo {
+        right: 80px;
+    }
+    #header #has_it_logo {
+        left: 0px;
+        top: 5px;
+        max-width: 156px;
+    }
+    #social_header a {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    #social_header {
+        right: 12px;
+    }
+}
+
+@media screen and (min-width: 530px) and (max-width: 749px) {
+    #header #has_it_logo {
+        left: 17px;
+        top: 17px;
+    }
+}
+
+/* Print */
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #interior_content .wrapper,
+    #interior_content .wrapper * {
+        visibility: visible;
+    }
+    #interior_content .wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    #interior_content .wrapper #sidebar,
+    #interior_content .wrapper #sidebar * {
+        visibility: hidden;
+    }
+    #interior_content .wrapper #content.rightpad {
+        width: 100%;
+        padding-right: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #interior_content .wrapper #content {
+        padding: 0;
+        width: 100%;
+    }
+    #interior_content .wrapper .eventButtonContainer {
+        margin-top: 10px;
+    }
+}
