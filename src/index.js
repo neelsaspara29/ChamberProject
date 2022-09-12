@@ -4,7 +4,7 @@ import App from './App';
 import './Styles/animate.css'
 import './Styles/fl-justicons.css'
 import './Styles/responsive.css'
-import './Styles/stylesheet.css'
+import './Styles/stylesheet.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom';
 
