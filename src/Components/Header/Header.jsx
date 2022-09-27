@@ -12,7 +12,7 @@ function Header() {
           <ul className="main_menu">
             <li className="item1 ">
               <Link className="first " to="pages/about-us/">
-                About
+                About Us
               </Link>
               <ul className="">
                 <li className="item1 ">
