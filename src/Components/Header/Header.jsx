@@ -18,7 +18,7 @@ function Header() {
                 <li className="item1 ">
                   <Link
                     className="first "
-                    to="pages/here-s-how-the-chamber-works-for-you/"
+                    to="/about"
                   >
                     SCCI At 4 Glance
                   </Link>
@@ -26,7 +26,7 @@ function Header() {
                 <li className="item1 ">
                   <Link
                     className="first "
-                    to="pages/here-s-how-the-chamber-works-for-you/"
+                    to="/mission"
                   >
                     Visson&Mission
                   </Link>
@@ -34,7 +34,7 @@ function Header() {
                 <li className="item1 ">
                   <Link
                     className="first "
-                    to="pages/here-s-how-the-chamber-works-for-you/"
+                    to="/messageChairman"
                   >
                     Message From the Chair
                   </Link>
