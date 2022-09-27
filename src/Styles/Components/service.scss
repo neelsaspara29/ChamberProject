@@ -1,0 +1,13 @@
+.service_facilities {
+  position: relative;
+  padding-bottom: 40px ;
+}
+.service_facilities::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 5%;
+  border-bottom: 1px solid rgb(205, 205, 205);
+  width: 90%;
+  
+}

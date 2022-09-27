@@ -6,60 +6,80 @@ import "swiper/css";
 import "swiper/css/pagination";
 function Gallery() {
   return (
-      <>
-          <div className="gallery_main">
-          <div className="gallery">
-              <h2 className='text-danger'><b>GALLERY AT GLANCE</b></h2>
-          </div>
-          <div className="imgageshowcase mt-5">
-              
+    <>
+      <div className="gallery_main">
+        <div className="gallery">
+          <h2 className="text-danger">
+            <b>GALLERY AT GLANCE</b>
+          </h2>
+        </div>
+        <div className="imgageshowcase mt-5">
           <Swiper
-        slidesPerView={4}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper mt-10"
-      >
-                      <SwiperSlide>
-                          <div style={{width:'300px',height:'300px'}}> <img alt="Anita Simmons" src="/Assets/Gallery/1.jpg" /></div>
-        </SwiperSlide>
-                      <SwiperSlide>
-                      <div style={{width:'300px',height:'300px'}}> <img alt="Anita Simmons" src="/Assets/Gallery/1.jpg" /></div>
-
-        </SwiperSlide>
-        <SwiperSlide>
-                                      <div style={{width:'300px',height:'300px'}}> <img alt="Anita Simmons" src="/Assets/Gallery/2.jpg" /></div>
-
-        </SwiperSlide>
-        <SwiperSlide>
-                                      <div style={{width:'300px',height:'300px'}}> <img alt="Anita Simmons" src="/Assets/Gallery/3.jpg" /></div>
-
-        </SwiperSlide>
-        <SwiperSlide>
-                                      <div style={{width:'300px',height:'300px'}}> <img alt="Anita Simmons" src="/Assets/Gallery/1.jpg" /></div>
-
-        </SwiperSlide>
-        <SwiperSlide>
-                                      <div style={{width:'300px',height:'300px'}}> <img alt="Anita Simmons" src="/Assets/Gallery/2.jpg" /></div>
-
-        </SwiperSlide>
-        <SwiperSlide>
-                                      <div style={{width:'300px',height:'300px'}}> <img alt="Anita Simmons" src="/Assets/Gallery/3.jpg" /></div>
-
-        </SwiperSlide>
-        <SwiperSlide>
-                                      <div style={{width:'300px',height:'300px'}}> <img alt="Anita Simmons" src="/Assets/Gallery/1.jpg" /></div>
-
-        </SwiperSlide>
-        <SwiperSlide>
-                                      <div style={{width:'300px',height:'300px'}}> <img alt="Anita Simmons" src="/Assets/Gallery/1.jpg" /></div>
-
-        </SwiperSlide>
-      </Swiper>
+            slidesPerView={4}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper mt-10"
+          >
+            <SwiperSlide>
+              <div style={{ width: "300px", height: "300px" }}>
+                {" "}
+                <img alt="Anita Simmons" src="/Assets/Gallery/1.jpg" />
               </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div style={{ width: "300px", height: "300px" }}>
+                {" "}
+                <img alt="Anita Simmons" src="/Assets/Gallery/1.jpg" />
               </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div style={{ width: "300px", height: "300px" }}>
+                {" "}
+                <img alt="Anita Simmons" src="/Assets/Gallery/1.jpg" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div style={{ width: "300px", height: "300px" }}>
+                {" "}
+                <img alt="Anita Simmons" src="/Assets/Gallery/1.jpg" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div style={{ width: "300px", height: "300px" }}>
+                {" "}
+                <img alt="Anita Simmons" src="/Assets/Gallery/1.jpg" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div style={{ width: "300px", height: "300px" }}>
+                {" "}
+                <img alt="Anita Simmons" src="/Assets/Gallery/1.jpg" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div style={{ width: "300px", height: "300px" }}>
+                {" "}
+                <img alt="Anita Simmons" src="/Assets/Gallery/1.jpg" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div style={{ width: "300px", height: "300px" }}>
+                {" "}
+                <img alt="Anita Simmons" src="/Assets/Gallery/1.jpg" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div style={{ width: "300px", height: "300px" }}>
+                {" "}
+                <img alt="Anita Simmons" src="/Assets/Gallery/1.jpg" />
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
 
       {/* <article class="flow">
   <h1>Our Team</h1>
@@ -111,8 +131,8 @@ function Gallery() {
     </ul>
   </div>
 </article> */}
-      </>
-  )
+    </>
+  );
 }
 
 export default Gallery

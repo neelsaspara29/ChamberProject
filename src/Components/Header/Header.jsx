@@ -5,14 +5,14 @@ function Header() {
   return (
     <div id="header">
       <div className="wrapper">
-        <Link id="logo" to="index.php">
+        <Link id="logo" to="/">
           <img src="/Assets/logo9.png" alt="" />
         </Link>
         <div id="main_menu">
           <ul className="main_menu">
             <li className="item1 ">
               <Link className="first " to="pages/about-us/">
-                About{" "}
+                About
               </Link>
               <ul className="">
                 <li className="item1 ">
@@ -22,7 +22,6 @@ function Header() {
                   >
                     SCCI At 4 Glance
                   </Link>
-                  
                 </li>
                 <li className="item1 ">
                   <Link
@@ -31,7 +30,6 @@ function Header() {
                   >
                     Visson&Mission
                   </Link>
-                  
                 </li>
                 <li className="item1 ">
                   <Link
@@ -40,40 +38,13 @@ function Header() {
                   >
                     Message From the Chair
                   </Link>
-                  
                 </li>
-                </ul>
+              </ul>
             </li>
             <li className="item2 ">
-              <Link className="" to="pages/benefits-of-joining-the-chamber/">
+              <Link className="" to="/scciteam">
                 SCCI Team
               </Link>
-              <ul className="">
-                <li className="item1 ">
-                  <Link
-                    className="first "
-                    to="pages/here-s-how-the-chamber-works-for-you/"
-                  >
-                    Office Business
-                  </Link>
-                </li>
-                <li className="item2">
-                  <Link to="forms/join-the-chamber/">Executive Comitee </Link>
-                </li>
-                <li className="item3">
-                  <Link to="index.php?submenu=manageyourmembership&amp;src=membership&amp;srctype=myaccount">
-                    Past President
-                  </Link>
-                </li>
-                <li className="item4">
-                  <Link to="footer-logos-redesign/">Secretariat </Link>
-                </li>
-                <li className="item5">
-                  <Link to="index.php?submenu=trustees&amp;src=directory&amp;view=footer_logos&amp;srctype=footer_logos_trustees&amp;displaytype=Redesign_Interior">
-                    SCCI Constitution
-                  </Link>
-                </li>            
-              </ul>
             </li>
             <li className="item3">
               <Link to="https://www.ftlchamber.com/index.php?submenu=manageyourmembership&amp;src=membership&amp;srctype=myaccount">
@@ -87,7 +58,6 @@ function Header() {
                   >
                     Certificate of origin
                   </Link>
-                  
                 </li>
                 <li className="item2">
                   <Link
@@ -96,7 +66,6 @@ function Header() {
                   >
                     Visa Recomandation
                   </Link>
-                  
                 </li>
                 <li className="item1 ">
                   <Link
@@ -105,7 +74,6 @@ function Header() {
                   >
                     Auditorium
                   </Link>
-                  
                 </li>
                 <li className="item1 ">
                   <Link
@@ -114,10 +82,8 @@ function Header() {
                   >
                     Conference Hall
                   </Link>
-                  
                 </li>
-                </ul>
-
+              </ul>
             </li>
             <li className="item4 ">
               <Link
@@ -189,7 +155,7 @@ function Header() {
                   >
                     Central Govt. Cercullers
                   </Link>
-                </li>               
+                </li>
               </ul>
             </li>
             <li className="item7 ">
@@ -211,10 +177,6 @@ function Header() {
                     Name List
                   </Link>
                 </li>
-                
-                
-                
-                
               </ul>
             </li>
           </ul>

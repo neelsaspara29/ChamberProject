@@ -1,4 +1,6 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
     background: #ffffff;
@@ -431,4 +433,54 @@ a:-webkit-any-link {
     margin: 0.5em;
     padding: 4px 10px;
   }
-  
+  .team_card{
+    margin-bottom: 10px;
+  }
+  #footer {
+    background: #2c2c2c;
+    padding: 9px 80px 20px 20px;
+}
+#social_menu {
+    padding-top: 5px;
+    color: #fff;
+    font-size: 15px;
+    width: 50%;
+    float: left;
+}
+
+#social_menu>div {
+    padding-bottom: 7px;
+}
+
+#social_menu a {
+    color: #fff;
+    font-size: 40px;
+    transition: all 0.3s ease;
+}
+
+#social_menu a:hover {
+    color: #f15a5a;
+}
+
+#social_menu a span.fa {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 17px 0 0;
+}
+
+p.copyright {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 32px 0 0;
+    display: block;
+    float: right;
+    text-align: right;
+    color: #fff;
+}
+
+p.copyright a {
+    color: #fff;
+}
