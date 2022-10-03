@@ -148,7 +148,7 @@ function Header() {
                   </li>
                 </ul>
               </li>
-              <li className="item7 ">
+              {/* <li className="item7 ">
               Members Directory
                 <ul className="">
                   <li className="item1">
@@ -160,7 +160,7 @@ function Header() {
                     </Link>
                   </li>
                 </ul>
-              </li>
+              </li> */}
              
             </ul>
           </div>

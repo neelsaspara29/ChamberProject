@@ -81,7 +81,7 @@ function Auditoriam() {
               </tr>
               <tr>
                 <td>Rent</td>
-                <td>{data[0].rent}&#8377;</td>
+                <td>{data[0]?.rent}&#8377;</td>
               </tr>
             </tbody>
           </Table>

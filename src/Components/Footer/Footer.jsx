@@ -15,11 +15,11 @@ export default function Footer() {
         className="text-center text-lg-start text-muted mt-5  bottom-0"
       >
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-          <div className="me-5 d-none d-lg-block">
+          {/* <div className="me-5 d-none d-lg-block">
             <span>Get connected with us on social networks:</span>
-          </div>
+          </div> */}
 
-          <div>
+          <div className="mx-auto">
             <a href="" className="me-4 text-reset">
               <MDBIcon icon="facebook-f" />
             </a>

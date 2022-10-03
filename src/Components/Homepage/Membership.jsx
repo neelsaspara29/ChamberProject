@@ -58,16 +58,16 @@ function Membership() {
                 </li>
               </ul>
             </div>
-            <h3>
+            {/* <h3>
               {" "}
               <b>Please Fill This Form For More Info</b>
-            </h3>
+            </h3> */}
           </section>
         </section>
       </article>
-      <section className="memb_form w-1/2 m-auto bg-gray-100">
+      {/* <section className="memb_form w-1/2 m-auto bg-gray-100">
         <Forms />
-      </section>
+      </section> */}
     </>
   );
 }
