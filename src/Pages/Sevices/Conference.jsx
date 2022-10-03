@@ -24,11 +24,11 @@ function Conference() {
   const [data1, setData1] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
   return (
     <>
-      <div className="w-2/3 m-auto mt-4">
-        <div>
+      <div className=" mt-4">
+        <div className="w-2/3 m-auto ">
           <h2 className="text-center text-danger uppercase">Conference hall</h2>
         </div>
-        <div className="mt-5">
+        <div className=" w-2/3 m-auto  mt-5">
           <p>{data[0]?.intro}</p>
           <div>
             <Swiper
@@ -39,6 +39,29 @@ function Conference() {
               }}
               modules={[Pagination]}
               className="mySwiper mt-10"
+              breakpoints={{
+                100: {
+                  width: 100,
+                  slidesPerView: 1,
+                },
+                160: {
+                  width: 160,
+                  slidesPerView: 1,
+                },
+                300: {
+                  width: 300,
+                  slidesPerView: 1,
+                },
+                640: {
+                  width: 640,
+                  slidesPerView: 2,
+                },
+                // when window width is >= 768px
+                768: {
+                  width: 768,
+                  slidesPerView: 3,
+                },
+              }}
             >
               {data1.map((single) => (
                 <SwiperSlide>
@@ -50,10 +73,10 @@ function Conference() {
             </Swiper>
           </div>
         </div>
-        <div className="text-center p-4">
+        <div className=" w-2/3 m-auto  text-center p-4 ">
           <h4 className="uppercase">About Conference</h4>
         </div>
-        <div>
+        <div className="w-2/3 m-auto table_responsive">
           <Table striped bordered hover>
             <thead></thead>
             <tbody>

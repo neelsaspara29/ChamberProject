@@ -37,10 +37,6 @@ const MissionVision = () => {
             <hr />
             <h1 class="gendocsPageTitle">Vision</h1>
             <p>{vision}</p>
-            <p>
-              To learn more about the Chamber, contact our membership team{" "}
-              <a href="forms/membership-inquiry/">here.</a>
-            </p>
           </div>
         </div>
       </div>

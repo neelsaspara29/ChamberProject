@@ -290,8 +290,8 @@ a:-webkit-any-link {
 
 
 #logo img{
-    width: 90%;
-    height: 90%;
+    width: 12rem;
+    height: 9rem;
     background: transparent;
     background-size: contain;
     background: no-repeat;
@@ -502,4 +502,33 @@ p.copyright a {
     margin-top: 16px;
     width: 400px;
 }
+  
+
+@media only screen and (max-width: 1030px) {
+   
+    .mobile_responsive{
+        visibility: visible !important;
+      }
+      #main_menu{
+        visibility: hidden;
+      }
+
+  }
+@media only screen and (max-width: 380px) {
+   
+    .table_responsive{
+        width: 95%;
+        margin: auto;
+    }
+
+  }
+  .mobile_responsive{
+    visibility: hidden;
+  }
+  .mobile_res_toggle{
+    width: 20px;
+    margin-bottom: 4px;
+    height: 3px;
+    background-color: orange;
+  }
   

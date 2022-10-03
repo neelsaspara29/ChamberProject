@@ -51,10 +51,7 @@ const About = () => {
               </a>{" "}
               trip.
             </p>
-            <p>
-              To learn more about the Chamber, contact our SCCI team
-              <a href="forms/membership-inquiry/">here.</a>
-            </p>
+           
           </div>
         </div>
       </div>

@@ -58,16 +58,10 @@ function Membership() {
                 </li>
               </ul>
             </div>
-            <h3>
-              {" "}
-              <b>Please Fill This Form For More Info</b>
-            </h3>
+            <div className="btn btn-primary p-2"> Download</div>
           </section>
         </section>
       </article>
-      <section className="memb_form w-1/2 m-auto bg-gray-100">
-        <Forms />
-      </section>
     </>
   );
 }

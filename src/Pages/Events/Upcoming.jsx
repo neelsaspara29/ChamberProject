@@ -28,7 +28,7 @@ const days = [
 function Upcoming() {
   const [data, setData] = useState([]);
   const fetchData = async () => {
-    await ApiPost("/event/get")
+    await ApiPost("/event/get", { type: "0" })
       .then((data) => {
         console.log("res-", data.data.data);
         let temp = data.data.data;
@@ -77,15 +77,25 @@ function Upcoming() {
               </div>
               {arr.map((single) => {
                 return (
-                  <div className="d-flex flex-wrap mt-3 ml-3">
-                    <div className="mr-2 text-center">
-                      <p>
-                        <b className="uppercase">
-                          {days[new Date(single.time).getDay()]}
-                        </b>
-                      </p>
-                      <p>{new Date(single.time).getDate()}</p>
+                  <div className="d-flex flex-row-reverse flex-wrap mt-3 ml-3">
+                    <div>
+                      {single.image ? (
+                        <img
+                          src={single.image}
+                          width={200}
+                          height={200}
+                          alt="Not Valid Image"
+                        />
+                      ) : (
+                        <img
+                          src="/Assets/Events/event1.jpg"
+                          width={200}
+                          height={200}
+                          alt=""
+                        />
+                      )}
                     </div>
+
                     <div
                       className="px-4 "
                       style={{ minWidth: "65%", maxWidth: "65%" }}
@@ -105,22 +115,13 @@ function Upcoming() {
 
                       <p>{single.brifIntro}</p>
                     </div>
-                    <div>
-                      {single.image ? (
-                        <img
-                          src={single.image}
-                          width={200}
-                          height={200}
-                          alt="Not Valid Image"
-                        />
-                      ) : (
-                        <img
-                          src="/Assets/Events/event1.jpg"
-                          width={200}
-                          height={200}
-                          alt=""
-                        />
-                      )}
+                    <div className="mr-2 text-center">
+                      <p>
+                        <b className="uppercase">
+                          {days[new Date(single.time).getDay()]}
+                        </b>
+                      </p>
+                      <p>{new Date(single.time).getDate()}</p>
                     </div>
                   </div>
                 );
@@ -134,13 +135,16 @@ function Upcoming() {
               <b> June 2021</b>
             </h4>
           </div>
-          <div className="d-flex flex-wrap justify-content-between mt-3 ml-3">
-            <div className="mr-2 text-center">
-              <p>
-                <b> SAT</b>
-              </p>
-              <p>5</p>
+          <div className="d-flex flex-row-reverse flex-wrap mt-3 ml-3">
+            <div>
+              <img
+                src="/Assets/Events/event1.jpg"
+                width={200}
+                height={200}
+                alt=""
+              />
             </div>
+
             <div className="px-4" style={{ minWidth: "65%", maxWidth: "65%" }}>
               <p style={{ paddingBottom: "4px" }}> June 5@ 8.00 am-5 pm</p>
               <p>
@@ -159,13 +163,11 @@ function Upcoming() {
                 inventore amet vitae cum natus! Perferendis, mollitia facilis?
               </p>
             </div>
-            <div>
-              <img
-                src="/Assets/Events/event1.jpg"
-                width={200}
-                height={200}
-                alt=""
-              />
+            <div className="mr-2 text-center">
+              <p>
+                <b> SAT</b>
+              </p>
+              <p>5</p>
             </div>
           </div>
           <div className="d-flex flex-wrap justify-content-between mt-3 ml-3">

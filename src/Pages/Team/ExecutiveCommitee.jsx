@@ -5,10 +5,10 @@ import { ApiGet } from "../../Helper/API/Apidata";
 function ExecutiveCommitee() {
   const [data, setData] = useState([]);
   const fetchData = async () => {
-    await ApiGet("/team/commitee_members")
+    await ApiGet("/team/fullTeam")
       .then((data) => {
         console.log("res-", data.data.data);
-        setData(data?.data?.data);
+        setData(data?.data?.data?.executivecommitees);
       })
       .catch((err) => console.log(err));
   };
