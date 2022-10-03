@@ -11,10 +11,10 @@ function index() {
     <>
       <Courusel />
       <Events />
-      <Gallery />
+      {/* <Gallery /> */}
       <Membership />
       <Services />
-      </>
+    </>
   );
 }
 

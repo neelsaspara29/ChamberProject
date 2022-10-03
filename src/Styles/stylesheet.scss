@@ -11,6 +11,7 @@ body {
     color: #6e7879;
     margin: 0;
     font-size: 13px;
+    min-height: 100vh;
 }
 
 body * {
@@ -324,14 +325,7 @@ a:-webkit-any-link {
     // border-bottom: 1px solid rgb(212, 212, 212);
     
 }
-#about_section::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    border-bottom: 1px solid rgb(205, 205, 205);
-    width: 90%;
- }
+
 
 #about_section h2,
 #about_section h5 {
@@ -347,7 +341,9 @@ a:-webkit-any-link {
     text-align: center;
 }
 #about_icons {
-    margin: 30px auto 0;
+    margin:30px auto ;
+    margin-top: 50px;
+     
     width: 100%;
     max-width: 800px;
 }
@@ -404,7 +400,7 @@ a:-webkit-any-link {
     color: #1c282a;
 }
       $colors: (
-       slide: #ffa260,
+       slide_1: #ffa260,
       );
   @each $button, $color in $colors {
     .#{$button} {
@@ -422,8 +418,8 @@ a:-webkit-any-link {
       color: #fff;
     }
   }
-  .slide:hover,
-  .slide:focus {
+  .slide_1:hover,
+  .slide_1:focus {
     box-shadow: inset 14em 0 0 0 var(--hover);
   }    
   button {
@@ -489,5 +485,21 @@ p.copyright a {
 #chairmainImage {
     background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.forbes.com%2Fprofile%2Fmukesh-ambani%2F&psig=AOvVaw2DMyrlYMc5r7JuM66H3qP3&ust=1664364751124000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJjm5__vtPoCFQAAAAAdAAAAABAE");
     background-size: cover;
+}
+.procedure_coo li{
+    padding: 6px 0px;
+    font-size: 16px;
+}
+.commitee_details{
+    display: flex;
+}
+.commitee_details div{
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+.commitee_main .commitee_one{
+    margin: 0 3px;
+    margin-top: 16px;
+    width: 400px;
 }
   

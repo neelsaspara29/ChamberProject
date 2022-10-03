@@ -2,16 +2,32 @@ import { Link, Route, Routes } from "react-router-dom";
 import Home from './Pages/Home'
 import Header from './Components/Header/Header'
 import Upcoming from './Pages/Events/Upcoming'
+import Past from './Pages/Events/Past'
 import Team from "./Components/Homepage/Team";
 import Footer from "./Components/Footer/Footer";
-
-import Courusel from "./Components/Homepage/Courusel";
-import Events from "./Components/Homepage/Events";
-import Gallery from "./Components/Homepage/Gallery";
 import About from "./Pages/About/About";
 import MessageChairman from "./Pages/About/MessageChairman";
 import MissionVision from "./Pages/About/MissionVision";
 
+import GovCerculler from "./Pages/Cercullers/GovCerculler";
+import CertificateOrigin from "./Pages/Sevices/CertificateOrigin";
+import VisaService from "./Pages/Sevices/VisaService";
+import Auditoriam from "./Pages/Sevices/Auditoriam";
+import Conference from "./Pages/Sevices/Conference";
+import Bulletin from "./Pages/Publications/Bulletin";
+import Industry from "./Pages/Publications/Industry";
+import AboutCoo from "./Pages/Coo/AboutCoo";
+import ProcedureCoo from "./Pages/Coo/ProcedureCoo";
+import StateCirculer from "./Pages/Cercullers/StateCirculer";
+import ComiteeMain from "./Pages/Comitees/ComiteeMain";
+import MembersDirectory from "./Pages/MembersDirectory/MembersDirectory";
+import Association from "./Pages/Association/Association";
+import Bhavnagar from "./Pages/About/Bhavnagar";
+import Bearear from "./Pages/Team/Bearear";
+import ExecutiveCommitee from "./Pages/Team/ExecutiveCommitee";
+import Secretaries from "./Pages/Team/Secretaries";
+import Publications from "./Pages/Publications/Publications";
+import Galleries from "./Pages/Gallery/Galleries";
 function App() {
   return (
     <>
@@ -19,10 +35,33 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} ></Route>
         <Route path="/upcomingevents" element={<Upcoming />} ></Route>
+        <Route path="/pastevents" element={<Past />} ></Route>
         <Route path="/scciteam" element={<Team />} ></Route>
         <Route path="/about" element={<About />} ></Route>
         <Route path="/messageChairman" element={<MessageChairman />} ></Route>
         <Route path="/mission" element={<MissionVision />} ></Route>
+        <Route path="/govcirculer" element={<GovCerculler />}></Route>
+        <Route path="/statecirculer" element={<StateCirculer />}></Route>
+        <Route path="/certificateoforigin" element={<CertificateOrigin />}></Route>
+        <Route path="/visarecomandation" element={<VisaService />}></Route>
+        <Route path="/auditorium" element={<Auditoriam />}></Route>
+        <Route path="/conference" element={<Conference />}></Route>
+        <Route path="/bulletin" element={<Bulletin />}></Route>
+        <Route path="/industrialdirectory" element={<Industry />}></Route>
+        <Route path="/otherpublication" element={<Publications />}></Route>
+        <Route path="/aboutcoo" element={<AboutCoo />}></Route>
+        <Route path="/procedure" element={<ProcedureCoo />}></Route>
+        <Route path="/comiteemain" element={<ComiteeMain />}></Route>
+        <Route path="/membersdirectory" element={<MembersDirectory />}></Route>
+        <Route path="/associative" element={<Association />}></Route>
+        <Route path="/bhavnagar" element={<Bhavnagar />}></Route>
+        <Route path="/officebearear" element={<Bearear />}></Route>
+        <Route path="/executiveCommitee" element={<ExecutiveCommitee />}></Route>
+        <Route path="/secretaries" element={<Secretaries />}></Route>
+        <Route path="/galleries" element={<Galleries />}></Route>
+
+
+
       </Routes>
       <Footer />
     </>

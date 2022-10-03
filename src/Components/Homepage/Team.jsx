@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 
 function Team() {
+  
   return (
     <>
       <div className="text-danger text-center mt-10">
@@ -162,16 +163,24 @@ function Team() {
                   </div>
                 </Card.Title>
                 <Card.Subtitle className="m-auto text-muted text-center">
-                  <h3>
-                    <b> Mr President </b>
-                  </h3>
+                  <h4>
+                    <b> MR. Shubham Sutariya </b>
+                  </h4>
                 </Card.Subtitle>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  <p>CEO Of SCCI</p>
+                  <p>9879868909</p>
+                  <p>scci@gamil.com</p>
                 </Card.Text>
-                <Card.Link href="#">Card Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
+                <Card.Link href="#">
+                  <span className="fa fa-twitter"></span>
+                </Card.Link>
+                <Card.Link href="#">
+                  <span className="fa fa-facebook"></span>
+                </Card.Link>
+                <Card.Link href="#">
+                  <span className="fa fa-instagram"></span>
+                </Card.Link>
               </Card.Body>
             </Card>
             <Card className="team_card" style={{ width: "20rem" }}>
@@ -187,16 +196,24 @@ function Team() {
                   </div>
                 </Card.Title>
                 <Card.Subtitle className="m-auto text-muted text-center">
-                  <h3>
-                    <b> Mr President </b>
-                  </h3>
+                  <h4>
+                    <b> MR. Shubham Sutariya </b>
+                  </h4>
                 </Card.Subtitle>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  <p>CEO Of SCCI</p>
+                  <p>9879868909</p>
+                  <p>scci@gamil.com</p>
                 </Card.Text>
-                <Card.Link href="#">Card Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
+                <Card.Link href="#">
+                  <span className="fa fa-twitter"></span>
+                </Card.Link>
+                <Card.Link href="#">
+                  <span className="fa fa-facebook"></span>
+                </Card.Link>
+                <Card.Link href="#">
+                  <span className="fa fa-instagram"></span>
+                </Card.Link>
               </Card.Body>
             </Card>
             <Card className="team_card" style={{ width: "20rem" }}>
@@ -212,41 +229,24 @@ function Team() {
                   </div>
                 </Card.Title>
                 <Card.Subtitle className="m-auto text-muted text-center">
-                  <h3>
-                    <b> Mr President </b>
-                  </h3>
+                  <h4>
+                    <b> MR. Shubham Sutariya </b>
+                  </h4>
                 </Card.Subtitle>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  <p>CEO Of SCCI</p>
+                  <p>9879868909</p>
+                  <p>scci@gamil.com</p>
                 </Card.Text>
-                <Card.Link href="#">Card Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
-              </Card.Body>
-            </Card>
-            <Card className="team_card" style={{ width: "20rem" }}>
-              <Card.Body>
-                <Card.Title>
-                  <div className="text-center">
-                    <img
-                      src="/Assets/team/1.jpg"
-                      // width={150}
-                      height={100}
-                      className="m-auto w-4/5"
-                    ></img>
-                  </div>
-                </Card.Title>
-                <Card.Subtitle className="m-auto text-muted text-center">
-                  <h3>
-                    <b> Mr President </b>
-                  </h3>
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">Card Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
+                <Card.Link href="#">
+                  <span className="fa fa-twitter"></span>
+                </Card.Link>
+                <Card.Link href="#">
+                  <span className="fa fa-facebook"></span>
+                </Card.Link>
+                <Card.Link href="#">
+                  <span className="fa fa-instagram"></span>
+                </Card.Link>
               </Card.Body>
             </Card>
           </div>

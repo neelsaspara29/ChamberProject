@@ -1,233 +1,217 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 function Header() {
+  const navigation = useNavigate();
   return (
-    <div id="header">
-      <div className="wrapper">
-        <Link id="logo" to="/">
-          <img src="/Assets/logo9.png" alt="" />
-        </Link>
-        <div id="main_menu">
-          <ul className="main_menu">
-            <li className="item1 ">
-              <Link className="first " to="pages/about-us/">
-                About Us
-              </Link>
-              <ul className="">
-                <li className="item1 ">
-                  <Link
-                    className="first "
-                    to="/about"
-                  >
-                    SCCI At 4 Glance
-                  </Link>
-                </li>
-                <li className="item1 ">
-                  <Link
-                    className="first "
-                    to="/mission"
-                  >
-                    Visson&Mission
-                  </Link>
-                </li>
-                <li className="item1 ">
-                  <Link
-                    className="first "
-                    to="/messageChairman"
-                  >
-                    Message From the Chair
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="item2 ">
-              <Link className="" to="/scciteam">
+    <>
+      <div id="header">
+        <div className="wrapper">
+          <Link id="logo" to="/">
+            <img src="/Assets/logo9.png" alt="" />
+          </Link>
+          <div id="main_menu">
+            <ul className="main_menu">
+              <li className="item1 ">
+                About
+                <ul className="">
+                  <li className="item1 ">
+                    <Link className="first " to="/about">
+                      SCCI At 4 Glance
+                    </Link>
+                  </li>
+                  <li className="item1 ">
+                    <Link className="first " to="/mission">
+                      Visson&Mission
+                    </Link>
+                  </li>
+                  <li className="item1 ">
+                    <Link className="first " to="/messageChairman">
+                      Message From the Chair
+                    </Link>
+                  </li>
+                  <li className="item1 ">
+                    <Link className="first " to="/bhavnagar">
+                      About Bhavnagar
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="item2 ">
                 SCCI Team
-              </Link>
-            </li>
-            <li className="item3">
-              <Link to="https://www.ftlchamber.com/index.php?submenu=manageyourmembership&amp;src=membership&amp;srctype=myaccount">
+                <ul className="">
+                  <li className="item1 ">
+                    <Link className="first " to="/officebearear">
+                      Office Bearear
+                    </Link>
+                  </li>
+                  <li className="item2">
+                    <Link className="first " to="/executiveCommitee">
+                      Executive Commitee
+                    </Link>
+                  </li>
+                  <li className="item1 ">
+                    <Link className="first " to="/secretaries">
+                      Secretaries
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="item3">
                 Services & Facilities
-              </Link>
-              <ul className="">
-                <li className="item1 ">
-                  <Link
-                    className="first "
-                    to="pages/here-s-how-the-chamber-works-for-you/"
-                  >
-                    Certificate of origin
-                  </Link>
-                </li>
-                <li className="item2">
-                  <Link
-                    className="first "
-                    to="pages/here-s-how-the-chamber-works-for-you/"
-                  >
-                    Visa Recomandation
-                  </Link>
-                </li>
-                <li className="item1 ">
-                  <Link
-                    className="first "
-                    to="pages/here-s-how-the-chamber-works-for-you/"
-                  >
-                    Auditorium
-                  </Link>
-                </li>
-                <li className="item1 ">
-                  <Link
-                    className="first "
-                    to="pages/here-s-how-the-chamber-works-for-you/"
-                  >
-                    Conference Hall
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="item4 ">
-              <Link
-                className=""
-                to="index.php?submenu=events&amp;src=events&amp;srctype=events_lister_new"
-              >
+                <ul className="">
+                  <li className="item1 ">
+                    <Link className="first " to="/certificateoforigin">
+                      Certificate of origin
+                    </Link>
+                  </li>
+                  <li className="item2">
+                    <Link className="first " to="/visarecomandation">
+                      Visa Recomandation
+                    </Link>
+                  </li>
+                  <li className="item1 ">
+                    <Link className="first " to="/auditorium">
+                      Auditorium
+                    </Link>
+                  </li>
+                  <li className="item1 ">
+                    <Link className="first " to="/conference">
+                      Conference Hall
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="item4 ">
                 Publication
-              </Link>
-              <ul className="">
-                <li className="item1">
-                  <Link
-                    className="first"
-                    to="index.php?submenu=eventsCalendar&amp;src=events&amp;srctype=events_glance_new"
-                  >
-                    Bio-monthly Bulletin
-                  </Link>
-                </li>
-                <li className="item2">
-                  <Link to="pages/virtual-events-library/">
-                    Industrial Directory
-                  </Link>
-                </li>
-                <li className="item3">
-                  <Link to="pages/signature-events/">Other Publication </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="item5 ">
-              <Link className="" to="pages/economic-development/">
+                <ul className="">
+                  <li className="item1">
+                    <Link className="first" to="/bulletin">
+                      Bio-monthly Bulletin
+                    </Link>
+                  </li>
+                  <li className="item2">
+                    <Link to="/industrialdirectory">Industrial Directory</Link>
+                  </li>
+                  <li className="item3">
+                    <Link to="/otherpublication">Other Publication </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="item5 ">
                 Coo Helpdesk
-              </Link>
-              <ul className="">
-                <li className="item1">
-                  <Link
-                    className="first"
-                    to="forms/business-first-site-visit-form/"
-                  >
-                    About Coo
-                  </Link>
-                </li>
-                <li className="item2">
-                  <Link
-                    to="clientuploads/Documents/Climate_Resilience/the-climate-resilience-economy-nexus-advancing-common-goal.pdf"
-                    onclick="window.open(this.href,'_blank'); return false;"
-                  >
-                    Procedure of coo
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="item6 ">
-              <Link className="" to="#">
+                <ul className="">
+                  <li className="item1">
+                    <Link className="first" to="/aboutcoo">
+                      About Coo
+                    </Link>
+                  </li>
+                  <li className="item2">
+                    <Link
+                      to="/procedure"
+                    >
+                      Procedure of coo
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="item6 ">
                 GOVT. Cercullers
-              </Link>
-              <ul className="">
-                <li className="item1">
-                  <Link
-                    className="first"
-                    to="pages/welcome-to-our-resource-page/"
-                    onclick="window.open(this.href,'_blank'); return false;"
-                  >
-                    State Govt. Cercullers
-                  </Link>
-                </li>
-                <li className="item2">
-                  <Link
-                    to="https://www.ftlchamber.com/index.php?src=gendocs&amp;ref=Foreign-Trade%20Zone%20241"
-                    onclick="window.open(this.href,'_blank'); return false;"
-                  >
-                    Central Govt. Cercullers
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="item7 ">
-              <Link className="last " to="#">
+                <ul className="">
+                  <li className="item1">
+                    <Link
+                      className="first"
+                      to="/statecirculer"
+                    >
+                      State Govt. Cercullers
+                    </Link>
+                  </li>
+                  <li className="item2">
+                    <Link
+                      to="/govcirculer"
+                    >
+                      Central Govt. Cercullers
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="item7 ">
                 Various Comitees
-              </Link>
-              <ul className="">
-                <li className="item1">
-                  <Link
-                    className="first"
-                    to="https://www.ftlchamber.com/pages/digital-magazine/"
-                    onclick="window.open(this.href,'_blank'); return false;"
-                  >
-                    Commitees
-                  </Link>
-                </li>
-                <li className="item2">
-                  <Link to="index.php?submenu=blog&amp;src=blog&amp;srctype=blog_lister_new&amp;displaytype=Redesign_Blog">
-                    Name List
-                  </Link>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div id="has_it_logo"></div>
-        <div id="social_header">
-          <Link
-            className="facebook"
-            to="https://www.facebook.com/ftlchamber/"
-            target="_blank"
-          >
-            <span className="fa fa-facebook"></span>
-          </Link>
-          <Link
-            className="twitter"
-            to="https://twitter.com/ftlchamber"
-            target="_blank"
-          >
-            <span className="fa fa-twitter"></span>
-          </Link>
-          <Link
-            className="linkedin"
-            to="https://www.linkedin.com/groups/855347"
-            target="_blank"
-          >
-            <span className="fa fa-linkedin"></span>
-          </Link>
-          <Link
-            className="instagram"
-            to="https://www.instagram.com/ftlchamber/"
-            target="_blank"
-          >
-            <span className="fa fa-instagram"></span>
-          </Link>
-          <Link
-            className="youtube"
-            to="https://www.youtube.com/channel/UC6poMQbbx9lT8ltWGlRU2eA?view_as=subscriber"
-          >
-            <span className="fa fa-youtube"></span>
-          </Link>
-        </div>
+                <ul className="">
+                  <li className="item1">
+                    <Link
+                      className="first"
+                      to="/comiteemain"
+                    >
+                      Commitees
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="item7 ">
+              Members Directory
+                <ul className="">
+                  <li className="item1">
+                    <Link
+                      className="first"
+                      to="/membersdirectory"
+                    >
+                      Members 
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+             
+            </ul>
+          </div>
+          <div id="has_it_logo"></div>
+          <div id="social_header">
+            <Link
+              className="facebook"
+              to="https://www.facebook.com/ftlchamber/"
+              target="_blank"
+            >
+              <span className="fa fa-facebook"></span>
+            </Link>
+            <Link
+              className="twitter"
+              to="https://twitter.com/ftlchamber"
+              target="_blank"
+            >
+              <span className="fa fa-twitter"></span>
+            </Link>
+            <Link
+              className="linkedin"
+              to="https://www.linkedin.com/groups/855347"
+              target="_blank"
+            >
+              <span className="fa fa-linkedin"></span>
+            </Link>
+            <Link
+              className="instagram"
+              to="https://www.instagram.com/ftlchamber/"
+              target="_blank"
+            >
+              <span className="fa fa-instagram"></span>
+            </Link>
+            <Link
+              className="youtube"
+              to="https://www.youtube.com/channel/UC6poMQbbx9lT8ltWGlRU2eA?view_as=subscriber"
+            >
+              <span className="fa fa-youtube"></span>
+            </Link>
+          </div>
 
-        {/* <!-- mobile menu section --> */}
-        {/* <div id="menu_toggle">
+          {/* <!-- mobile menu section --> */}
+          {/* <div id="menu_toggle">
         <span className="fa fa-bars"></span>
       </div> */}
 
-        {/* <!-- end of mobile menu --> */}
+          {/* <!-- end of mobile menu --> */}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
-
+ 
 export default Header;

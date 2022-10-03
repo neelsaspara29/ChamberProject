@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../Styles/Components/service.scss";
 function Services() {
   return (
@@ -17,12 +18,14 @@ function Services() {
                 alt=""
               />
             </div>
-            <div
-              style={{ marginTop: "6px", fontSize: "14px" }}
-              className="text-green-600"
-            >
-              Certification Of Origin
-            </div>
+            <Link to="/certificateoforigin">
+              <div
+                style={{ marginTop: "6px", fontSize: "14px" }}
+                className="text-green-600"
+              >
+                Certification Of Origin
+              </div>
+            </Link>
           </div>
           <div>
             <div className="text-center">
@@ -33,12 +36,14 @@ function Services() {
                 alt=""
               />
             </div>
-            <div
-              style={{ marginTop: "6px", fontSize: "14px" }}
-              className="text-green-600"
-            >
-              Visa Recomandation
-            </div>
+            <Link to="/visarecomandation">
+              <div
+                style={{ marginTop: "6px", fontSize: "14px" }}
+                className="text-green-600"
+              >
+                Visa Recomandation
+              </div>
+            </Link>
           </div>
           <div className="text-center">
             <div>
@@ -49,12 +54,14 @@ function Services() {
                 alt=""
               />
             </div>
-            <div
-              style={{ marginTop: "6px", fontSize: "14px" }}
-              className="text-green-600"
-            >
-              Auditorium
-            </div>
+            <Link to="/auditorium">
+              <div
+                style={{ marginTop: "6px", fontSize: "14px" }}
+                className="text-green-600"
+              >
+                Auditorium
+              </div>
+            </Link>
           </div>
           <div>
             <div className="text-center">
@@ -65,12 +72,14 @@ function Services() {
                 alt=""
               />
             </div>
-            <div
-              style={{ marginTop: "6px", fontSize: "14px" }}
-              className="text-green-600"
-            >
-              Conference Hall
-            </div>
+            <Link to="/conference">
+              <div
+                style={{ marginTop: "6px", fontSize: "14px" }}
+                className="text-green-600"
+              >
+                Conference Hall
+              </div>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,10 +1,23 @@
-import React from 'react'
-import '../../../src/Styles/GallaryPage/index.scss'
+import React, { useEffect, useState } from "react";
+import "../../../src/Styles/GallaryPage/index.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from 'swiper'
+import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
+import { ApiPost } from "../../Helper/API/Apidata";
 function Gallery() {
+  const [data, setData] = useState([]);
+  const fetchData = async () => {
+    await ApiPost("/gallaryEvent/get")
+      .then((data) => {
+        console.log("res-", data);
+        setData(data?.data?.data);
+      })
+      .catch((err) => console.log(err));
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <>
       <div className="gallery_main">
@@ -135,4 +148,4 @@ function Gallery() {
   );
 }
 
-export default Gallery
+export default Gallery;
