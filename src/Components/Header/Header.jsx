@@ -115,8 +115,8 @@ function Header() {
                   </li>
                 </ul>
               </li>
-              <li className="item7 ">
-                Members Directory
+               <li className="item7 ">
+              Members Directory
                 <ul className="">
                   <li className="item1">
                     <Link className="first" to="/membersdirectory">
@@ -124,7 +124,8 @@ function Header() {
                     </Link>
                   </li>
                 </ul>
-              </li>
+              </li> 
+             
             </ul>
           </div>
           <div id="has_it_logo"></div>
