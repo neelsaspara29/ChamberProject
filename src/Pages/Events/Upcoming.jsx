@@ -134,7 +134,7 @@ function Upcoming() {
               <b> June 2021</b>
             </h4>
           </div>
-          <div className="d-flex justify-content-between mt-3 ml-3">
+          <div className="d-flex flex-wrap justify-content-between mt-3 ml-3">
             <div className="mr-2 text-center">
               <p>
                 <b> SAT</b>
@@ -168,7 +168,7 @@ function Upcoming() {
               />
             </div>
           </div>
-          <div className="d-flex justify-content-between mt-3 ml-3">
+          <div className="d-flex flex-wrap justify-content-between mt-3 ml-3">
             <div className="mr-2 text-center">
               <p>
                 <b> SAT</b>

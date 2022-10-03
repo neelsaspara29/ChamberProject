@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BaseURL = "http://192.168.43.80:3001/admin"
+const BaseURL = "http://chamber-env.eba-2jmsfvkk.ap-south-1.elasticbeanstalk.com/admin"
 export const ApiGet = (type) => {
     return new Promise((resolve, reject) => {
         axios

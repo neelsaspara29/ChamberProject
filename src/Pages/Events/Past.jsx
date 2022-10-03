@@ -134,7 +134,7 @@ function Past() {
               <b> June 2021</b>
             </h4>
           </div>
-          <div className="d-flex justify-content-between mt-3 ml-3">
+          <div className="d-flex flex-wrap justify-content-between mt-3 ml-3">
             <div className="mr-2 text-center">
               <p>
                 <b> SAT</b>
@@ -168,14 +168,14 @@ function Past() {
               />
             </div>
           </div>
-          <div className="d-flex justify-content-between mt-3 ml-3">
+          <div className="d-flex flex-wrap justify-content-between mt-3 ml-3">
             <div className="mr-2 text-center">
               <p>
                 <b> SAT</b>
               </p>
               <p>5</p>
             </div>
-            <div className="px-4" style={{ minWidth: "60%", maxWidth: "60%" }}>
+            <div className="px-4" style={{ width: "60%" }}>
               <p style={{ paddingBottom: "4px" }}> June 5@ 8.00 am-5 pm</p>
               <p>
                 <h5>

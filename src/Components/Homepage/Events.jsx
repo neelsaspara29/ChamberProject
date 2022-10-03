@@ -26,7 +26,7 @@ function Events() {
               </Link>
             </div>
           </div>
-          <div className="d-flex">
+          <div className="d-flex flex-wrap">
             <div className="m-2">
               <Link to="/galleries">
                 <div style={{ width: "14em" }}>

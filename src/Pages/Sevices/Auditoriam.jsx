@@ -1,12 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Table } from "react-bootstrap";
+import { ApiPost } from "../../Helper/API/Apidata";
 
 function Auditoriam() {
-  const [data, setData] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
+  const [data, setData] = useState([]);
+  const fetchData = async () => {
+    await ApiPost("/service/get", {
+      type: "1",
+    })
+      .then((data) => {
+        console.log("res-", data);
+        setData(data?.data?.data);
+      })
+      .catch((err) => console.log(err));
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
+  const [data1, setData1] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
   return (
     <>
       <div className="w-2/3 m-auto mt-4">
@@ -14,11 +29,7 @@ function Auditoriam() {
           <h2 className="text-center text-danger">AUDITORIAM</h2>
         </div>
         <div className="mt-5">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam
-            consectetur ipsam deserunt, neque rem molestiae alias reiciendis
-            placeat magni.
-          </p>
+          <p>{data[0]?.intro}</p>
           <div>
             <Swiper
               slidesPerView={4}
@@ -29,10 +40,10 @@ function Auditoriam() {
               modules={[Pagination]}
               className="mySwiper mt-10"
             >
-              {data.map((data) => (
+              {data1.map((single) => (
                 <SwiperSlide>
                   <div style={{ width: "200px", height: "200px" }}>
-                    <img alt="Anita Simmons" src="/Assets/Gallery/1.jpg" />
+                    <img alt="Anita Simmons" src={data[0]?.image} />
                   </div>
                 </SwiperSlide>
               ))}
@@ -51,8 +62,14 @@ function Auditoriam() {
                 <td>SCCI Auditorium</td>
               </tr>
               <tr>
-                <td>Since</td>
-                <td>1990</td>
+                <td>Fecilities</td>
+                <td>
+                  {data[0]?.facilities.map((single) => {
+                    return (
+                      <span className="bg-orange-400 mr-1 p-1.5">{single}</span>
+                    );
+                  })}
+                </td>
               </tr>
               <tr>
                 <td>Dimentions</td>
@@ -60,11 +77,11 @@ function Auditoriam() {
               </tr>
               <tr>
                 <td>Capecity:</td>
-                <td>1000 People</td>
+                <td>500 People</td>
               </tr>
               <tr>
-                <td>Price</td>
-                <td>30000</td>
+                <td>Rent</td>
+                <td>{data[0].rent}&#8377;</td>
               </tr>
             </tbody>
           </Table>
