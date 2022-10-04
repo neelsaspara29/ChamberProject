@@ -39,8 +39,8 @@ const About = () => {
         </div>
         <div class="wrapper">
           <div id="content" class="rightpad">
-            <h1 class="gendocsPageTitle">About Us</h1>
-            <p>
+            <h1 class="gendocsPageTitle text-center">About Us</h1>
+            <p className="text-center">
               {data}
               <a
                 href="http://washingtonsummit.org/"

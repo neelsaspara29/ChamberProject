@@ -3,7 +3,7 @@ import React from 'react'
 
 function Courusel() {
     return (
-      <div className="slider">
+      <div className="slider px-2">
         <Carousel pause="hover" indicators={false}>
           <Carousel.Item>
             <img
