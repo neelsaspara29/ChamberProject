@@ -8,8 +8,8 @@ function Services() {
         <div className="text-danger text-center  px-4 sm:px-6 lg:px-8 lg:pt-20 ">
           <h2> SERVICES & FACILITIES</h2>
         </div>
-        <div className="d-flex w-4/5 flex-wrap m-auto justify-between mt-5">
-          <div>
+        <div className="d-flex w-4/5 flex-wrap m-auto service_responsive justify-between mt-5">
+          <div className="p-2">
             <div className="text-center">
               <img
                 src="/Assets/Service/certificate.svg"
@@ -27,7 +27,7 @@ function Services() {
               </div>
             </Link>
           </div>
-          <div>
+          <div className="p-2">
             <div className="text-center">
               <img
                 src="/Assets/Service/visa.svg"
@@ -45,7 +45,7 @@ function Services() {
               </div>
             </Link>
           </div>
-          <div className="text-center">
+          <div className="p-2">
             <div>
               <img
                 src="/Assets/Service/auditoriam.svg"
@@ -63,7 +63,7 @@ function Services() {
               </div>
             </Link>
           </div>
-          <div>
+          <div className="p-2">
             <div className="text-center">
               <img
                 src="/Assets/Service/conference.svg"

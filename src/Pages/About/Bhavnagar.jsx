@@ -6,7 +6,7 @@ function Bhavnagar() {
       <div>
         <h2 className="text-danger uppercase text-center my-4">Bhavnagar</h2>
       </div>
-      <div className="w-3/4 m-auto">
+      <div className="w-4/5 m-auto">
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
           qui. Cumque, amet deserunt quisquam dolore eius tempore quo nam
@@ -38,15 +38,15 @@ function Bhavnagar() {
         </div>
         <div>
           <div className="d-flex flex-wrap justify-between  mt-14">
-            <div>
+            <div className="industry_bhavnagar">
               <img
                 src="/Assets/bhavnagr/chem.jpg"
-                style={{ width: "300px", height: "300px" }}
+                style={{ width: "23rem", height: "23rem" }}
                 alt=""
               />
             </div>
-            <div className="w-2/3">
-              <div className="text-green-500 uppercase ">
+            <div className="w-2/3 bhannagar_industry">
+              <div className="text-green-500 uppercase industry_header">
                 <h3>chemical industry</h3>
               </div>
               <div>
@@ -87,12 +87,12 @@ function Bhavnagar() {
             <div>
               <img
                 src="/Assets/bhavnagr/text.jpg"
-                style={{ width: "300px", height: "300px" }}
+                style={{ width: "23rem", height: "23rem" }}
                 alt=""
               />
             </div>
-            <div className="w-2/3">
-              <div className="text-green-500 uppercase ">
+            <div className="w-2/3 bhannagar_industry">
+              <div className="text-green-500 uppercase industry_header">
                 <h3>texttile industry</h3>
               </div>
               <div>

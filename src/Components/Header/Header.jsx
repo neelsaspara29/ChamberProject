@@ -12,9 +12,11 @@ function Header() {
     <>
       <div id="header">
         <div className="wrapper">
-          <Link id="logo" to="/">
-            <img src="/Assets/logo9.png" alt="" />
-          </Link>
+          <div>
+            <Link id="logo" to="/">
+              <img src="/Assets/logo9.png" alt="" />
+            </Link>
+          </div>
           <div id="main_menu">
             <ul className="main_menu">
               <li className="item1 ">
@@ -115,8 +117,8 @@ function Header() {
                   </li>
                 </ul>
               </li>
-               <li className="item7 ">
-              Members Directory
+              <li className="item7 ">
+                Members Directory
                 <ul className="">
                   <li className="item1">
                     <Link className="first" to="/membersdirectory">
@@ -124,8 +126,7 @@ function Header() {
                     </Link>
                   </li>
                 </ul>
-              </li> 
-             
+              </li>
             </ul>
           </div>
           <div id="has_it_logo"></div>

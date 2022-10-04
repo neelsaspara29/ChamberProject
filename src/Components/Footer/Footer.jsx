@@ -44,36 +44,17 @@ export default function Footer() {
         <section className="">
           <MDBContainer className="text-center  text-md-start mt-5">
             <MDBRow className="mt-3">
-              <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4 text-center">
+              <MDBCol
+                md="3"
+                lg="4"
+                xl="3"
+                className="mx-auto p-0 mb-4 text-center"
+              >
                 <h6 className="text-uppercase fw-bold mb-4">
                   <MDBIcon icon="gem" className="me-3" />
                   Saurashtra Chambers Of Commerce Bhavnagar
                 </h6>
                 <p>Unity Is Strengh</p>
-              </MDBCol>
-
-              <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Pricing
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Settings
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Orders
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Help
-                  </a>
-                </p>
               </MDBCol>
 
               <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">

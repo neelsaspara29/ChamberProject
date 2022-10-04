@@ -6,7 +6,7 @@ function Events() {
     <>
       <div className="w-4/5 m-auto mt-5 home_second ">
         <div className="d-flex align-items-center flex-col">
-          <div className="d-flex flex-wrap ">
+          <div className="d-flex flex-wrap events_responsive">
             <div className="m-2">
               <Link to="upcomingevents">
                 <div style={{ width: "14em" }}>
@@ -26,7 +26,7 @@ function Events() {
               </Link>
             </div>
           </div>
-          <div className="d-flex flex-wrap">
+          <div className="d-flex flex-wrap events_responsive" >
             <div className="m-2">
               <Link to="/galleries">
                 <div style={{ width: "14em" }}>

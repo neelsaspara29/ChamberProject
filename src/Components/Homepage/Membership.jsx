@@ -9,10 +9,10 @@ function Membership() {
       <article className="bg-white membership m-auto w-5/6 ">
         <section className=" px-4 sm:px-6 lg:px-8 lg:pt-20 bg-white">
           <section className="text-center">
-            <h1 className="text-danger uppercase">MemberShip</h1>
+            <h1 className="text-danger uppercase"> About MemberShip</h1>
           </section>
           <section className="overview ">
-            <h3>
+            <h3 className="text-green-500 member_responsive">
               <b> Overview</b>
             </h3>
             <p className="mt-3  mx-auto capitalize ">
@@ -33,8 +33,8 @@ function Membership() {
           <section>
             <div className="w-100 ">
               <section className="why_to_sub">
-                <h3>
-                  <b> Why To Subscribe SCCI Membership </b>
+                <h3 className="text-green-500 member_responsive">
+                  <b> Why To Subscribe ? </b>
                 </h3>
               </section>
               <ul className="benefit list-none d-flex flex-col justify-start p-0">
@@ -58,7 +58,10 @@ function Membership() {
                 </li>
               </ul>
             </div>
-            <div className="btn btn-primary p-2"> Download</div>
+            <div className="btn btn-primary p-2 member_download_button_responsive">
+              {" "}
+              <div> Download </div>
+            </div>
           </section>
         </section>
       </article>
