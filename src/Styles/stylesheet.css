@@ -308,7 +308,7 @@ a:-webkit-any-link {
     padding: 0;
 }
 .slider img{
-    height: 80vh !important;
+    height: 30vh !important;
 }
 .slider{
     z-index: -5;
