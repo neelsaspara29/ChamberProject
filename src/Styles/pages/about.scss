@@ -1271,6 +1271,13 @@ table {
     table {
       border: 0;
     }
+
+    .pub {
+        width: 90% !important;
+    }
+    .pub_text {
+        font-size: 0.8rem !important;
+    }
   
     table caption {
       font-size: 1.3em;
@@ -1291,6 +1298,7 @@ table {
       border-bottom: 3px solid #ddd;
       display: block;
       margin-bottom: .625em;
+      border-radius: 5px;
     }
     
     table td {

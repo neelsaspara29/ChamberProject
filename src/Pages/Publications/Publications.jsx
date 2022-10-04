@@ -24,9 +24,9 @@ function Publications() {
       <div id="interior_content">
     
     <div className="text-center mt-3">
-      <h2 className="text-danger uppercase">Other Publication</h2>
+      <h2 className="uppercase" style={{color:"#1700ec", fontWeight: "700"}}>Other Publication</h2>
     </div>
-    <div className="w-2/3 m-auto mt-4">
+    <div className="w-2/3 m-auto mt-4 pub">
     <table>
 {/* <caption>Statement Summary</caption> */}
 <thead>
@@ -49,7 +49,7 @@ function Publications() {
                 <td data-label = "Month">{item.month}</td>
                 <td data-label = "Created Date">{moment(item.createdAt).format(" MMMM Do YYYY")}</td>
                 <td data-label = "Download" >
-                  <div className="btn btn-primary px-2 py-1  inline ">
+                  <div className="btn btn-primary px-2 py-1  inline pub_text" onClick={() => {window.open(item?.link)}}>
                     Download
                   </div>
                 </td>
