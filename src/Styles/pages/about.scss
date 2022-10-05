@@ -1417,6 +1417,15 @@ table th {
     font-size: 0.8rem !important;
   }
 
+  .city-box1 p {
+    // letter-spacing: 1px;
+    word-spacing: 0px;
+  }
+  .city-box2 p {
+    // letter-spacing: 1px;
+    word-spacing: 0px;
+  }
+
   table caption {
     font-size: 1.3em;
   }
@@ -1476,7 +1485,7 @@ table th {
 
 .city-box1 p {
   line-height: 25px;
-  text-align: justify;
+  // text-align: justify;
   margin-top: 12px;
   vertical-align: middle;
 }
@@ -1486,6 +1495,7 @@ table th {
   margin-right: 10px;
   height: 200px;
   width: 200px;
+  border-radius: 5px;
 }
 
 .clear {
@@ -1497,18 +1507,20 @@ table th {
   display: inline-block;
   margin-bottom: 25px;
   float: left;
+  border-radius: 5px;
 }
 
 .city-box1 h3 {
-  line-height: 0.7;
+  // line-height: 0.7;
 }
 .city-box2 h3 {
-  line-height: 0.7;
+  // line-height: 0.7;
+  padding: 2px;
 }
 
 .city-box2 p {
   line-height: 25px;
-  text-align: justify;
+  // text-align: justify;
   margin-top: 12px;
   vertical-align: middle;
 }
@@ -1518,4 +1530,5 @@ table th {
   margin-left: 10px;
   height: 200px;
   width: 200px;
+  border-radius: 5px;
 }
