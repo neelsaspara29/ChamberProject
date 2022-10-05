@@ -12,7 +12,7 @@ function Membership() {
             <h1 className="text-danger uppercase"> About MemberShip</h1>
           </section>
           <section className="overview ">
-            <h3 className="text-green-500 member_responsive">
+            <h3 className="text-green-500 member_responsive text-center">
               <b> Overview</b>
             </h3>
             <p className="mt-3  mx-auto capitalize text-center">

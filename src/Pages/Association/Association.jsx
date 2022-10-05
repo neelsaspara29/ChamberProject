@@ -23,13 +23,13 @@ function Association() {
   return (
     <>
       <Header1 />
-      <div className="w-2/3 m-auto mt-4">
+      <div className="w-2/3 m-auto mt-4 pub">
         <div>
-          <h2 className="text-center text-danger uppercase">
+          <h3 className="text-center text-danger uppercase">
             associated association of scci
-          </h2>
+          </h3>
         </div>
-        <div className="mt-5">
+        <div className="mt-3">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam
             consectetur ipsam deserunt, neque rem molestiae alias reiciendis
@@ -42,28 +42,37 @@ function Association() {
         </div>
 
         <div className=" m-auto mt-4">
-          <Table striped bordered>
+        <table>
+            {/* <caption>Statement Summary</caption> */}
             <thead>
-              <tr className="uppercase">
-                <th>Idx</th>
-                <th>Serial Number</th>
-                <th>Name</th>
-                <th>Address</th>
+              <tr>
+                <th scope="col">Serial Number</th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Contact-1</th>
+                <th scope="col">Contact-2</th>
               </tr>
             </thead>
             <tbody>
-              {data?.map((single) => {
+              {data.map((item) => {
                 return (
                   <tr>
-                    <td>1</td>
-                    <td>{single?.sNumber}</td>
-                    <td>{single?.name}</td>
-                    <td>{single?.address}</td>
+                    <td data-label="Serial Number">{item?.sNumber}</td>
+                    <td data-label="Name">{item?.name}</td>
+                    <td data-label="Address">
+                      {item?.address}
+                    </td>
+                    <td data-label="Contact-1">
+                      987920714
+                    </td>
+                    <td data-label="Contact-2">
+                      8291829182
+                    </td>
                   </tr>
                 );
               })}
             </tbody>
-          </Table>
+          </table>
         </div>
       </div>
     </>
