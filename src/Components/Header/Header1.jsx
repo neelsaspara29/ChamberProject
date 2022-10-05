@@ -16,7 +16,7 @@ function Header1() {
             <Link id="logo" to="/">
               <img
                 src="/Assets/sccilogo.png"
-                style={{ width: "6em", height: "6em" }}
+                style={{ width: "30vw", height: "13vh" }}
                 alt=""
               />
             </Link>
@@ -28,7 +28,7 @@ function Header1() {
                 <ul className="">
                   <li className="item1 ">
                     <Link className="first " to="/about">
-                      SCCI At 4 Glance
+                      SCCI At a Glance
                     </Link>
                   </li>
                   <li className="item1 ">
@@ -38,7 +38,7 @@ function Header1() {
                   </li>
                   <li className="item1 ">
                     <Link className="first " to="/messageChairman">
-                      Message From the Chair
+                      Message From the Chairman
                     </Link>
                   </li>
                   <li className="item1 ">
@@ -194,23 +194,38 @@ function Header1() {
                 <li className="item1 ">
                   About
                   <ul className="">
-                    <li className="item1 ">
+                    <li className="item1 " onclick={handleClose}>
                       <Link className="first " to="/about">
-                        SCCI At 4 Glance
+                        <span onclick={() => handleClose()}>
+                          {" "}
+                          SCCI At a Glance
+                        </span>
                       </Link>
                     </li>
                     <li className="item1 ">
-                      <Link className="first " to="/mission">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/mission"
+                      >
                         Visson&Mission
                       </Link>
                     </li>
                     <li className="item1 ">
-                      <Link className="first " to="/messageChairman">
-                        Message From the Chair
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/messageChairman"
+                      >
+                        Message From the Chairman
                       </Link>
                     </li>
                     <li className="item1 ">
-                      <Link className="first " to="/bhavnagar">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/bhavnagar"
+                      >
                         About Bhavnagar
                       </Link>
                     </li>
@@ -220,18 +235,30 @@ function Header1() {
                   SCCI Team
                   <ul className="">
                     <li className="item1 ">
-                      <Link className="first " to="/officebearear">
-                        Office Bearear
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/officebearear"
+                      >
+                        Office Bearers
                       </Link>
                     </li>
                     <li className="item2">
-                      <Link className="first " to="/executiveCommitee">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/executiveCommitee"
+                      >
                         Executive Commitee
                       </Link>
                     </li>
                     <li className="item1 ">
-                      <Link className="first " to="/secretaries">
-                        Secretaries
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/secretaries"
+                      >
+                        Secretariat
                       </Link>
                     </li>
                   </ul>
@@ -240,22 +267,38 @@ function Header1() {
                   Services & Facilities
                   <ul className="">
                     <li className="item1 ">
-                      <Link className="first " to="/certificateoforigin">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/certificateoforigin"
+                      >
                         Certificate of origin
                       </Link>
                     </li>
                     <li className="item2">
-                      <Link className="first " to="/visarecomandation">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/visarecomandation"
+                      >
                         Visa Recomandation
                       </Link>
                     </li>
                     <li className="item1 ">
-                      <Link className="first " to="/auditorium">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/auditorium"
+                      >
                         Auditorium
                       </Link>
                     </li>
                     <li className="item1 ">
-                      <Link className="first " to="/conference">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/conference"
+                      >
                         Conference Hall
                       </Link>
                     </li>
@@ -265,17 +308,23 @@ function Header1() {
                   Publication
                   <ul className="">
                     <li className="item1">
-                      <Link className="first" to="/bulletin">
+                      <Link
+                        onclick={handleClose}
+                        className="first"
+                        to="/bulletin"
+                      >
                         Bio-monthly Bulletin
                       </Link>
                     </li>
                     <li className="item2">
-                      <Link to="/industrialdirectory">
+                      <Link onclick={handleClose} to="/industrialdirectory">
                         Industrial Directory
                       </Link>
                     </li>
                     <li className="item3">
-                      <Link to="/otherpublication">Other Publication </Link>
+                      <Link onclick={handleClose} to="/otherpublication">
+                        Other Publication{" "}
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -283,25 +332,37 @@ function Header1() {
                   Coo Helpdesk
                   <ul className="">
                     <li className="item1">
-                      <Link className="first" to="/aboutcoo">
+                      <Link
+                        onclick={handleClose}
+                        className="first"
+                        to="/aboutcoo"
+                      >
                         About Coo
                       </Link>
                     </li>
                     <li className="item2">
-                      <Link to="/procedure">Procedure of coo</Link>
+                      <Link onclick={handleClose} to="/procedure">
+                        Procedure of coo
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="item6 ">
-                  GOVT. Cercullers
+                  GOVT. circulars
                   <ul className="">
                     <li className="item1">
-                      <Link className="first" to="/statecirculer">
-                        State Govt. Cercullers
+                      <Link
+                        onclick={handleClose}
+                        className="first"
+                        to="/statecirculer"
+                      >
+                        State Govt. circulars
                       </Link>
                     </li>
                     <li className="item2">
-                      <Link to="/govcirculer">Central Govt. Cercullers</Link>
+                      <Link onclick={handleClose} to="/govcirculer">
+                        Central Govt. circulars
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -309,7 +370,11 @@ function Header1() {
                   Various Comitees
                   <ul className="">
                     <li className="item1">
-                      <Link className="first" to="/comiteemain">
+                      <Link
+                        onclick={handleClose}
+                        className="first"
+                        to="/comiteemain"
+                      >
                         Commitees
                       </Link>
                     </li>
@@ -319,7 +384,11 @@ function Header1() {
                   Members Directory
                   <ul className="">
                     <li className="item1">
-                      <Link className="first" to="/membersdirectory">
+                      <Link
+                        onclick={handleClose}
+                        className="first"
+                        to="/membersdirectory"
+                      >
                         Members
                       </Link>
                     </li>

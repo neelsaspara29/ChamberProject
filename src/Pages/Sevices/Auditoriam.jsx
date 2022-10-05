@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import { Table } from "react-bootstrap";
 import { ApiPost } from "../../Helper/API/Apidata";
 import Carousel from 'react-bootstrap/Carousel';
-
+import Header1 from "../../Components/Header/Header1";
 
 function Auditoriam() {
   const [data, setData] = useState([]);
@@ -26,7 +26,8 @@ function Auditoriam() {
   const [data1, setData1] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
   return (
     <>
-    <div className="slider ">
+      <Header1 />
+      <div className="slider ">
         <Carousel pause="hover" indicators={false}>
           <Carousel.Item>
             <img
@@ -142,33 +143,32 @@ function Auditoriam() {
             </tbody>
           </Table> */}
           <table>
-  {/* <caption>Statement Summary</caption> */}
-  <thead>
-    <tr>
-    
-      <th scope="col">Fecilities</th>
-      <th scope="col">Capacity</th>
-      <th scope="col">Rent</th>
-      {/* <th scope="col"></th> */}
-    </tr>
-  </thead>
-  <tbody>
-  
-        <tr>
-       
-                
-                  <td data-label = "Facilities">Ac, Water</td>
-                  <td data-label = "Capacity">30,000</td>
-                  <td data-label = "Rent">30,000</td>
-                  
-                </tr>
-   
-     
-    
-  </tbody>
-</table>
+            {/* <caption>Statement Summary</caption> */}
+            <thead>
+              <tr>
+                <th scope="col">Fecilities</th>
+                <th scope="col">Capacity</th>
+                <th scope="col">Rent</th>
+                {/* <th scope="col"></th> */}
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Facilities">Ac, Water</td>
+                <td data-label="Capacity">30,000</td>
+                <td data-label="Rent">30,000</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        
+        <div>
+          <h2 className=" w-2/3 m-auto text-center text-danger">
+            Introduction
+          </h2>
+        </div>
+        <div className="w-2/3 m-auto mt-5">
+          <p>{data[0]?.intro}</p>
+        </div>
         {/* <div className="d-flex justify-center mt-4 w-100">
           <div>
             <p>Name:</p>

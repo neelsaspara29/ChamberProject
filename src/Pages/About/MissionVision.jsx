@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Header1 from "../../Components/Header/Header1";
 import { ApiGet } from "../../Helper/API/Apidata";
 
 const MissionVision = () => {
@@ -19,6 +20,7 @@ const MissionVision = () => {
   }, []);
   return (
     <>
+      <Header1 />
       <div id="interior_content">
         <div id="interior_header_banner">
           <span id="bnrinst_2_453">

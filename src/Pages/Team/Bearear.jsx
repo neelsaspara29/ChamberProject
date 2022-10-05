@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
+import Header1 from "../../Components/Header/Header1";
 import { ApiGet } from "../../Helper/API/Apidata";
 
 function Bearear() {
@@ -17,6 +18,7 @@ function Bearear() {
   }, []);
   return (
     <>
+      <Header1 />
       {/* <div className="text-danger text-center mt-10 uppercase">
         <h1>office bearear</h1>
       </div>
@@ -67,46 +69,50 @@ function Bearear() {
         </div>
       </div> */}
       <div id="interior_content">
-
         {/* <div id="interior_header_banner"><span id="bnrinst_2_450"><img src="cache/sql/fba/fs_450.jpg" width="1439" height="300" style="border:0" alt=""  /></span>
             
         </div> */}
         <div class="wrapper">
-            <div id="content" class="rightpad pb-1">
-               
-                <div class="staffModule moduleLister ">
-                    <h1 class="title text-center mb-3"> Office Bearers</h1>
-                    <div>
-                    {data.map((item) => {
-                      return (
-                        <div class="listerItem">
-                            <div class="thumbnail"  >
-              <img className="team_img" style={{borderRadius: "50%"}} src={item?.image} />
-
-                            </div>
-                            <h2><a href="staff-directory-redesign/staff/carolyn-michaels-iom/?back=staff">{item?.name}</a></h2>
-                            <h3>Vice President</h3>
-                            <div class="phone"><a href="tel:954.462.2396"><span class="fa fa-phone-square"></span> {item?.mobile}</a></div>
-                            <div class="email"><a href="mailto:carolyn.m@ftlchamber.com"><span class="fa fa-envelope"></span> {item?.email}</a></div>
-                            <div class="clear"></div>
-                        </div>
-                      )
-                    })}
-                        
-
-                 
-
+          <div id="content" class="rightpad pb-1">
+            <div class="staffModule moduleLister ">
+              <h1 class="title text-center mb-3"> Office Bearers</h1>
+              <div>
+                {data.map((item) => {
+                  return (
+                    <div class="listerItem">
+                      <div class="thumbnail">
+                        <img
+                          className="team_img"
+                          style={{ borderRadius: "50%" }}
+                          src={item?.image}
+                        />
+                      </div>
+                      <h2>
+                        <a href="staff-directory-redesign/staff/carolyn-michaels-iom/?back=staff">
+                          {item?.name}
+                        </a>
+                      </h2>
+                      <h3>Vice President</h3>
+                      <div class="phone">
+                        <a href="tel:954.462.2396">
+                          <span class="fa fa-phone-square"></span>{" "}
+                          {item?.mobile}
+                        </a>
+                      </div>
+                      <div class="email">
+                        <a href="mailto:carolyn.m@ftlchamber.com">
+                          <span class="fa fa-envelope"></span> {item?.email}
+                        </a>
+                      </div>
+                      <div class="clear"></div>
                     </div>
-                </div>
+                  );
+                })}
+              </div>
             </div>
-
-
-
-            
-
+          </div>
         </div>
-        
-    </div>
+      </div>
     </>
   );
 }

@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Header1 from "../../Components/Header/Header1";
 import { ApiGet } from "../../Helper/API/Apidata";
 
 const About = () => {
@@ -18,6 +19,7 @@ const About = () => {
 
   return (
     <>
+      <Header1 />
       <div id="interior_content">
         <div
           id="interior_header_banner"
@@ -51,7 +53,6 @@ const About = () => {
               </a>{" "}
               trip.
             </p>
-           
           </div>
         </div>
       </div>

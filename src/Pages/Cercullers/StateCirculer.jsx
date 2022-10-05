@@ -1,6 +1,7 @@
 import moment from "moment";
 import React, { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
+import Header1 from "../../Components/Header/Header1";
 import { ApiPost } from "../../Helper/API/Apidata";
 
 function StateCirculer() {
@@ -22,6 +23,7 @@ function StateCirculer() {
   }, []);
   return (
     <>
+      <Header1 />
       <div id="interior_content">
     
     <div className="text-center mt-3">

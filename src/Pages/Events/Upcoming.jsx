@@ -1,5 +1,6 @@
 import moment from "moment/moment";
 import React, { useEffect, useState } from "react";
+import Header1 from "../../Components/Header/Header1";
 import { ApiGet, ApiPost } from "../../Helper/API/Apidata";
 import "../../Styles/Components/events.scss";
 const monthNames = [
@@ -58,6 +59,7 @@ function Upcoming() {
   }, []);
   return (
     <>
+      <Header1 />
       <div className="text-danger text-center p-3">
         <h3> UPCOMING EVENTS </h3>
       </div>

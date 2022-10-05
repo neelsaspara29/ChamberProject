@@ -56,7 +56,7 @@ function Services() {
             </div>
             <Link to="/auditorium">
               <div
-                style={{ marginTop: "0px", fontSize: "14px" }}
+                style={{ marginTop: "6px", fontSize: "14px" }}
                 className="text-green-600 text-center"
               >
                 Auditorium

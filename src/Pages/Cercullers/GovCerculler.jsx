@@ -1,6 +1,7 @@
 import moment from "moment";
 import React, { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
+import Header1 from "../../Components/Header/Header1";
 import { ApiPost } from "../../Helper/API/Apidata";
 
 function GovCerculler() {
@@ -22,6 +23,7 @@ function GovCerculler() {
   }, []);
   return (
     <>
+      <Header1 />
       {/* <div className="text-center mt-3">
         <h2 className="text-danger uppercase">central goverment Circulars</h2>
       </div>

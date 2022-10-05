@@ -1,8 +1,10 @@
 import React from "react";
+import Header1 from "../../Components/Header/Header1";
 
 function AboutCoo() {
   return (
     <>
+      <Header1 />
       <div>
         <h2 className="text-danger uppercase text-center my-4">About coo</h2>
       </div>

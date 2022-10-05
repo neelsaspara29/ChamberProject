@@ -14,7 +14,11 @@ function Header() {
         <div className="wrapper">
           <div>
             <Link id="logo" to="/">
-              <img src="/Assets/sccilogo.png" alt="" style={{zIndex: "100"}} />
+              <img
+                src="/Assets/sccilogo.png"
+                style={{ width: "10em", height: "8em" }}
+                alt=""
+              />
             </Link>
           </div>
           <div id="main_menu">
@@ -23,8 +27,8 @@ function Header() {
                 About
                 <ul className="">
                   <li className="item1 ">
-                    <Link className="first " to="/about">
-                      SCCI At 4 Glance
+                    <Link className="first " to="/about" onClick={handleClose}>
+                      SCCI At a Glance
                     </Link>
                   </li>
                   <li className="item1 ">
@@ -34,7 +38,7 @@ function Header() {
                   </li>
                   <li className="item1 ">
                     <Link className="first " to="/messageChairman">
-                      Message From the Chair
+                      Message From the Chairman
                     </Link>
                   </li>
                   <li className="item1 ">
@@ -95,15 +99,15 @@ function Header() {
                 </ul>
               </li>
               <li className="item6 ">
-                GOVT. Cercullers
+                GOVT. circulars
                 <ul className="">
                   <li className="item1">
                     <Link className="first" to="/statecirculer">
-                      State Govt. Cercullers
+                      State Govt. circulars
                     </Link>
                   </li>
                   <li className="item2">
-                    <Link to="/govcirculer">Central Govt. Cercullers</Link>
+                    <Link to="/govcirculer">Central Govt. circulars</Link>
                   </li>
                 </ul>
               </li>
@@ -166,7 +170,10 @@ function Header() {
               <span className="fa fa-youtube"></span>
             </Link>
           </div>
-          <div className="mobile_responsive absolute right-12 top-28 ">
+          <div
+            className="mobile_responsive absolute right-12 top-28 "
+            // style={{ display: "none" }}
+          >
             <div onClick={handleShow}>
               <div className="mobile_res_toggle"></div>
               <div className="mobile_res_toggle"></div>
@@ -181,7 +188,9 @@ function Header() {
           {/* <!-- end of mobile menu --> */}
           <Offcanvas show={show} onHide={handleClose}>
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title>zxdv</Offcanvas.Title>
+              <Offcanvas.Title>
+                SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY - BHAVNAGAR
+              </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <ul className="main_menu main_menu_responsive uppercase">
@@ -189,22 +198,38 @@ function Header() {
                   About
                   <ul className="">
                     <li className="item1 ">
-                      <Link className="first " to="/about">
-                        SCCI At 4 Glance
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/about"
+                      >
+                        SCCI At a Glance
                       </Link>
                     </li>
                     <li className="item1 ">
-                      <Link className="first " to="/mission">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/mission"
+                      >
                         Visson&Mission
                       </Link>
                     </li>
                     <li className="item1 ">
-                      <Link className="first " to="/messageChairman">
-                        Message From the Chair
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/messageChairman"
+                      >
+                        Message From the Chairman
                       </Link>
                     </li>
                     <li className="item1 ">
-                      <Link className="first " to="/bhavnagar">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/bhavnagar"
+                      >
                         About Bhavnagar
                       </Link>
                     </li>
@@ -214,18 +239,30 @@ function Header() {
                   SCCI Team
                   <ul className="">
                     <li className="item1 ">
-                      <Link className="first " to="/officebearear">
-                        Office Bearear
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/officebearear"
+                      >
+                        Office Bearers
                       </Link>
                     </li>
                     <li className="item2">
-                      <Link className="first " to="/executiveCommitee">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/executiveCommitee"
+                      >
                         Executive Commitee
                       </Link>
                     </li>
                     <li className="item1 ">
-                      <Link className="first " to="/secretaries">
-                        Secretaries
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/secretaries"
+                      >
+                        Secretariat
                       </Link>
                     </li>
                   </ul>
@@ -234,22 +271,38 @@ function Header() {
                   Services & Facilities
                   <ul className="">
                     <li className="item1 ">
-                      <Link className="first " to="/certificateoforigin">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/certificateoforigin"
+                      >
                         Certificate of origin
                       </Link>
                     </li>
                     <li className="item2">
-                      <Link className="first " to="/visarecomandation">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/visarecomandation"
+                      >
                         Visa Recomandation
                       </Link>
                     </li>
                     <li className="item1 ">
-                      <Link className="first " to="/auditorium">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/auditorium"
+                      >
                         Auditorium
                       </Link>
                     </li>
                     <li className="item1 ">
-                      <Link className="first " to="/conference">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/conference"
+                      >
                         Conference Hall
                       </Link>
                     </li>
@@ -259,17 +312,23 @@ function Header() {
                   Publication
                   <ul className="">
                     <li className="item1">
-                      <Link className="first" to="/bulletin">
+                      <Link
+                        onclick={handleClose}
+                        className="first"
+                        to="/bulletin"
+                      >
                         Bio-monthly Bulletin
                       </Link>
                     </li>
                     <li className="item2">
-                      <Link to="/industrialdirectory">
+                      <Link onclick={handleClose} to="/industrialdirectory">
                         Industrial Directory
                       </Link>
                     </li>
                     <li className="item3">
-                      <Link to="/otherpublication">Other Publication </Link>
+                      <Link onclick={handleClose} to="/otherpublication">
+                        Other Publication{" "}
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -277,25 +336,37 @@ function Header() {
                   Coo Helpdesk
                   <ul className="">
                     <li className="item1">
-                      <Link className="first" to="/aboutcoo">
+                      <Link
+                        onclick={handleClose}
+                        className="first"
+                        to="/aboutcoo"
+                      >
                         About Coo
                       </Link>
                     </li>
                     <li className="item2">
-                      <Link to="/procedure">Procedure of coo</Link>
+                      <Link onclick={handleClose} to="/procedure">
+                        Procedure of coo
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="item6 ">
-                  GOVT. Cercullers
+                  GOVT. Circulares
                   <ul className="">
                     <li className="item1">
-                      <Link className="first" to="/statecirculer">
-                        State Govt. Cercullers
+                      <Link
+                        onclick={handleClose}
+                        className="first"
+                        to="/statecirculer"
+                      >
+                        State Govt. Circulares
                       </Link>
                     </li>
                     <li className="item2">
-                      <Link to="/govcirculer">Central Govt. Cercullers</Link>
+                      <Link onclick={handleClose} to="/govcirculer">
+                        Central Govt. Circulares
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -303,7 +374,11 @@ function Header() {
                   Various Comitees
                   <ul className="">
                     <li className="item1">
-                      <Link className="first" to="/comiteemain">
+                      <Link
+                        onclick={handleClose}
+                        className="first"
+                        to="/comiteemain"
+                      >
                         Commitees
                       </Link>
                     </li>
@@ -313,7 +388,11 @@ function Header() {
                   Members Directory
                   <ul className="">
                     <li className="item1">
-                      <Link className="first" to="/membersdirectory">
+                      <Link
+                        onclick={handleClose}
+                        className="first"
+                        to="/membersdirectory"
+                      >
                         Members
                       </Link>
                     </li>

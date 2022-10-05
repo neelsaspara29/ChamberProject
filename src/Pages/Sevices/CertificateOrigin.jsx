@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header1 from "../../Components/Header/Header1";
 
 function CertificateOrigin() {
   return (
     <>
+      <Header1 />
       <div className="w-2/3 m-auto mt-4">
         <div>
           <h2 className="text-center text-danger">Certificate Of Origin</h2>

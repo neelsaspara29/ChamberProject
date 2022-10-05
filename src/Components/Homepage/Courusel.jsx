@@ -19,7 +19,7 @@ function Courusel() {
             <img
               src="/Assets/sccilogo.png"
               alt="SCCI"
-              style={{ width: "40px", height: "40px", borderRadius: "50%" }}
+              style={{ width: "45px", height: "45px", borderRadius: "50%" }}
               className="bg-transparent inline"
               srcset=""
             />
@@ -106,7 +106,7 @@ function Courusel() {
       </div>
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title style={{ color: "#133236" }}>
+          <Offcanvas.Title style={{ color: "#4e959e" }}>
             SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY - BHAVNAGAR
           </Offcanvas.Title>
         </Offcanvas.Header>

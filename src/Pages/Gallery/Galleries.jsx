@@ -7,10 +7,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "../../Styles/Components/gallery.scss";
 import vd1 from "../../Helper/video/vd1.mp4";
+import Header1 from "../../Components/Header/Header1";
 function Galleries() {
   const data = [1, 2, 3, 4];
   return (
     <>
+      <Header1 />
       <div className="w-4/5 text-center m-auto">
         <Carousel indicators={false} interval={null}>
           {data.map((single) => {

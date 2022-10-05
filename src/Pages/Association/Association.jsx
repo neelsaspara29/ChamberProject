@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
+import Header1 from "../../Components/Header/Header1";
 import { ApiPost } from "../../Helper/API/Apidata";
 
 function Association() {
@@ -21,6 +22,7 @@ function Association() {
 
   return (
     <>
+      <Header1 />
       <div className="w-2/3 m-auto mt-4">
         <div>
           <h2 className="text-center text-danger uppercase">

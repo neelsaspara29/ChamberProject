@@ -1,5 +1,5 @@
 import { Link, Route, Routes } from "react-router-dom";
-import Home from './Pages/Home'
+import Home from './Pages/Home/Home'
 import Header from './Components/Header/Header'
 import Upcoming from './Pages/Events/Upcoming'
 import Past from './Pages/Events/Past'
@@ -37,7 +37,7 @@ function App() {
         <Route path="/" element={<Home />} ></Route>  
 
       </Routes>
-      <Header1 />
+      
       <Routes>
         <Route path="/upcomingevents" element={<Upcoming />} ></Route>
         <Route path="/pastevents" element={<Past />} ></Route>

@@ -593,7 +593,7 @@ p.copyright a {
     visibility: hidden;
   }
   .mobile_responsive {
-    top: 5rem;
+    top: 50%;
   }
 }
 @media only screen and (max-width: 300px) {
@@ -601,7 +601,7 @@ p.copyright a {
     width: 50%;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   #logo img {
     max-width: 180px;
     width: 140px;
@@ -616,7 +616,7 @@ p.copyright a {
   .header1{
     // visibility: visible !important;
     display: block !important;
-    height: 100px !important;
+    height: 85px !important;
   }
   .home_header_responsive .mobile_res_toggle{
     background-color: white !important;
@@ -646,15 +646,18 @@ p.copyright a {
 .main_menu_responsive>li {
  font-size: 1.3em;
  text-transform: uppercase !important;
- color: #133236;
+ color: #4e959e;
  margin-top: 16px;
 
 }
 .main_menu_responsive li>ul>li{
   font-size: 8px !important;
-  padding: 6px;
+  padding: 5px;
   color: #5c727d;
+  background-color: #efefef;
+  border-radius: 12px;
   cursor: pointer;
+  margin-top: 4px;
   
 }
 .main_menu_responsive li>ul>li:hover{
