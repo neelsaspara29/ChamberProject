@@ -6,7 +6,7 @@ function AboutCoo() {
       <div>
         <h2 className="text-danger uppercase text-center my-4">About coo</h2>
       </div>
-      <div className="w-3/4 m-auto">
+      <div className="w-3/4 m-auto pub">
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
           qui. Cumque, amet deserunt quisquam dolore eius tempore quo nam

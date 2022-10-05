@@ -6,7 +6,7 @@ function ProcedureCoo() {
       <div className="text-danger text-center my-4 uppercase">
         <h2>procedure</h2>
       </div>
-      <div className="w-3/4  m-auto" style={{ fontSize: "16px" }}>
+      <div className="w-3/4  m-auto pub text-center" style={{ fontSize: "16px" }}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quaerat
         quia aspernatur voluptatum repudiandae, iste soluta earum est nobis,
         officiis fugiat vel blanditiis ut ea nemo tenetur repellat dolore
