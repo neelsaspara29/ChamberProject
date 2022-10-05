@@ -40,8 +40,8 @@ function App() {
         <Route path="/about" element={<About />} ></Route>
         <Route path="/messageChairman" element={<MessageChairman />} ></Route>
         <Route path="/mission" element={<MissionVision />} ></Route>
-        <Route path="/govcirculer" element={<GovCerculler />}></Route>
-        <Route path="/statecirculer" element={<StateCirculer />}></Route>
+        <Route path="/statecirculer" element={<GovCerculler />}></Route>
+        <Route path="/govcirculer" element={<StateCirculer />}></Route>
         <Route path="/certificateoforigin" element={<CertificateOrigin />}></Route>
         <Route path="/visarecomandation" element={<VisaService />}></Route>
         <Route path="/auditorium" element={<Auditoriam />}></Route>
