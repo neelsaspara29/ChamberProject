@@ -49,7 +49,7 @@ function Header() {
                 <ul className="">
                   <li className="item1 ">
                     <Link className="first " to="/officebearear">
-                      Office Bearear
+                      Office Bearers
                     </Link>
                   </li>
                   <li className="item2">
@@ -59,7 +59,7 @@ function Header() {
                   </li>
                   <li className="item1 ">
                     <Link className="first " to="/secretaries">
-                      Secretaries
+                    Secretariat
                     </Link>
                   </li>
                 </ul>

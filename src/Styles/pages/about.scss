@@ -786,7 +786,8 @@ div.listerItem {
 // /* ModuleEnd::photo */
 
 // /* ModuleBegin::news */
-.newsModule.moduleDetail {}
+.newsModule.moduleDetail {
+}
 // .newsModule.moduleLister {}
 // .newsModule .copyright { padding: 1em 0em; text-align: center; font-size: smaller; }
 // .newsModule .blurb {}
@@ -817,8 +818,11 @@ div.listerItem {
 // .blogModule .blurb {}
 
 // /* ---- Blog Detail ------- */
-.blogModule.moduleDetail {}
-.blogModule.moduleDetail h1 { margin-bottom: 5px; }
+.blogModule.moduleDetail {
+}
+.blogModule.moduleDetail h1 {
+  margin-bottom: 5px;
+}
 // .blogModule.moduleDetail .fullText {}
 
 // /* ---- Blog Archives ------ */
@@ -856,9 +860,13 @@ div.listerItem {
 // 	.eventsModule .ticket {}
 // 	.eventsModule .description {}
 // 	.eventsModule .utilityLinks {}
-    // .eventsModule.moduleDetail .thumbnail {width:300px; float:right; margin-left: 20px;}
-    .eventsModule.moduleDetail h1.title {margin: 0 0 12px;}
-    .eventsModule.moduleDetail h2 { margin: 20px 0 12px;}
+// .eventsModule.moduleDetail .thumbnail {width:300px; float:right; margin-left: 20px;}
+.eventsModule.moduleDetail h1.title {
+  margin: 0 0 12px;
+}
+.eventsModule.moduleDetail h2 {
+  margin: 20px 0 12px;
+}
 
 // /* --------------- Event Styles --------------- */
 
@@ -1117,8 +1125,8 @@ div.listerItem {
   float: left;
   border: 3px solid #0071b9;
   border-radius: 50%;
-//   width: 150px;
-//   height: 150px;
+  //   width: 150px;
+  //   height: 150px;
   margin: 0 20px 15px 0;
   background-repeat: no-repeat;
   background-position: center top;
@@ -1206,8 +1214,8 @@ div.listerItem {
 //     #back_to_top { right: 25px; bottom:25px;}
 
 #content img {
-  max-width: 100% !important;
-  height: auto !important;
+  max-width: 100%;
+  height: auto;
 }
 
 //     #member_spotlight .top_row .memberBox { width: 100%; }
@@ -1233,8 +1241,8 @@ div.listerItem {
 //     .about_desc { padding: 10px 0 10px;}
 
 #content img {
-  max-width: 100% !important;
-  height: auto !important;
+  max-width: 100% ;
+  height: auto ;
 }
 
 //     #member_spotlight .top_row .memberBox { width: 100%; }
@@ -1300,8 +1308,8 @@ div.listerItem {
   width: auto;
 }
 #content img {
-  max-width: 100% !important;
-  height: auto !important;
+  max-width: 100%;
+  height: auto;
 }
 
 //     #member_spotlight .top_row .memberBox { width: 100%; }
@@ -1452,4 +1460,9 @@ table th {
   table td:last-child {
     border-bottom: 0;
   }
+}
+
+.team_img {
+  height: 128px !important;
+  width: 128px !important;
 }
