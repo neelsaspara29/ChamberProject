@@ -607,6 +607,15 @@ p.copyright a {
     width: 140px;
     height: 95px;
   }
+  .upcoming_events{
+    width: 96%  !important;
+  }
+  .upcoming_events .event_one{
+    margin-top: 18px !important;
+  }
+  .individual_event{
+    justify-content: center;
+  }
   .home_header_responsive{
     visibility: visible !important;
   }
@@ -646,8 +655,8 @@ p.copyright a {
 .main_menu_responsive>li {
  font-size: 1.3em;
  text-transform: uppercase !important;
- color: #4e959e;
  margin-top: 16px;
+ color: black;
 
 }
 .main_menu_responsive li>ul>li{

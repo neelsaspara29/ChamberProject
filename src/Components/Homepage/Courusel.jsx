@@ -106,7 +106,7 @@ function Courusel() {
       </div>
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title style={{ color: "#4e959e" }}>
+          <Offcanvas.Title style={{ color: "black" }}>
             SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY - BHAVNAGAR
           </Offcanvas.Title>
         </Offcanvas.Header>

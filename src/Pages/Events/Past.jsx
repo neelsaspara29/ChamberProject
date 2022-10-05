@@ -81,7 +81,7 @@ function Past() {
               </div>
               {arr.map((single) => {
                 return (
-                  <div className="d-flex flex-row-reverse flex-wrap mt-3 ml-3">
+                  <div className="d-flex flex-row-reverse flex-wrap mt-12 ml-3 individual_event">
                     <div>
                       {single.image ? (
                         <img
@@ -133,82 +133,6 @@ function Past() {
             </div>
           );
         })}
-        <div>
-          <div className="mb-5 mt-3">
-            <h4>
-              <b> June 2021</b>
-            </h4>
-          </div>
-          <div className="d-flex flex-row-reverse flex-wrap mt-3 ml-3">
-            <div>
-              <img
-                src="/Assets/Events/event1.jpg"
-                width={200}
-                height={200}
-                alt=""
-              />
-            </div>
-
-            <div className="px-4" style={{ minWidth: "65%", maxWidth: "65%" }}>
-              <p style={{ paddingBottom: "4px" }}> June 5@ 8.00 am-5 pm</p>
-              <p>
-                <h5>
-                  <b> Conference </b>
-                </h5>
-              </p>
-              <p style={{ paddingBottom: "10px" }}>
-                <b> Farmer's Protest Discussion </b>
-              </p>
-
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                et placeat quos maiores perspiciatis ipsam architecto sapiente
-                tempora culpa consequuntur ratione, sint quaerat. Obcaecati
-                inventore amet vitae cum natus! Perferendis, mollitia facilis?
-              </p>
-            </div>
-            <div className="mr-2 text-center">
-              <p>
-                <b> SAT</b>
-              </p>
-              <p>5</p>
-            </div>
-          </div>
-          <div className="d-flex flex-wrap justify-content-between mt-3 ml-3">
-            <div className="mr-2 text-center">
-              <p>
-                <b> SAT</b>
-              </p>
-              <p>5</p>
-            </div>
-            <div className="px-4" style={{ minWidth: "60%", maxWidth: "60%" }}>
-              <p style={{ paddingBottom: "4px" }}> June 5@ 8.00 am-5 pm</p>
-              <p>
-                <h5>
-                  <b> Conference </b>
-                </h5>
-              </p>
-              <p style={{ paddingBottom: "10px" }}>
-                <b> Farmer's Protest Discussion </b>
-              </p>
-
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                et placeat quos maiores perspiciatis ipsam architecto sapiente
-                tempora culpa consequuntur ratione, sint quaerat. Obcaecati
-                inventore amet vitae cum natus! Perferendis, mollitia facilis?
-              </p>
-            </div>
-            <div>
-              <img
-                src="/Assets/Events/event1.jpg"
-                width={200}
-                height={200}
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
       </div>
     </>
   );
