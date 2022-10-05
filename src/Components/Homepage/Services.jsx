@@ -48,7 +48,7 @@ function Services() {
           <div className="p-2">
             <div>
               <img
-                src="/Assets/Service/auditoriam.svg"
+                src="/Assets/Service/auditorium1.png"
                 width={100}
                 height={100}
                 alt=""
@@ -56,8 +56,8 @@ function Services() {
             </div>
             <Link to="/auditorium">
               <div
-                style={{ marginTop: "6px", fontSize: "14px" }}
-                className="text-green-600"
+                style={{ marginTop: "0px", fontSize: "14px" }}
+                className="text-green-600 text-center"
               >
                 Auditorium
               </div>

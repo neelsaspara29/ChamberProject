@@ -28,12 +28,17 @@ import ExecutiveCommitee from "./Pages/Team/ExecutiveCommitee";
 import Secretaries from "./Pages/Team/Secretaries";
 import Publications from "./Pages/Publications/Publications";
 import Galleries from "./Pages/Gallery/Galleries";
+import Header1 from "./Components/Header/Header1";
 function App() {
   return (
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} ></Route>
+        <Route path="/" element={<Home />} ></Route>  
+
+      </Routes>
+      <Header1 />
+      <Routes>
         <Route path="/upcomingevents" element={<Upcoming />} ></Route>
         <Route path="/pastevents" element={<Past />} ></Route>
         <Route path="/scciteam" element={<Team />} ></Route>

@@ -3,18 +3,22 @@ import { Link, Navigate, useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
-function Header() {
+function Header1() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
-      <div id="header" className="header0">
+      <div id="header" className="header1" style={{ display: "none" }}>
         <div className="wrapper">
           <div>
             <Link id="logo" to="/">
-              <img src="/Assets/sccilogo.png" alt="" />
+              <img
+                src="/Assets/sccilogo.png"
+                style={{ width: "6em", height: "6em" }}
+                alt=""
+              />
             </Link>
           </div>
           <div id="main_menu">
@@ -166,7 +170,7 @@ function Header() {
               <span className="fa fa-youtube"></span>
             </Link>
           </div>
-          <div className="mobile_responsive absolute right-12 top-28 ">
+          <div className="mobile_responsive absolute right-12 top-28  ">
             <div onClick={handleShow}>
               <div className="mobile_res_toggle"></div>
               <div className="mobile_res_toggle"></div>
@@ -181,7 +185,9 @@ function Header() {
           {/* <!-- end of mobile menu --> */}
           <Offcanvas show={show} onHide={handleClose}>
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title>zxdv</Offcanvas.Title>
+              <Offcanvas.Title>
+                SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY - BHAVNAGAR
+              </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <ul className="main_menu main_menu_responsive uppercase">
@@ -328,4 +334,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Header1;
