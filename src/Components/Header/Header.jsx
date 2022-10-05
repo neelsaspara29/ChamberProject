@@ -14,7 +14,7 @@ function Header() {
         <div className="wrapper">
           <div>
             <Link id="logo" to="/">
-              <img src="/Assets/sccilogo.png" alt="" />
+              <img src="/Assets/sccilogo.png" alt="" style={{zIndex: "100"}} />
             </Link>
           </div>
           <div id="main_menu">
