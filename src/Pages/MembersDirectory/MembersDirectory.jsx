@@ -21,14 +21,14 @@ function MembersDirectory() {
   return (
     <>
       <Header1 />
-      <div className="w-2/3 m-auto mt-4">
+      <div className="w-2/3 m-auto mt-4 pub">
         <div>
           <h2 className="text-center text-danger uppercase">
             members directory{" "}
           </h2>
         </div>
-        <div className="mt-5">
-          <p>
+        <div className="mt-3">
+          <p className="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam
             consectetur ipsam deserunt, neque rem molestiae alias reiciendis
             placeat magni. Lorem ipsum dolor sit amet consectetur adipisicing
@@ -40,11 +40,11 @@ function MembersDirectory() {
         </div>
 
         <div>
-          <Table bordered>
+          {/* <Table bordered>
             <thead></thead>
             <tbody className="uppercase">
               <tr>
-                <td>ordinary </td>
+                <td className="td">ordinary </td>
                 <td>
                   <div className="btn btn-primary"> Download</div>
                 </td>
@@ -62,7 +62,49 @@ function MembersDirectory() {
                 </td>
               </tr>
             </tbody>
-          </Table>
+          </Table> */}
+
+          <table>
+            {/* <caption>Statement Summary</caption> */}
+            <thead>
+              <tr>
+                <th scope="col">Ordinary</th>
+                <th scope="col">Petron</th>
+                <th scope="col">Association</th>
+               
+              </tr>
+            </thead>
+            <tbody>
+             
+                  <tr>
+                    <td data-label="Ordinary">
+                      <div
+                        className="btn btn-primary px-2 py-1  inline pub_text"
+                        
+                      >
+                        Download
+                      </div>
+                    </td>
+                    <td data-label="Petron">
+                      <div
+                        className="btn btn-primary px-2 py-1  inline pub_text"
+                        
+                      >
+                        Download
+                      </div>
+                    </td>
+                    <td data-label="Association">
+                      <div
+                        className="btn btn-primary px-2 py-1  inline pub_text"
+                        
+                      >
+                        Download
+                      </div>
+                    </td>
+                  </tr>
+               
+            </tbody>
+          </table>
         </div>
       </div>
     </>

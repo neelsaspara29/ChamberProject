@@ -6,11 +6,11 @@ function VisaService() {
   return (
     <>
       <Header1 />
-      <div className="w-2/3 m-auto mt-4">
+      <div className="w-2/3 m-auto mt-4 pub">
         <div>
           <h2 className="text-center text-danger">Visa Recomandation</h2>
         </div>
-        <div className="mt-5">
+        <div className="mt-3">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
             consequuntur magnam. A dolor neque quisquam. Aut recusandae
@@ -27,16 +27,16 @@ function VisaService() {
               </thead>
               <tbody>
                 <tr>
-                  <td>Document 1- this is first document for apply in visa</td>
+                  <td className="vd">Document 1- this is first document for apply in visa</td>
                 </tr>
                 <tr>
-                  <td>Document 1- this is first document for apply in visa</td>
+                  <td className="vd">Document 1- this is first document for apply in visa</td>
                 </tr>
                 <tr>
-                  <td>Document 1- this is first document for apply in visa</td>
+                  <td className="vd">Document 1- this is first document for apply in visa</td>
                 </tr>
                 <tr>
-                  <td>Document 1- this is first document for apply in visa</td>
+                  <td className="vd">Document 1- this is first document for apply in visa</td>
                 </tr>
               </tbody>
             </Table>
