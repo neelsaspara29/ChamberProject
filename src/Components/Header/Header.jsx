@@ -10,7 +10,7 @@ function Header() {
   const handleShow = () => setShow(true);
   return (
     <>
-      <div id="header" className="header0">
+      <div id="header" className="header0 uppercase">
         <div className="wrapper">
           <div>
             <Link id="logo" to="/">
@@ -66,6 +66,11 @@ function Header() {
                       Secretariat
                     </Link>
                   </li>
+                  <li className="item1">
+                    <Link className="first" to="/comiteemain">
+                      Commitees
+                    </Link>
+                  </li>
                 </ul>
               </li>
 
@@ -99,24 +104,39 @@ function Header() {
                 </ul>
               </li>
               <li className="item6 ">
-                GOVT. circulars
+                Events
                 <ul className="">
                   <li className="item1">
-                    <Link className="first" to="/statecirculer">
-                      State Govt. circulars
+                    <Link className="first" to="/upcomingevents">
+                      Upcoming Events
                     </Link>
                   </li>
                   <li className="item2">
-                    <Link to="/govcirculer">Central Govt. circulars</Link>
+                    <Link to="/pastevents">Past Events</Link>
                   </li>
                 </ul>
               </li>
-              <li className="item7 ">
-                Various Comitees
+              <li className="item7  ">
+                Services & Facilities
                 <ul className="">
                   <li className="item1">
-                    <Link className="first" to="/comiteemain">
-                      Commitees
+                    <Link className="first" to="/certificateoforigin">
+                      Certification Of Origin
+                    </Link>
+                  </li>
+                  <li className="item1">
+                    <Link className="first" to="/visarecomandation">
+                      Visa Recomandation
+                    </Link>
+                  </li>
+                  <li className="item1">
+                    <Link className="first" to="/auditorium">
+                      Auditorium
+                    </Link>
+                  </li>
+                  <li className="item1">
+                    <Link className="first" to="/conference">
+                      Conference Hall
                     </Link>
                   </li>
                 </ul>
@@ -265,6 +285,16 @@ function Header() {
                         Secretariat
                       </Link>
                     </li>
+                    <li className="item1">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/secretaries"
+                      >
+                        Commitees
+                      </Link>
+                    </li>
+                    <li className="item1 "></li>
                   </ul>
                 </li>
                 <li className="item3">
@@ -304,6 +334,25 @@ function Header() {
                         to="/conference"
                       >
                         Conference Hall
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="item6 ">
+                  Events
+                  <ul className="">
+                    <li className="item1">
+                      <Link
+                        className="first"
+                        to="/upcomingevents"
+                        onclick={handleClose}
+                      >
+                        Upcoming Events
+                      </Link>
+                    </li>
+                    <li className="item2">
+                      <Link to="/pastevents" onclick={handleClose}>
+                        Past Events
                       </Link>
                     </li>
                   </ul>

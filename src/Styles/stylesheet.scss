@@ -601,7 +601,7 @@ p.copyright a {
     width: 50%;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 5600px) {
   #logo img {
     max-width: 180px;
     width: 140px;
@@ -633,7 +633,12 @@ p.copyright a {
   .header1  .mobile_res_toggle{
     background-color: orange !important;
   }
-  
+  .main_menu_responsive{
+    padding-left: 1em !important;
+  }
+  .offcanvas {
+    width: 90%  !important;
+  }
 }
 
 .header0 .mobile_responsive {
@@ -660,12 +665,13 @@ p.copyright a {
 
 }
 .main_menu_responsive li>ul>li{
-  font-size: 8px !important;
+  font-size: 6px !important;
   padding: 5px;
   color: #5c727d;
   background-color: #efefef;
   border-radius: 12px;
   cursor: pointer;
+  text-transform: capitalize !important;
   margin-top: 4px;
   
 }

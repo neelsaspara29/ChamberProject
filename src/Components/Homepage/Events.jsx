@@ -8,35 +8,35 @@ function Events() {
         <div className="d-flex align-items-center flex-col">
           <div className="d-flex flex-wrap events_responsive">
             <div className="m-2">
-              <Link to="upcomingevents">
-                <div style={{ width: "14em" }}>
+              <Link to="/statecirculer">
+                <div style={{ width: "18em" }}>
                   <button class="slide_1 w-100 uppercase p-2">
-                    upcoming events
+                    STATE GOVT. CIRCULARES
                   </button>
                 </div>
               </Link>
             </div>
             <div className="m-2">
-              <Link to="/pastevents">
-                <div style={{ width: "14em" }}>
+              <Link to="/govcirculer">
+                <div style={{ width: "18em" }}>
                   <button class="slide_1 w-100 uppercase p-2">
-                    past events
+                    CENTRAL GOVT. CIRCULARES
                   </button>
                 </div>
               </Link>
             </div>
           </div>
-          <div className="d-flex flex-wrap events_responsive" >
+          <div className="d-flex flex-wrap events_responsive">
             <div className="m-2">
               <Link to="/galleries">
-                <div style={{ width: "14em" }}>
+                <div style={{ width: "18em" }}>
                   <button class="slide_1 w-100 uppercase p-2">Gallery</button>
                 </div>
               </Link>
             </div>
             <div className="m-2">
               <Link to="/associative">
-                <div style={{ width: "14em" }}>
+                <div style={{ width: "18em" }}>
                   <button class="slide_1 w-100 uppercase p-2">
                     associations
                   </button>

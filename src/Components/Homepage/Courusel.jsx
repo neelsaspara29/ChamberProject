@@ -19,7 +19,7 @@ function Courusel() {
             <img
               src="/Assets/sccilogo.png"
               alt="SCCI"
-              style={{ width: "45px", height: "45px", borderRadius: "50%" }}
+              style={{ width: "49px", height: "49px", borderRadius: "50%" }}
               className="bg-transparent inline"
               srcset=""
             />
@@ -117,17 +117,17 @@ function Courusel() {
               <ul className="">
                 <li className="item1 ">
                   <Link className="first " to="/about">
-                    SCCI At 4 Glance
+                    SCCI At a Glance
                   </Link>
                 </li>
                 <li className="item1 ">
                   <Link className="first " to="/mission">
-                    Visson&Mission
+                    Visson&nbsp;&&nbsp;Mission
                   </Link>
                 </li>
                 <li className="item1 ">
                   <Link className="first " to="/messageChairman">
-                    Message From the Chair
+                    Message From the Chairman
                   </Link>
                 </li>
                 <li className="item1 ">
@@ -142,7 +142,7 @@ function Courusel() {
               <ul className="">
                 <li className="item1 ">
                   <Link className="first " to="/officebearear">
-                    Office Bearear
+                    Office Bearers
                   </Link>
                 </li>
                 <li className="item2">
@@ -182,6 +182,25 @@ function Courusel() {
                 </li>
               </ul>
             </li>
+            <li className="item6 ">
+              Events
+              <ul className="">
+                <li className="item1">
+                  <Link
+                    className="first"
+                    to="/upcomingevents"
+                    onclick={handleClose}
+                  >
+                    Upcoming Events
+                  </Link>
+                </li>
+                <li className="item2">
+                  <Link to="/pastevents" onclick={handleClose}>
+                    Past Events
+                  </Link>
+                </li>
+              </ul>
+            </li>
             <li className="item4 ">
               Publication
               <ul className="">
@@ -212,15 +231,15 @@ function Courusel() {
               </ul>
             </li>
             <li className="item6 ">
-              GOVT. Cercullers
+              GOVT. Circulares
               <ul className="">
                 <li className="item1">
                   <Link className="first" to="/statecirculer">
-                    State Govt. Cercullers
+                    State Govt. Circulares
                   </Link>
                 </li>
                 <li className="item2">
-                  <Link to="/govcirculer">Central Govt. Cercullers</Link>
+                  <Link to="/govcirculer">Central Govt. Circulares</Link>
                 </li>
               </ul>
             </li>

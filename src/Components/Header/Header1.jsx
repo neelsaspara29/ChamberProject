@@ -304,6 +304,25 @@ function Header1() {
                     </li>
                   </ul>
                 </li>
+                <li className="item6 ">
+                  Events
+                  <ul className="">
+                    <li className="item1">
+                      <Link
+                        className="first"
+                        to="/upcomingevents"
+                        onclick={handleClose}
+                      >
+                        Upcoming Events
+                      </Link>
+                    </li>
+                    <li className="item2">
+                      <Link to="/pastevents" onclick={handleClose}>
+                        Past Events
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
                 <li className="item4 ">
                   Publication
                   <ul className="">

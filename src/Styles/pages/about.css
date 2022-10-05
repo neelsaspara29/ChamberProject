@@ -1,0 +1,438 @@
+.wrapper {
+  margin: 0 auto;
+  width: 97%;
+  max-width: 1170px;
+  position: relative;
+}
+
+#content p,
+#content ol,
+#content ul,
+#tinymce p,
+#tinymce ol,
+#tinymce ul {
+  line-height: 1.8em;
+}
+
+#interior_header_banner {
+  height: 300px;
+  background: url("../../Assets/about/fs_453.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+#interior_header_banner span,
+#interior_header_banner span a,
+#interior_header_banner span img {
+  display: none;
+}
+
+#content {
+  padding: 25px 0 50px;
+}
+
+#content.rightpad {
+  padding-right: 325px;
+}
+
+#sidebar {
+  position: absolute;
+  right: 0px;
+  width: 295px;
+  top: 25px;
+}
+
+#sub_menu {
+  display: none;
+}
+
+#sub_menu ul,
+#sub_menu li {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  position: relative;
+}
+
+#sub_menu a {
+  display: block;
+  padding: 7px 15px;
+  color: #fff;
+  font-size: 16px;
+}
+
+#sub_menu_title {
+  display: block;
+  margin-bottom: 2px;
+  background: #ff4338;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+
+#sub_menu li > span.fa {
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 36px;
+  width: 40px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  line-height: 38px;
+  text-align: center;
+}
+
+#sub_menu a.haschildren {
+  margin-right: 45px;
+}
+
+#sub_menu > ul {
+  margin-bottom: 20px;
+}
+
+#sub_menu > ul > li {
+  background: #0071b9;
+  margin: 0 0 2px;
+}
+
+/* Level 2 */
+#sub_menu > ul > li > ul {
+  display: none;
+}
+
+#sub_menu > ul > li > ul > li {
+  padding-left: 20px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Level 3+ */
+#sub_menu > ul > li > ul ul li {
+  padding-left: 20px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+#sub_menu > ul > li > ul ul li a {
+  font-size: 15px;
+}
+
+.sidebanner span {
+  display: block;
+  margin: 0px 0px 20px;
+}
+
+.sidebanner a {
+  display: block;
+}
+
+.sidebanner img {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+}
+
+div.listerItem {
+  margin: 1em 0 1.5em 0;
+  padding-bottom: 1.5em;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.listerItem.eventsLister {
+  width: 100%;
+  display: inline-block;
+}
+
+.gendocsPageTitle {
+  margin-bottom: 13px;
+}
+
+.blogModule.moduleDetail h1 {
+  margin-bottom: 5px;
+}
+
+.eventsModule.moduleDetail h1.title {
+  margin: 0 0 12px;
+}
+
+.eventsModule.moduleDetail h2 {
+  margin: 20px 0 12px;
+}
+
+.staffModule .listerItem {
+  padding: 15px 0;
+  margin: 15px 0;
+}
+
+.staffModule .thumbnail {
+  float: left;
+  border: 3px solid #0071b9;
+  border-radius: 50%;
+  margin: 0 20px 15px 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-color: #000;
+}
+
+.staffModule h1 {
+  margin-bottom: 50px;
+}
+
+.staffModule.moduleDetail h1 {
+  color: #0071b9;
+  margin: 0 0 0;
+  padding: 0 0 5px;
+}
+
+.staffModule h2 {
+  margin: 0;
+  padding: 8px 0 0;
+}
+
+.staffModule h3 {
+  margin: 0px;
+  padding: 0px 0 7px;
+  color: #00945e;
+}
+
+.staffModule h4 {
+  color: #333;
+}
+
+.staffModule .phone a,
+.staffModule .email a {
+  color: #0071b9;
+}
+
+.staffModule h3 a {
+  color: #00945e !important;
+}
+
+.testimonialsModule.moduleLister .listerItem {
+  position: relative;
+}
+
+#content img {
+  max-width: 100%;
+  height: auto;
+}
+
+#content img {
+  max-width: 100%;
+  height: auto;
+}
+
+#content {
+  min-height: none;
+}
+
+#content.rightpad {
+  padding-right: 0;
+}
+
+#sidebar {
+  position: static;
+  width: auto;
+}
+
+#content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.membershipModule.moduleLister .listerItem {
+  width: 100%;
+  padding: 0 10px;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #interior_content .wrapper,
+  #interior_content .wrapper * {
+    visibility: visible;
+  }
+  #interior_content .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  #interior_content .wrapper #sidebar,
+  #interior_content .wrapper #sidebar * {
+    visibility: hidden;
+  }
+  #interior_content .wrapper #content.rightpad {
+    width: 100%;
+    padding-right: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #interior_content .wrapper #content {
+    padding: 0;
+    width: 100%;
+  }
+  #interior_content .wrapper .eventButtonContainer {
+    margin-top: 10px;
+  }
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+  .pub {
+    width: 90% !important;
+  }
+  .pub_text {
+    font-size: 0.8rem !important;
+  }
+  .city-box1 p {
+    word-spacing: 0px;
+  }
+  .city-box2 p {
+    word-spacing: 0px;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+    border-radius: 5px;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+  table td::before {
+    /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+  .vd {
+    text-align: center !important;
+  }
+}
+
+.team_img {
+  height: 128px !important;
+  width: 128px !important;
+}
+
+.city-box1 {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 25px;
+  float: left;
+}
+
+.city-box1 p {
+  line-height: 25px;
+  margin-top: 12px;
+  vertical-align: middle;
+}
+
+.city-box1 img {
+  float: left;
+  margin-right: 10px;
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.clear {
+  clear: both;
+}
+
+.city-box2 {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 25px;
+  float: left;
+  border-radius: 5px;
+}
+
+.city-box2 h3 {
+  padding: 2px;
+}
+
+.city-box2 p {
+  line-height: 25px;
+  margin-top: 12px;
+  vertical-align: middle;
+}
+
+.city-box2 img {
+  float: right;
+  margin-left: 10px;
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  visibility: hidden;
+}
+/*# sourceMappingURL=about.css.map */
