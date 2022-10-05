@@ -661,7 +661,7 @@ p.copyright a {
   }
 }
 
-@media only screen and (max-width: 5600px) {
+@media only screen and (max-width: 500px) {
   #logo img {
     max-width: 180px;
     width: 140px;

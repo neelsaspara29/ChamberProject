@@ -117,7 +117,7 @@ function Header() {
                 </ul>
               </li>
               <li className="item7  ">
-                Services & Facilities
+                Services
                 <ul className="">
                   <li className="item1">
                     <Link className="first" to="/certificateoforigin">
