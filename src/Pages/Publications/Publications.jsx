@@ -26,8 +26,8 @@ function Publications() {
       <div id="interior_content">
         <div className="text-center mt-3">
           <h2
-            className="uppercase"
-            style={{ color: "#1700ec", fontWeight: "700" }}
+            className="uppercase title2 text-danger"
+            style={{  fontWeight: "700" }}
           >
             Other Publication
           </h2>

@@ -8,7 +8,7 @@ function VisaService() {
       <Header1 />
       <div className="w-2/3 m-auto mt-4 pub">
         <div>
-          <h2 className="text-center text-danger">Visa Recomandation</h2>
+          <h2 className="text-center title2 text-danger">Visa Recomandation</h2>
         </div>
         <div className="mt-3">
           <p>

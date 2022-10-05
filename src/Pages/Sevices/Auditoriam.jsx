@@ -96,17 +96,17 @@ function Auditoriam() {
           </Carousel.Item>
         </Carousel>
       </div>
-      <div className=" mt-4 ">
+      <div className=" mt-2 ">
       <div>
-          <h2 className=" w-2/3 m-auto text-center text-danger">Introduction</h2>
+          <h2 className=" w-2/3 m-auto text-center text-danger title2">Auditoriam</h2>
         </div>
-        <div className="w-2/3 m-auto mt-5 pub">
+        <div className="w-2/3 m-auto mt-3 pub">
           <p className="text-center">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</p>
           
         </div>
         
-        <div className="w-2/3 m-auto text-center p-4">
-          <h4 className="uppercase">About Auditorium</h4>
+        <div className="w-2/3 m-auto text-center p-2">
+          <h4 className="">Information</h4>
         </div>
         <div className="w-2/3 m-auto table_responsive pub">
           {/* <Table striped bordered hover className="m-auto">
@@ -161,14 +161,7 @@ function Auditoriam() {
             </tbody>
           </table>
         </div>
-        <div>
-          <h2 className=" w-2/3 m-auto text-center text-danger">
-            Introduction
-          </h2>
-        </div>
-        <div className="w-2/3 m-auto mt-5">
-          <p>{data[0]?.intro}</p>
-        </div>
+        
         {/* <div className="d-flex justify-center mt-4 w-100">
           <div>
             <p>Name:</p>

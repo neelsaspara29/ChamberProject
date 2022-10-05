@@ -52,7 +52,7 @@ export default function Footer() {
               >
                 <h6 className="text-uppercase fw-bold mb-4">
                   <MDBIcon icon="gem" className="me-3" />
-                  Saurashtra Chambers Of Commerce Bhavnagar
+                  SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY - BHAVNAGAR
                 </h6>
                 <p>Unity Is Strengh</p>
               </MDBCol>

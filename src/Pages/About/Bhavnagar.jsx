@@ -6,7 +6,7 @@ function Bhavnagar() {
     <>
       <Header1 />
       <div>
-        <h2 className="text-danger uppercase text-center my-4">Bhavnagar</h2>
+        <h1 className="text-danger  text-center text-danger title2  my-4" >Bhavnagar</h1>
       </div>
       <div className="w-4/5 m-auto pub flow-root">
         <div class="city-box1">
@@ -14,7 +14,7 @@ function Bhavnagar() {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLXu9bNsbC6WqRiox0sEfSzb-QBiXtrBFZGHO2CXac&s"
             alt="Surat By Road"
           />
-          <h3>Road: </h3>
+          <h3 className="text-primary title2">Road: </h3>
           <p>
             Auto Rickshaws and Electronic Rickshaws are the common means of
             transport that are the most preferred after the bus. These are
@@ -33,7 +33,7 @@ function Bhavnagar() {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLXu9bNsbC6WqRiox0sEfSzb-QBiXtrBFZGHO2CXac&s"
             alt="Private vehicles in Surat"
           />
-          <h3> Vehicles in Surat: </h3>
+          <h3 className="text-primary title2"> Vehicles in Surat: </h3>
           <p>
             If you are thinking of relocating here with your family permanently
             in Surat, it is best to purchase a vehicle. Purchase any of your
@@ -50,7 +50,7 @@ function Bhavnagar() {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLXu9bNsbC6WqRiox0sEfSzb-QBiXtrBFZGHO2CXac&s"
             alt="Bus Service in Surat"
           />
-          <h3>Bus Service: </h3>
+          <h3 className="text-primary title2">Bus Service: </h3>
           <p>
             Bus service is the backbone of Surat Transportation. The majority of
             people are more dependent on public transport than any other means.
@@ -77,7 +77,7 @@ function Bhavnagar() {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLXu9bNsbC6WqRiox0sEfSzb-QBiXtrBFZGHO2CXac&s"
             alt="Railway Service in Surat"
           />
-          <h3>Railway Service: </h3>
+          <h3 className="text-primary title2">Railway Service: </h3>
           <p>
             The Surat Railways Station is an A-1- category railway station of
             Western Railway station of Indian Railways serving Surat, beside
@@ -96,7 +96,7 @@ function Bhavnagar() {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLXu9bNsbC6WqRiox0sEfSzb-QBiXtrBFZGHO2CXac&s"
             alt="Cab Service in Surat"
           />
-          <h3>Cab Service: </h3>
+          <h3 className="text-primary title2">Cab Service: </h3>
           <p>
             Apart from famous leading cab service providers, i.e., Ola and Uber,
             various other emerging cab services are popular in Surat. Prachi
@@ -118,7 +118,7 @@ function Bhavnagar() {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLXu9bNsbC6WqRiox0sEfSzb-QBiXtrBFZGHO2CXac&s"
             alt="Air Service in Surat"
           />
-          <h3>Air Service: </h3>
+          <h3 className="text-primary title2">Air Service: </h3>
           <p>
             Surat International Airport is situated at Magdalla, Surat, in
             Gujarat, with 770 acres. It is the second busiest airport in
@@ -136,7 +136,7 @@ function Bhavnagar() {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLXu9bNsbC6WqRiox0sEfSzb-QBiXtrBFZGHO2CXac&s"
             alt="Metro Service Surat"
           />
-          <h3>Metro Service: </h3>
+          <h3 className="text-primary title2">Metro Service: </h3>
           <p>
             Soon will all the metro services be initiated in Surat. It is yet
             under construction for a rapid transit rail system in the Gujarat

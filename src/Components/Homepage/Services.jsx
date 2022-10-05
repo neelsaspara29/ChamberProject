@@ -4,9 +4,9 @@ import "../../Styles/Components/service.scss";
 function Services() {
   return (
     <>
-      <div className="service_facilities mt-2">
-        <div className="text-danger text-center  px-4 sm:px-6 lg:px-8 lg:pt-20 ">
-          <h2 className="text-center"> SERVICES & FACILITIES</h2>
+      <div className="service_facilities mt-1">
+        <div className="text-danger text-center  px-4 sm:px-6 lg:px-8 lg:pt-10 ">
+          <h2 className="text-center title2"> SERVICES & FACILITIES</h2>
         </div>
         <div className="d-flex w-4/5 flex-wrap m-auto service_responsive justify-between mt-5">
           <div className="p-2">

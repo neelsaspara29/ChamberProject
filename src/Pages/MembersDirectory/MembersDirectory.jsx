@@ -23,8 +23,8 @@ function MembersDirectory() {
       <Header1 />
       <div className="w-2/3 m-auto mt-4 pub">
         <div>
-          <h2 className="text-center text-danger uppercase">
-            members directory{" "}
+          <h2 className="text-center text-danger title2">
+            Members Directory{" "}
           </h2>
         </div>
         <div className="mt-3">

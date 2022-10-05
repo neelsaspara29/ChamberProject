@@ -74,7 +74,7 @@ function ExecutiveCommitee() {
         <div class="wrapper">
           <div id="content" class="rightpad pb-1">
             <div class="staffModule moduleLister ">
-              <h1 class="title text-center mb-3">Executive Committee</h1>
+              <h1 class="title2 text-danger text-center mb-3">Executive Committee</h1>
               <div>
                 {data.map((item) => {
                   return (

@@ -6,7 +6,7 @@ function ProcedureCoo() {
     <>
       <Header1 />
       <div className="text-danger text-center my-4 uppercase">
-        <h2>procedure</h2>
+        <h2 className="title2">Procedure</h2>
       </div>
       <div
         className="w-3/4  m-auto pub text-center"
@@ -31,7 +31,7 @@ function ProcedureCoo() {
       <div className="d-flex m-auto mt-3 w-3/4 justify-start">
         <div className="procedure_coo">
           <div className="text-green-500">
-            <h3>Following Are Steps You Have to Folow</h3>
+            <h3 className="title2 text-primary">Following Are Steps You Have to Folow</h3>
           </div>
           <div>
             <ol type="1" className="capitalize" style={{ padding: "0" }}>

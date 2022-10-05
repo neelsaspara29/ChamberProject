@@ -26,10 +26,10 @@ function Bulletin() {
       <div id="interior_content">
         <div className="text-center mt-3">
           <h2
-            className=" uppercase"
-            style={{ color: "#1700ec", fontWeight: "700" }}
+            className=" uppercase title2 text-danger"
+            style={{ fontWeight: "700" }}
           >
-            bulletins
+            Bulletins
           </h2>
         </div>
         <div className="w-2/3 m-auto mt-4 pub">

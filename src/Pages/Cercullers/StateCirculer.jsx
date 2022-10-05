@@ -27,9 +27,9 @@ function StateCirculer() {
       <div id="interior_content">
     
     <div className="text-center mt-3">
-      <h2 className=" uppercase" style={{color:"#1700ec", fontWeight: "700"}}>Central Government Circulars</h2>
+      <h2 className=" text-danger title2" >Central Government Circulars</h2>
     </div>
-    <div className="w-2/3 m-auto mt-4 pub">
+    <div className="w-2/3 m-auto mt-3 pub">
     <table>
 {/* <caption>Statement Summary</caption> */}
 <thead>

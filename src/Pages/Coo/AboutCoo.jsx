@@ -6,7 +6,7 @@ function AboutCoo() {
     <>
       <Header1 />
       <div>
-        <h2 className="text-danger uppercase text-center my-4">About coo</h2>
+        <h1 className="text-danger title2  text-center my-3">About Coo</h1>
       </div>
       <div className="w-3/4 m-auto pub">
         <p className="text-center">

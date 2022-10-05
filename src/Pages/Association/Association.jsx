@@ -25,9 +25,9 @@ function Association() {
       <Header1 />
       <div className="w-2/3 m-auto mt-4 pub">
         <div>
-          <h3 className="text-center text-danger uppercase">
-            associated association of scci
-          </h3>
+          <h4 className="text-center text-danger title2">
+            Associated Association Of Scci
+          </h4>
         </div>
         <div className="mt-3">
           <p>

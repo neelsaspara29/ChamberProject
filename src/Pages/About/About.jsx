@@ -41,7 +41,7 @@ const About = () => {
         </div>
         <div class="wrapper">
           <div id="content" class="rightpad">
-            <h1 class="gendocsPageTitle text-center">About Us</h1>
+            <h1 class="gendocsPageTitle text-center text-danger title2">About Us</h1>
             <p className="text-center">
               {data}
               <a
