@@ -4,7 +4,7 @@ import "../../Styles/Components/service.scss";
 function Services() {
   return (
     <>
-      <div className="service_facilities ">
+      <div className="service_facilities mt-2">
         <div className="text-danger text-center  px-4 sm:px-6 lg:px-8 lg:pt-20 ">
           <h2> SERVICES & FACILITIES</h2>
         </div>

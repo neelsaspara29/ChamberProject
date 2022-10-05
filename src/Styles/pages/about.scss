@@ -1532,3 +1532,8 @@ table th {
   width: 200px;
   border-radius: 5px;
 }
+
+.swiper-button-next,
+.swiper-button-prev{
+    visibility: hidden;
+  }

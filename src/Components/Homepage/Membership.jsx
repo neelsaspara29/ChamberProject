@@ -6,8 +6,8 @@ import Forms from "../Utility/Form";
 function Membership() {
   return (
     <>
-      <article className="bg-white membership m-auto w-5/6 ">
-        <section className=" px-4 sm:px-6 lg:px-8 lg:pt-20 bg-white">
+      <article className="bg-white membership m-auto w-5/6 pub ">
+        <section className=" lg:pt-10 bg-white">
           <section className="text-center">
             <h1 className="text-danger uppercase"> About MemberShip</h1>
           </section>
@@ -15,7 +15,7 @@ function Membership() {
             <h3 className="text-green-500 member_responsive">
               <b> Overview</b>
             </h3>
-            <p className="mt-3  mx-auto capitalize ">
+            <p className="mt-3  mx-auto capitalize text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
               aliquid alias facere deserunt commodi maiores voluptates error ex.
               Voluptate repellendus earum reprehenderit! Officia rem eos non
@@ -31,7 +31,7 @@ function Membership() {
             </p>
           </section>
           <section>
-            <div className="w-100 ">
+            <div className="w-100 text-center ">
               <section className="why_to_sub">
                 <h3 className="text-green-500 member_responsive">
                   <b> Why To Subscribe ? </b>
