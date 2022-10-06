@@ -43,7 +43,7 @@ const About = () => {
         <div class="wrapper">
           <div id="content" class="rightpad">
             <h1 class="gendocsPageTitle text-center text-danger title2">
-              SCCI AT a GLANCE
+              SCCI AT A GLANCE
             </h1>
             <p className="text-center">{data} </p>
           </div>

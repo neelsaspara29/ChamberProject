@@ -62,7 +62,7 @@ function Header() {
                     </Link>
                   </li>
                   <li className="item2">
-                    <Link className="first " to="/  ">
+                    <Link className="first " to="/pastpresident">
                       Past President
                     </Link>
                   </li>
@@ -279,6 +279,15 @@ function Header() {
                         to="/executiveCommitee"
                       >
                         Executive Commitee
+                      </Link>
+                    </li>
+                    <li className="item2">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/pastpresident"
+                      >
+                        Past President
                       </Link>
                     </li>
                     <li className="item1 ">

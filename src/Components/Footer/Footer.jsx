@@ -76,6 +76,9 @@ export default function Footer() {
                 <p>
                   <MDBIcon icon="print" className="me-3" /> 0278-2430040
                 </p>
+                <p>
+                  <MDBIcon icon="print" className="me-3" /> +91-9408 80 7980
+                </p>
               </MDBCol>
             </MDBRow>
           </MDBContainer>
