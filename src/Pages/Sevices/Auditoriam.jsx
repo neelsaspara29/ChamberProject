@@ -32,7 +32,9 @@ function Auditoriam() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={"https://media.istockphoto.com/photos/empty-red-armchairs-of-a-theater-ready-for-a-show-picture-id1295114854?b=1&k=20&m=1295114854&s=170667a&w=0&h=W9ZbN674554Jsamxo5AfoO3DrSm_7qYS1EnANgusi9o="}
+              src={
+                "https://media.istockphoto.com/photos/empty-red-armchairs-of-a-theater-ready-for-a-show-picture-id1295114854?b=1&k=20&m=1295114854&s=170667a&w=0&h=W9ZbN674554Jsamxo5AfoO3DrSm_7qYS1EnANgusi9o="
+              }
               alt="First slide"
             />
             {/* <Carousel.Caption>
@@ -43,7 +45,9 @@ function Auditoriam() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={"https://images.unsplash.com/photo-1596522354195-e84ae3c98731?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXVkaXRvcml1bXxlbnwwfHwwfHw%3D&w=1000&q=80"}
+              src={
+                "https://images.unsplash.com/photo-1596522354195-e84ae3c98731?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXVkaXRvcml1bXxlbnwwfHwwfHw%3D&w=1000&q=80"
+              }
               alt="Second slide"
             />
 
@@ -69,7 +73,9 @@ function Auditoriam() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={"https://media.istockphoto.com/photos/stage-mock-up-3d-rendering-empty-wall-screen-template-picture-id889218716?k=20&m=889218716&s=612x612&w=0&h=4eiLQFLDUzXmcC0uwi5JP-6YashlAw7KeAM95wYGXJ8="}
+              src={
+                "https://media.istockphoto.com/photos/stage-mock-up-3d-rendering-empty-wall-screen-template-picture-id889218716?k=20&m=889218716&s=612x612&w=0&h=4eiLQFLDUzXmcC0uwi5JP-6YashlAw7KeAM95wYGXJ8="
+              }
               alt="Third slide"
             />
 
@@ -83,7 +89,9 @@ function Auditoriam() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={"https://t4.ftcdn.net/jpg/02/30/80/55/240_F_230805549_zIJjS9BaESGVXlTMEihQlbp2hlCfHiR7.jpg"}
+              src={
+                "https://t4.ftcdn.net/jpg/02/30/80/55/240_F_230805549_zIJjS9BaESGVXlTMEihQlbp2hlCfHiR7.jpg"
+              }
               alt="Third slide"
             />
 
@@ -97,14 +105,15 @@ function Auditoriam() {
         </Carousel>
       </div>
       <div className=" mt-2 ">
-      <div>
-          <h2 className=" w-2/3 m-auto text-center text-danger title2">Auditoriam</h2>
+        <div>
+          <h2 className=" w-2/3 m-auto text-center text-danger title2">
+            Auditoriam
+          </h2>
         </div>
         <div className="w-2/3 m-auto mt-3 pub">
-          <p className="text-center">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</p>
-          
+          <p className="text-center">{data[0]?.intro}</p>
         </div>
-        
+
         <div className="w-2/3 m-auto text-center p-2">
           <h4 className="">Information</h4>
         </div>
@@ -154,14 +163,18 @@ function Auditoriam() {
             </thead>
             <tbody>
               <tr>
-                <td data-label="Facilities">Ac, Water</td>
+                <td data-label="Facilities">
+                  {data[0]?.facilities.map((item) => (
+                    <span>{item},&nbsp;</span>
+                  ))}
+                </td>
                 <td data-label="Capacity">30,000</td>
-                <td data-label="Rent">30,000</td>
+                <td data-label="Rent">&#8377;{data[0]?.rent}/day</td>
               </tr>
             </tbody>
           </table>
         </div>
-        
+
         {/* <div className="d-flex justify-center mt-4 w-100">
           <div>
             <p>Name:</p>

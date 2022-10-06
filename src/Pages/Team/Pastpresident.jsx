@@ -3,13 +3,13 @@ import { Card } from "react-bootstrap";
 import Header1 from "../../Components/Header/Header1";
 import { ApiGet } from "../../Helper/API/Apidata";
 
-function Bearear() {
+function Pastpresident() {
   const [data, setData] = useState([]);
   const fetchData = async () => {
     await ApiGet("/team/fullTeam")
       .then((data) => {
         console.log("res-", data.data.data);
-        setData(data?.data?.data?.officeBearer);
+        setData(data?.data?.data?.executivecommitees);
       })
       .catch((err) => console.log(err));
   };
@@ -20,7 +20,7 @@ function Bearear() {
     <>
       <Header1 />
       {/* <div className="text-danger text-center mt-10 uppercase">
-        <h1>office bearear</h1>
+        <h1>executive commitee</h1>
       </div>
       <div className="w-3/5 m-auto mt-5">
         <div className="team_member">
@@ -46,7 +46,6 @@ function Bearear() {
                     </Card.Subtitle>
                     <Card.Text>
                       <p className="uppercase">
-                       
                         {single.role ? single.role : " member of scci"}
                       </p>
                       <p>{single?.mobile}</p>
@@ -68,7 +67,7 @@ function Bearear() {
           </div>
         </div>
       </div> */}
-      <div id="interior_content">
+      <div id="interior_content ">
         {/* <div id="interior_header_banner"><span id="bnrinst_2_450"><img src="cache/sql/fba/fs_450.jpg" width="1439" height="300" style="border:0" alt=""  /></span>
             
         </div> */}
@@ -76,8 +75,7 @@ function Bearear() {
           <div id="content" class="rightpad pb-1">
             <div class="staffModule moduleLister ">
               <h1 class="title2 text-danger text-center mb-3 uppercase">
-                {" "}
-                Office Bearers
+                Past Presidents
               </h1>
               <div className="lg:w-4/5 lg:m-auto">
                 {data.map((item) => {
@@ -118,4 +116,4 @@ function Bearear() {
   );
 }
 
-export default Bearear;
+export default Pastpresident;

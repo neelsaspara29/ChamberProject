@@ -81,8 +81,11 @@ function ComiteeMain() {
         <div class="wrapper">
           <div id="content" class="rightpad pb-1">
             <div class="staffModule moduleLister ">
-              <h1 class="title2 text-center text-danger mb-3"> Various Committee</h1>
-              <div>
+              <h1 class="title2 text-center text-danger mb-3">
+                {" "}
+                Various Committee
+              </h1>
+              <div className=" lg:w-4/5 lg:m-auto">
                 {data.map((item) => {
                   return (
                     <div class="listerItem">
@@ -94,18 +97,16 @@ function ComiteeMain() {
                         />
                       </div>
                       <h2>
-                        <a href="staff-directory-redesign/staff/carolyn-michaels-iom/?back=staff">
-                          {item?.chairmenName}
-                        </a>
+                        <a>{item?.chairmenName}</a>
                       </h2>
                       <h3>{item?.name}</h3>
                       <div class="phone">
-                        <a href="tel:954.462.2396">
+                        <a href={"tel:" + item?.mobile}>
                           <span class="fa fa-phone-square"></span> {item?.phone}
                         </a>
                       </div>
                       <div class="email">
-                        <a href="mailto:carolyn.m@ftlchamber.com">
+                        <a href={"mailto:" + item?.email}>
                           <span class="fa fa-envelope"></span> {item?.email}
                         </a>
                       </div>

@@ -29,6 +29,7 @@ import Secretaries from "./Pages/Team/Secretaries";
 import Publications from "./Pages/Publications/Publications";
 import Galleries from "./Pages/Gallery/Galleries";
 import Header1 from "./Components/Header/Header1";
+import Pastpresident from "./Pages/Team/Pastpresident";
 function App() {
   return (
     <>
@@ -64,6 +65,7 @@ function App() {
         <Route path="/executiveCommitee" element={<ExecutiveCommitee />}></Route>
         <Route path="/secretaries" element={<Secretaries />}></Route>
         <Route path="/galleries" element={<Galleries />}></Route>
+        <Route path="/pastpresident" element={<Pastpresident />}></Route>
 
 
 

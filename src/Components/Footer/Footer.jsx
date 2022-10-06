@@ -47,7 +47,7 @@ export default function Footer() {
               <MDBCol
                 md="3"
                 lg="4"
-                xl="3"
+                xl="4"
                 className="mx-auto p-0 mb-4 text-center"
               >
                 <h6 className="text-uppercase fw-bold mb-4">
@@ -57,46 +57,39 @@ export default function Footer() {
                 <p>Unity Is Strengh</p>
               </MDBCol>
 
-              <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
+              <MDBCol md="4" lg="3" xl="4" className="mx-auto mb-md-0 mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                 <p>
                   <MDBIcon icon="home" className="me-2" />
-                  Bhavnagar , Gujarat , India
+                  315, Sagar Complex, Near Jashonath Circle, Nakubaug, Bhavnagar
+                  – 364001.
                 </p>
                 <p>
                   <MDBIcon icon="envelope" className="me-3" />
-                  email@example.com
+                  <a href="mailto:scci.bhavnagar@gmail.com">
+                    scci.bhavnagar@gmail.com
+                  </a>
                 </p>
                 <p>
-                  <MDBIcon icon="phone" className="me-3" /> + 91 9988523612
+                  <MDBIcon icon="phone" className="me-3" /> 0278-2424279
                 </p>
                 <p>
-                  <MDBIcon icon="print" className="me-3" /> + 91 9875698745
-                </p>
-              </MDBCol>
-              <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">
-                  List Of holidays
-                </h6>
-                <p>
-                  <MDBIcon icon="home" className="me-2" />
-                  Bhavnagar , Gujarat , India
-                </p>
-                <p>
-                  <MDBIcon icon="envelope" className="me-3" />
-                  email@example.com
-                </p>
-                <p>
-                  <MDBIcon icon="phone" className="me-3" /> + 91 9988523612
-                </p>
-                <p>
-                  <MDBIcon icon="print" className="me-3" /> + 91 9875698745
+                  <MDBIcon icon="print" className="me-3" /> 0278-2430040
                 </p>
               </MDBCol>
             </MDBRow>
           </MDBContainer>
         </section>
-
+        <div
+          className="cursor-pointer  mx-auto text-center mb-1"
+          style={{
+            backgroundColor: "rgba(0, 0, 0, 0.05)",
+            maxWidth: "30vw",
+            borderRadius: "4px",
+          }}
+        >
+          Download List Of Holidays
+        </div>
         <div
           className="text-center p-4"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}

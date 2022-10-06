@@ -74,8 +74,10 @@ function Secretaries() {
         <div class="wrapper">
           <div id="content" class="rightpad pb-1">
             <div class="staffModule moduleLister ">
-              <h1 class="title2 text-danger text-center mb-3">Secretariat</h1>
-              <div>
+              <h1 class="title2 text-danger text-center mb-3 uppercase">
+                Secretariat
+              </h1>
+              <div className="lg:w-4/5 lg:m-auto">
                 {data.map((item) => {
                   return (
                     <div class="listerItem">
@@ -87,19 +89,17 @@ function Secretaries() {
                         />
                       </div>
                       <h2>
-                        <a href="staff-directory-redesign/staff/carolyn-michaels-iom/?back=staff">
-                          {item?.name}
-                        </a>
+                        <a>{item?.name}</a>
                       </h2>
-                      <h3>Vice President</h3>
+                      <h3>{item?.role}</h3>
                       <div class="phone">
-                        <a href="tel:954.462.2396">
+                        <a href={"tel:" + item?.mobile}>
                           <span class="fa fa-phone-square"></span>{" "}
                           {item?.mobile}
                         </a>
                       </div>
                       <div class="email">
-                        <a href="mailto:carolyn.m@ftlchamber.com">
+                        <a href={"mailto:" + item?.email}>
                           <span class="fa fa-envelope"></span> {item?.email}
                         </a>
                       </div>

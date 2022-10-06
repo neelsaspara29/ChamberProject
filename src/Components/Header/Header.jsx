@@ -61,6 +61,11 @@ function Header() {
                       Executive Commitee
                     </Link>
                   </li>
+                  <li className="item2">
+                    <Link className="first " to="/  ">
+                      Past President
+                    </Link>
+                  </li>
                   <li className="item1 ">
                     <Link className="first " to="/secretaries">
                       Secretariat
