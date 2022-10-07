@@ -116,16 +116,7 @@ function Header1() {
                   </li>
                 </ul>
               </li>
-              <li className="item7 ">
-                Various Comitees
-                <ul className="">
-                  <li className="item1">
-                    <Link className="first" to="/comiteemain">
-                      Working committees
-                    </Link>
-                  </li>
-                </ul>
-              </li>
+
               <li className="item7 cursor-pointer ">Membership Renewal</li>
             </ul>
           </div>
@@ -391,20 +382,7 @@ function Header1() {
                     </li>
                   </ul>
                 </li>
-                <li className="item7 ">
-                  Various Comitees
-                  <ul className="">
-                    <li className="item1">
-                      <Link
-                        onclick={handleClose}
-                        className="first"
-                        to="/comiteemain"
-                      >
-                        Working committees
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
+
                 <li className="item7 bg-blue-500 membership_renewal ">
                   Membership Renewal
                 </li>

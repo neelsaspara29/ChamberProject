@@ -8,9 +8,11 @@ function CertificateOrigin() {
       <Header1 />
       <div className="w-2/3 m-auto mt-4">
         <div>
-          <h2 className="text-center text-danger">Certificate Of Origin</h2>
+          <h2 className="text-center title2 text-danger uppercase">
+            Certificate Of Origin
+          </h2>
         </div>
-        <div className="mt-5">
+        <div className="mt-5" style={{ fontSize: "16px" }}>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam
             consectetur ipsam deserunt, neque rem molestiae alias reiciendis

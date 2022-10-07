@@ -106,11 +106,11 @@ function Auditoriam() {
       </div>
       <div className=" mt-2 ">
         <div>
-          <h2 className=" w-2/3 m-auto text-center text-danger title2">
+          <h2 className=" w-2/3 m-auto text-center text-danger title2 uppercase">
             Auditoriam
           </h2>
         </div>
-        <div className="w-2/3 m-auto mt-3 pub">
+        <div className="w-2/3 m-auto mt-3 pub" style={{ fontSize: "16px" }}>
           <p className="text-center">{data[0]?.intro}</p>
         </div>
 

@@ -6,9 +6,11 @@ function AboutCoo() {
     <>
       <Header1 />
       <div>
-        <h1 className="text-danger title2  text-center my-3">About Coo</h1>
+        <h1 className="text-danger title2  text-center my-3 uppercase">
+          About Coo
+        </h1>
       </div>
-      <div className="w-3/4 m-auto pub">
+      <div className="w-3/4 m-auto pub" style={{ fontSize: "16px" }}>
         <p className="text-center">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
           qui. Cumque, amet deserunt quisquam dolore eius tempore quo nam

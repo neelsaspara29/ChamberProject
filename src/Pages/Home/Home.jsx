@@ -100,7 +100,7 @@ function Home() {
 
       <Membership />
       <Services />
-      <Logocourosel />
+      {/* <Logocourosel /> */}
     </>
   );
 }

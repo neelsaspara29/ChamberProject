@@ -8,9 +8,11 @@ function VisaService() {
       <Header1 />
       <div className="w-2/3 m-auto mt-4 pub">
         <div>
-          <h2 className="text-center title2 text-danger">Visa Recomandation</h2>
+          <h2 className="text-center title2 text-danger uppercase">
+            Visa Recomandation
+          </h2>
         </div>
-        <div className="mt-3">
+        <div className="mt-3" style={{ fontSize: "16px" }}>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
             consequuntur magnam. A dolor neque quisquam. Aut recusandae
@@ -27,16 +29,24 @@ function VisaService() {
               </thead>
               <tbody>
                 <tr>
-                  <td className="vd">Document 1- this is first document for apply in visa</td>
+                  <td className="vd">
+                    Document 1- this is first document for apply in visa
+                  </td>
                 </tr>
                 <tr>
-                  <td className="vd">Document 1- this is first document for apply in visa</td>
+                  <td className="vd">
+                    Document 1- this is first document for apply in visa
+                  </td>
                 </tr>
                 <tr>
-                  <td className="vd">Document 1- this is first document for apply in visa</td>
+                  <td className="vd">
+                    Document 1- this is first document for apply in visa
+                  </td>
                 </tr>
                 <tr>
-                  <td className="vd">Document 1- this is first document for apply in visa</td>
+                  <td className="vd">
+                    Document 1- this is first document for apply in visa
+                  </td>
                 </tr>
               </tbody>
             </Table>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
-import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
 function Header() {
@@ -89,6 +88,9 @@ function Header() {
                   </li>
                   <li className="item2">
                     <Link to="/industrialdirectory">Industrial Directory</Link>
+                  </li>
+                  <li className="item2">
+                    <Link to="/pressrelease">Press Release</Link>
                   </li>
                   <li className="item3">
                     <Link to="/otherpublication">Other Publications </Link>
@@ -424,20 +426,7 @@ function Header() {
                     </li>
                   </ul>
                 </li>
-                <li className="item7 ">
-                  Various Comitees
-                  <ul className="">
-                    <li className="item1">
-                      <Link
-                        onclick={handleClose}
-                        className="first"
-                        to="/comiteemain"
-                      >
-                        Working committees
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
+
                 <li className="item7 ">Membership Renewal</li>
               </ul>
             </Offcanvas.Body>

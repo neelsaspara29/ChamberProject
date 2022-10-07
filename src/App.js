@@ -30,6 +30,7 @@ import Publications from "./Pages/Publications/Publications";
 import Galleries from "./Pages/Gallery/Galleries";
 import Header1 from "./Components/Header/Header1";
 import Pastpresident from "./Pages/Team/Pastpresident";
+import PressRelease from "./Pages/Publications/PressRelease";
 function App() {
   return (
     <>
@@ -55,6 +56,7 @@ function App() {
         <Route path="/bulletin" element={<Bulletin />}></Route>
         <Route path="/industrialdirectory" element={<Industry />}></Route>
         <Route path="/otherpublication" element={<Publications />}></Route>
+        <Route path="/pressrelease" element={<PressRelease />}></Route>
         <Route path="/aboutcoo" element={<AboutCoo />}></Route>
         <Route path="/procedure" element={<ProcedureCoo />}></Route>
         <Route path="/comiteemain" element={<ComiteeMain />}></Route>

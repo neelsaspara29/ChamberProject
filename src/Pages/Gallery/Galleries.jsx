@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Carousel, CarouselItem } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,97 +8,95 @@ import "swiper/css/pagination";
 import "../../Styles/Components/gallery.scss";
 import vd1 from "../../Helper/video/vd1.mp4";
 import Header1 from "../../Components/Header/Header1";
+import { ApiPost } from "../../Helper/API/Apidata";
+import { BiShowAlt } from "react-icons/bi";
 function Galleries() {
-  const data = [1, 2, 3, 4];
+  const [data, setData] = useState([]);
+  const [id, setId] = useState(-1);
+  const fetchData = async () => {
+    await ApiPost("/gallaryEvent/get")
+      .then((data) => {
+        console.log("res-", data);
+        let dt = data?.data?.data;
+        for (let i = 0; i < dt.length; i++) {
+          dt[i].videos = dt[i].videos.map((item) =>
+            item.replace("watch?v=", "embed/")
+          );
+        }
+        // data?.data?.data?.map((single,idx) => {
+        //   data?.data?.data[idx].videos= single.videos.map((item) =>  item.replace("watch?v=","embed/"));
+
+        // });
+        console.log(dt);
+        setData(dt);
+      })
+      .catch((err) => console.log(err));
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <>
       <Header1 />
-      <div className="w-4/5 text-center m-auto">
-        <Carousel indicators={false} interval={null}>
-          {data.map((single) => {
-            return (
-              <Carousel.Item key={single}>
-                <ReactPlayer
-                  url={vd1}
-                  pip={true}
-                  controls={true}
-                  playing={true}
-                  width="100%"
-                />
-              </Carousel.Item>
-            );
-          })}
-        </Carousel>
+      <h1 className="my-5 text-danger uppercase text-center title2">gallery</h1>
+      <div className="w-4/5 text-center mx-auto mt-4">
+        <div>
+          <table className="gallery_responsive">
+            {/* <caption>Statement Summary</caption> */}
+            <thead>
+              <tr>
+                <th scope="col">Event </th>
+                <th scope="col">Deep Dive In Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data?.map((item, idx) => (
+                <tr>
+                  <td>{item.name}</td>
+                  <td>
+                    <BiShowAlt
+                      className="inline text-center text-3xl cursor-pointer text-blue-500"
+                      onClick={() => setId(idx)}
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div className="w-4/5 mx-auto mt-5">
-        <Swiper
-          // install Swiper modules
-          modules={[Autoplay]}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          spaceBetween={10}
-          loop={true}
-          breakpoints={{
-            // when window width is >= 640px
-            640: {
-              width: 640,
-              slidesPerView: 2,
-            },
-            540: {
-              width: 640,
-              slidesPerView: 1,
-            },
-            // when window width is >= 768px
-            768: {
-              width: 768,
-              slidesPerView: 2,
-            },
-          }}
-          navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-        >
-          <SwiperSlide>
-            <img
-              className="d-block w-100"
-              src={
-                "https://t4.ftcdn.net/jpg/02/30/80/55/240_F_230805549_zIJjS9BaESGVXlTMEihQlbp2hlCfHiR7.jpg"
-              }
-              alt="Third slide"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              className="d-block w-100"
-              src={
-                "https://media.istockphoto.com/photos/stage-mock-up-3d-rendering-empty-wall-screen-template-picture-id889218716?k=20&m=889218716&s=612x612&w=0&h=4eiLQFLDUzXmcC0uwi5JP-6YashlAw7KeAM95wYGXJ8="
-              }
-              alt="Third slide"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            {" "}
-            <img
-              className="d-block w-100"
-              src={"https://images7.alphacoders.com/693/thumb-1920-693484.jpg"}
-              alt="Third slide"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              className="d-block w-100"
-              src={
-                "https://media.istockphoto.com/photos/empty-red-armchairs-of-a-theater-ready-for-a-show-picture-id1295114854?b=1&k=20&m=1295114854&s=170667a&w=0&h=W9ZbN674554Jsamxo5AfoO3DrSm_7qYS1EnANgusi9o="
-              }
-              alt="First slide"
-            />
-          </SwiperSlide>
-          ...
-        </Swiper>
+
+      {id >= 0 && data[id] && (
+        <h3 className="text-center mt-5 uppercase">Vedio Gallery</h3>
+      )}
+      <div className="w-4/5 vedio_display d-flex flex-wrap mx-auto mt-2 justify-center overflow-x-scroll">
+        {id >= 0 &&
+          data[id] &&
+          data[id].videos.map((single) => (
+            <div>
+              <iframe
+                src={single}
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                title="video"
+              />{" "}
+            </div>
+          ))}
+      </div>
+      {id >= 0 && data[id] && (
+        <h3 className="text-center mt-12 uppercase">Picture Gallery</h3>
+      )}
+      <div className="w-4/5 image_display flex-wrap d-flex mx-auto mt-2 justify-center overflow-x-scroll">
+        {id >= 0 &&
+          data[id] &&
+          data[id].images.map((single) => (
+            <>
+              <div className="img_o">
+                <img src={single} width={250} height={250} alt="" />
+              </div>
+            </>
+          ))}
       </div>
     </>
   );

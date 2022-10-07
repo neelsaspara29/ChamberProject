@@ -28,7 +28,7 @@ function ProcedureCoo() {
         dolore, sequi soluta quia impedit dignissimos reiciendis consectetur
         cupiditate?
       </div>
-      <table className="w-3/4  m-auto ">
+      <table className="w-3/4 mt-3 mx-auto ">
         {/* <caption>Statement Summary</caption> */}
         <thead>
           <tr>
@@ -40,22 +40,22 @@ function ProcedureCoo() {
         </thead>
         <tbody>
           <tr>
-            <td data-label="Ordinary">
+            <td data-label="PFD1">
               <div className="btn btn-primary px-2 py-1  inline pub_text">
                 Download
               </div>
             </td>
-            <td data-label="Ordinary">
+            <td data-label="PDF2">
               <div className="btn btn-primary px-2 py-1  inline pub_text">
                 Download
               </div>
             </td>
-            <td data-label="Petron">
+            <td data-label="PDF3">
               <div className="btn btn-primary px-2 py-1  inline pub_text">
                 Download
               </div>
             </td>
-            <td data-label="Association">
+            <td data-label="PDF4">
               <div className="btn btn-primary px-2 py-1  inline pub_text">
                 Download
               </div>

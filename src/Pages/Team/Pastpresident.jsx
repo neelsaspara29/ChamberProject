@@ -81,7 +81,7 @@ function Pastpresident() {
               <h1 class="title2 text-danger text-center mb-3 uppercase">
                 Past Presidents
               </h1>
-              <div className="lg:w-4/5 lg:m-auto capitalize">
+              <div className="  capitalize">
                 {data?.map((item) => {
                   return (
                     <div class="listerItem">

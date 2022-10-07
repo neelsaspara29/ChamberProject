@@ -90,23 +90,31 @@ function Bearear() {
                           src={item?.image}
                         />
                       </div>
-                      <h2>
-                        <a>{item?.name}</a>
-                      </h2>
-                      <h3>{item?.compneyName}</h3>
-                      <h3>{item?.role}</h3>
-                      <div class="phone">
-                        <a href={"tel:" + item?.mobile}>
-                          <span class="fa fa-phone-square"></span>{" "}
-                          {item?.mobile}
-                        </a>
+
+                      <div>
+                        <h2>
+                          <a>{item?.name}</a>
+                        </h2>
+                        <h3>{item?.role}</h3>
+                        <div class="phone">
+                          <a href={"tel:" + item?.mobile}>
+                            <span class="fa fa-building-o"></span>{" "}
+                            {item?.compneyName}
+                          </a>
+                        </div>
+                        <div class="phone">
+                          <a href={"tel:" + item?.mobile}>
+                            <span class="fa fa-phone-square"></span>{" "}
+                            {item?.mobile}
+                          </a>
+                        </div>
+                        <div class="email">
+                          <a href={"mailto:" + item?.email}>
+                            <span class="fa fa-envelope"></span> {item?.email}
+                          </a>
+                        </div>
+                        <div class="clear"></div>
                       </div>
-                      <div class="email">
-                        <a href={"mailto:" + item?.email}>
-                          <span class="fa fa-envelope"></span> {item?.email}
-                        </a>
-                      </div>
-                      <div class="clear"></div>
                     </div>
                   );
                 })}

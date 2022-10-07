@@ -25,6 +25,7 @@ function Conference() {
   const [data1, setData1] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
   return (
     <>
+      <Header1 />
       <div className="slider ">
         <Carousel pause="hover" indicators={false}>
           <Carousel.Item>
@@ -104,11 +105,11 @@ function Conference() {
       </div>
       <div className=" mt-2 ">
         <div>
-          <h2 className=" w-2/3 m-auto text-center title2 text-danger">
+          <h2 className=" w-2/3 m-auto text-center title2 text-danger uppercase">
             ConferenceHall
           </h2>
         </div>
-        <div className="w-2/3 m-auto mt-3 pub">
+        <div className="w-2/3 m-auto mt-3 pub" style={{ fontSize: "16px" }}>
           <p className="text-center">{data[0]?.intro}</p>
         </div>
 

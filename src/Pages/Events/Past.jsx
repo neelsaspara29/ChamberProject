@@ -63,7 +63,7 @@ function Past() {
     <>
       <Header1 />
       <div className="text-danger text-center p-3">
-        <h3> PAST EVENTS </h3>
+        <h3 className="text-danger title2"> PAST EVENTS </h3>
       </div>
       <div className=" w-2/3 m-auto upcoming_events">
         {data?.map((arr) => {
@@ -89,6 +89,7 @@ function Past() {
                           width={200}
                           height={200}
                           alt="Not Valid Image"
+                          className="mobile_img_resp"
                         />
                       ) : (
                         <img

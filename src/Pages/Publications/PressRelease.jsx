@@ -4,19 +4,21 @@ import { Pagination, Table } from "react-bootstrap";
 import Header1 from "../../Components/Header/Header1";
 import { ApiPost } from "../../Helper/API/Apidata";
 
-function Bulletin() {
+function PressRelease() {
   const [data, setData] = useState([]);
   const [totalpage, settotalpage] = useState(0);
+  const [currentpage, setcurrentpage] = useState(1);
+  const [pagesize, setpagesize] = useState(10);
   const [active, setActive] = useState(1);
 
   const fetchData = async (page, limit) => {
-    await ApiPost("/bulletin/get", {
+    await ApiPost("/press/get", {
       page: page,
       limit: limit,
     })
       .then((data) => {
         console.log("res-", data.data);
-        setData(data?.data?.data?.bulletinsData);
+        setData(data?.data?.data?.presssData);
         settotalpage(data?.data?.data?.state?.page_limit);
       })
       .catch((err) => console.log(err));
@@ -26,7 +28,7 @@ function Bulletin() {
     fetchData(page, 10);
   };
   useEffect(() => {
-    fetchData(1, 10);
+    fetchData(active, pagesize);
   }, []);
   return (
     <>
@@ -37,18 +39,18 @@ function Bulletin() {
             className=" uppercase title2 text-danger"
             style={{ fontWeight: "700" }}
           >
-            Bulletins
+            press release
           </h2>
         </div>
         <div className="w-2/3 m-auto mt-4 pub">
           <table>
             {/* <caption>Statement Summary</caption> */}
             <thead>
-              <tr>
+              <tr className="uppercase">
                 <th scope="col">SERIAL NUMBER</th>
-                <th scope="col">MONTH</th>
-                <th scope="col">CREATE DATE</th>
-                <th scope="col">DOWNLOAD</th>
+                <th scope="col">particulers</th>
+                <th scope="col">docFile</th>
+                <th scope="col">pdf</th>
               </tr>
             </thead>
             <tbody>
@@ -56,15 +58,22 @@ function Bulletin() {
                 return (
                   <tr>
                     <td data-label="Serial Number">{item.sNumber}</td>
-                    <td data-label="Month">{item.month}</td>
+                    <td data-label="Month">{item.particulers}</td>
                     <td data-label="Created Date">
-                      {moment(item.createdAt).format(" MMMM Do YYYY")}
+                      <div
+                        className="btn btn-primary px-2 py-1  inline pub_text"
+                        onClick={() => {
+                          window.open(item?.docFile);
+                        }}
+                      >
+                        Download
+                      </div>
                     </td>
                     <td data-label="Download">
                       <div
                         className="btn btn-primary px-2 py-1  inline pub_text"
                         onClick={() => {
-                          window.open(item?.link);
+                          window.open(item?.pdf);
                         }}
                       >
                         Download
@@ -94,4 +103,4 @@ function Bulletin() {
   );
 }
 
-export default Bulletin;
+export default PressRelease;

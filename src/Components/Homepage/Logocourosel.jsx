@@ -3,66 +3,62 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Carousel } from "react-bootstrap";
 
 function Logocourosel() {
   return (
     <>
-      <div className="w-4/5 mx-auto mt-7">
-        <Swiper
-          // install Swiper modules
-          modules={[Autoplay]}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          spaceBetween={10}
-          loop={true}
-          breakpoints={{
-            // when window width is >= 640px
-            640: {
-              width: 640,
-              slidesPerView: 2,
-            },
-            540: {
-              width: 640,
-              slidesPerView: 1,
-            },
-            // when window width is >= 768px
-            768: {
-              width: 768,
-              slidesPerView: 2,
-            },
-          }}
-          navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-        >
-          <SwiperSlide>
-            <img
-              className="d-block w-50 h-50 my-auto"
-              src={"/Assets/logo_courosol/aaaci-logo.png"}
-              alt="Third slide"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              className="d-block w-50 h-100 my-auto"
-              src={"/Assets/logo_courosol/ficci.png"}
-              alt="Third slide"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            {" "}
-            <img
-              className="d-block w-50 h-50"
-              src={"/Assets/logo_courosol/gcci.png"}
-              alt="Third slide"
-            />
-          </SwiperSlide>
-        </Swiper>
-      </div>
+      <Carousel
+        pause="hover"
+        style={{ width: "30%", height: "30% !important" }}
+        indicators={false}
+        className="mx-auto"
+        dura
+      >
+        <Carousel.Item>
+          <img
+            className="d-block "
+            width={100}
+            height={100}
+            src={"/Assets/logo_courosol/aaaci-logo.png"}
+            alt="First slide"
+          />
+          {/* <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption> */}
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block"
+            width={100}
+            height={100}
+            src={"/Assets/logo_courosol/ficci.png"}
+            alt="Second slide"
+          />
+
+          {/* <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption> */}
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block"
+            src={"/Assets/logo_courosol/gcci.png"}
+            alt="Third slide"
+            width={100}
+            height={100}
+          />
+
+          {/* <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption> */}
+        </Carousel.Item>
+      </Carousel>
     </>
   );
 }

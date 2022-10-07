@@ -58,80 +58,31 @@ export default function Footer() {
               </MDBCol>
 
               <MDBCol md="4" lg="3" xl="6" className="mx-auto mb-md-0 mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+                <h6 className="text-uppercase fw-bold mb-4">Contact Us</h6>
                 <p>
-                  <img
-                    src="/Assets/Footer/location.png.jpg"
-                    width={30}
-                    height={25}
-                    alt=""
-                    srcset=""
-                    className="inline mr-2 bg-transparent"
-                    style={{ borderRadius: "10px" }}
-                  />
+                  <MDBIcon icon="home" className="me-2" />
                   315, Sagar Complex, Near Jashonath Circle, Nakubaug, Bhavnagar
                   – 364001.
                 </p>
                 <p>
-                  <img
-                    src="/Assets/Footer/email.png.jpg"
-                    width={30}
-                    height={25}
-                    alt=""
-                    srcset=""
-                    className="inline mr-2 bg-transparent"
-                    style={{ borderRadius: "10px" }}
-                  />
+                  <MDBIcon icon="envelope" className="me-3" />
                   <a href="mailto:scci.bhavnagar@gmail.com">
                     scci.bhavnagar@gmail.com
                   </a>
                 </p>
                 <p>
-                  <img
-                    src="/Assets/Footer/work.jpg"
-                    width={30}
-                    height={25}
-                    alt=""
-                    srcset=""
-                    className="inline mr-2 bg-transparent"
-                    style={{ borderRadius: "10px" }}
-                  />
+                  <MDBIcon icon="calendar" className="me-3" />
                   11:00 am To 06:00 pm
                 </p>
                 <p>
-                  <img
-                    src="/Assets/Footer/phone.jpg"
-                    width={30}
-                    height={25}
-                    alt=""
-                    srcset=""
-                    className="inline mr-2 bg-transparent"
-                    style={{ borderRadius: "10px" }}
-                  />{" "}
-                  0278-2424279
+                  <MDBIcon icon="phone" className="me-3" /> 0278-2424279
                 </p>
                 <p>
-                  <img
-                    src="/Assets/Footer/phone.jpg"
-                    width={30}
-                    height={25}
-                    alt=""
-                    srcset=""
-                    className="inline mr-2 bg-transparent"
-                    style={{ borderRadius: "10px" }}
-                  />{" "}
+                  <MDBIcon icon="phone" className="me-3" />
                   0278-2430040
                 </p>
                 <p>
-                  <img
-                    src="/Assets/Footer/whapapp.png.jpg"
-                    width={30}
-                    height={25}
-                    alt=""
-                    srcset=""
-                    className="inline mr-2 bg-transparent"
-                    style={{ borderRadius: "10px" }}
-                  />{" "}
+                  <MDBIcon icon="whatsapp" className="me-2" />
                   +91-9408 80 7980
                 </p>
               </MDBCol>

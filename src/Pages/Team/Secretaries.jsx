@@ -77,7 +77,7 @@ function Secretaries() {
               <h1 class="title2 text-danger text-center mb-3 uppercase">
                 Secretariat
               </h1>
-              <div className="lg:w-4/5 lg:m-auto">
+              <div>
                 {data.map((item) => {
                   return (
                     <div class="listerItem">

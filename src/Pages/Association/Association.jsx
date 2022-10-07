@@ -26,7 +26,7 @@ function Association() {
       <div className="w-2/3 m-auto mt-4 pub">
         <div>
           <h4 className="text-center text-danger title2">
-            Associated Association Of Scci
+            Associated Association With Scci
           </h4>
         </div>
         <div className="mt-3">
@@ -42,7 +42,7 @@ function Association() {
         </div>
 
         <div className=" m-auto mt-4">
-        <table>
+          <table>
             {/* <caption>Statement Summary</caption> */}
             <thead>
               <tr>
@@ -59,15 +59,9 @@ function Association() {
                   <tr>
                     <td data-label="Serial Number">{item?.sNumber}</td>
                     <td data-label="Name">{item?.name}</td>
-                    <td data-label="Address">
-                      {item?.address}
-                    </td>
-                    <td data-label="Contact-1">
-                      987920714
-                    </td>
-                    <td data-label="Contact-2">
-                      8291829182
-                    </td>
+                    <td data-label="Address">{item?.address}</td>
+                    <td data-label="Contact-1">{item?.contact1}</td>
+                    <td data-label="Contact-2">{item?.contact2}</td>
                   </tr>
                 );
               })}

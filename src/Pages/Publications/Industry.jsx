@@ -1,24 +1,31 @@
 import moment from "moment/moment";
 import React, { useEffect, useState } from "react";
-import { Table } from "react-bootstrap";
+import { Pagination, Table } from "react-bootstrap";
 import Header1 from "../../Components/Header/Header1";
 import { ApiPost } from "../../Helper/API/Apidata";
 
 function Industry() {
   const [data, setData] = useState([]);
-  const fetchData = async () => {
+  const [totalpage, settotalpage] = useState(0);
+  const [active, setActive] = useState(1);
+  const fetchData = async (page, limit) => {
     await ApiPost("/industrial/get", {
-      page: 1,
-      limit: 10,
+      page: page,
+      limit: limit,
     })
       .then((data) => {
         console.log("res-", data.data);
         setData(data?.data?.data?.industrialsData);
+        settotalpage(data?.data?.data?.state?.page_limit);
       })
       .catch((err) => console.log(err));
   };
+  const handleChangePagination = (page) => {
+    setActive(page);
+    fetchData(page, 10);
+  };
   useEffect(() => {
-    fetchData();
+    fetchData(1, 10);
   }, []);
   return (
     <>
@@ -27,7 +34,7 @@ function Industry() {
         <div className="text-center mt-3">
           <h2
             className="uppercase title2 text-danger"
-            style={{  fontWeight: "700" }}
+            style={{ fontWeight: "700" }}
           >
             Industrial Directory
           </h2>
@@ -67,6 +74,19 @@ function Industry() {
               })}
             </tbody>
           </table>
+          <Pagination className="mt-2">
+            {Array.from({ length: totalpage }, (_, index) => index + 1)?.map(
+              (item) => (
+                <Pagination.Item
+                  key={item}
+                  onClick={() => handleChangePagination(item)}
+                  active={item === active}
+                >
+                  {item}
+                </Pagination.Item>
+              )
+            )}
+          </Pagination>
         </div>
       </div>
     </>

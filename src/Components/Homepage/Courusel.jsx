@@ -257,16 +257,7 @@ function Courusel() {
                 </li>
               </ul>
             </li>
-            <li className="item7 ">
-              Various Comitees
-              <ul className="">
-                <li className="item1">
-                  <Link className="first" to="/comiteemain">
-                    Working committees
-                  </Link>
-                </li>
-              </ul>
-            </li>
+
             <li className="item7 shine bg-blue-500 membership_renewal text-blue-100">
               Membership Renewal
             </li>

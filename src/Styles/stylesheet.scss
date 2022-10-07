@@ -6,7 +6,7 @@
 body {
   background: #ffffff;
   position: relative;
-  font-family: "Open Sans", sans-serif;
+  // font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #6e7879;
   margin: 0;
@@ -15,10 +15,12 @@ body {
   letter-spacing: 1px;
 }
 
-body * {
-  font-family: "Open Sans", sans-serif;
+body {
+  font-family: "Concert One", sans-serif ;
 }
 #header {
+  font-family: "Concert One", sans-serif !important;
+  font-size: large;
   height: 130px;
   width: 100%;
   background: #fff;
@@ -577,6 +579,9 @@ p.copyright a {
     flex-direction: column;
     align-items: center;
   }
+  .mobile_img_resp{
+    margin-bottom: 20px !important;
+  }
   
 }
 @media only screen and (max-width: 1180px) {
@@ -611,6 +616,24 @@ p.copyright a {
 @media only screen and (max-width: 300px) {
   .member_download_button_responsive{
     width: 50%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .staffModule .thumbnail{
+    margin-right: 4px  !important;
+    margin-bottom: 50px !important;
+  }
+  .team_img{
+    height: 80px !important;
+    width: 60px !important;
+  }
+  .gallery_responsive td{
+    display: inline  !important;
+    
+  }
+  .gallery_responsive tr{
+    text-align: start;
+
   }
 }
 @media only screen and (max-width: 500px) {
@@ -663,9 +686,9 @@ p.copyright a {
   background-color: orange;
 }
 
-* {
-  font-family: "Chivo", sans-serif;
-}
+// * {
+//   font-family: "Chivo", sans-serif;
+// }
 .service_responsive img {
   margin: auto !important;
 }
@@ -692,9 +715,9 @@ color: black;
 }
 
 
-* {
-  font-family: 'Chivo', sans-serif !important;
-}
+// * {
+//   font-family: 'Chivo', sans-serif !important;
+// }
 
 .title2 {
   font-family: 'Concert One', cursive !important; 
@@ -705,4 +728,22 @@ color: black;
   padding: 2px;
   border-radius: 5px;
   
+}
+.vedio_display div{
+margin-right: 6px;
+margin-bottom: 6px;
+border-radius: 12px;
+}
+.image_display .img_o{
+  width: 250px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  
+}
+.image_display .img_o img{
+  border-radius: 12px ;
+
+}
+::-webkit-scrollbar {
+  display: none;
 }
