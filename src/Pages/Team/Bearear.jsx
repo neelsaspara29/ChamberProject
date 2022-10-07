@@ -93,6 +93,7 @@ function Bearear() {
                       <h2>
                         <a>{item?.name}</a>
                       </h2>
+                      <h3>{item?.compneyName}</h3>
                       <h3>{item?.role}</h3>
                       <div class="phone">
                         <a href={"tel:" + item?.mobile}>
