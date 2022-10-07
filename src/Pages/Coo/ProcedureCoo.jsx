@@ -28,19 +28,54 @@ function ProcedureCoo() {
         dolore, sequi soluta quia impedit dignissimos reiciendis consectetur
         cupiditate?
       </div>
-      <div className="d-flex m-auto mt-3 w-3/4 justify-start">
+      <table className="w-3/4  m-auto ">
+        {/* <caption>Statement Summary</caption> */}
+        <thead>
+          <tr>
+            <th scope="col">PDF1</th>
+            <th scope="col">PDF2</th>
+            <th scope="col">PDF3</th>
+            <th scope="col">PDF4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Ordinary">
+              <div className="btn btn-primary px-2 py-1  inline pub_text">
+                Download
+              </div>
+            </td>
+            <td data-label="Ordinary">
+              <div className="btn btn-primary px-2 py-1  inline pub_text">
+                Download
+              </div>
+            </td>
+            <td data-label="Petron">
+              <div className="btn btn-primary px-2 py-1  inline pub_text">
+                Download
+              </div>
+            </td>
+            <td data-label="Association">
+              <div className="btn btn-primary px-2 py-1  inline pub_text">
+                Download
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div className="d-flex mx-auto mt-10 w-3/4 justify-start">
         <div className="procedure_coo">
           <div className="text-green-500">
-            <h3 className="title2 text-primary">Following Are Steps You Have to Folow</h3>
+            <h3 className="title2 text-primary">
+              Following Are Steps You Have to Follow
+            </h3>
           </div>
+
           <div>
             <ol type="1" className="capitalize" style={{ padding: "0" }}>
-              <li>1. Click The Link</li>
-              <li>2. register your self</li>
-              <li>3. complete profile</li>
-              <li>4. login</li>
-              <li>5. upload download</li>
-              <li>6. mail to us</li>
+              <li>1. Download PDF</li>
+              <li>2. Fill Form</li>
+              <li>3. Send Us</li>
             </ol>
             <p className="text-primary " style={{ fontSize: "12px" }}>
               <a href="http://">click hear to fill form</a>

@@ -569,18 +569,18 @@ p.copyright a {
   font-size: 16px;
 }
 
-.commitee_details {
+.committee_details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.commitee_details div {
+.committee_details div {
   padding: 1rem;
   font-size: 1.4rem;
 }
 
-.commitee_main .commitee_one {
+.committee_main .committee_one {
   margin: 0 3px;
   margin-top: 16px;
   width: 400px;

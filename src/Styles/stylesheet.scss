@@ -437,6 +437,7 @@ a:-webkit-any-link {
 }
 $colors: (
   slide_1: #ffa260,
+  slide_2: #ffa260,
 );
 @each $button, $color in $colors {
   .#{$button} {
@@ -456,7 +457,11 @@ button {
 }
 .slide_1:hover,
 .slide_1:focus {
-  box-shadow: inset 14em 0 0 0 var(--hover);
+  box-shadow: inset 18em 0 0 0 var(--hover);
+}
+.slide_2:hover,
+.slide_2:focus {
+  box-shadow: inset 37em 0 0 0 var(--hover);
 }
 button {
   background: none;
@@ -526,14 +531,14 @@ p.copyright a {
   padding: 6px 0px;
   font-size: 16px;
 }
-.commitee_details {
+.committee_details {
   display: flex;
 }
-.commitee_details div {
+.committee_details div {
   padding: 1rem;
   font-size: 1.4rem;
 }
-.commitee_main .commitee_one {
+.committee_main .committee_one {
   margin: 0 3px;
   margin-top: 16px;
   width: 400px;
@@ -554,9 +559,7 @@ p.copyright a {
   }
 }
 @media only screen and (max-width: 450px) {
-  .events_responsive {
-    justify-content: center;
-  }
+  
   .membership {
     width: 96%;
     padding-top: 30px;
@@ -574,6 +577,7 @@ p.copyright a {
     flex-direction: column;
     align-items: center;
   }
+  
 }
 @media only screen and (max-width: 1180px) {
   .industry_bhavnagar {
@@ -586,6 +590,14 @@ p.copyright a {
     width: 100%;
     margin-top: 12px;
     letter-spacing: 1px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .events_responsive {
+    justify-content: center;
+  }
+  .slide2{
+    width: 18em !important;
   }
 }
 @media only screen and (max-width: 1180px) {
@@ -686,4 +698,11 @@ color: black;
 
 .title2 {
   font-family: 'Concert One', cursive !important; 
+}
+.membership_renewal{
+  text-align: center;
+  color: rgb(219 234 254 / 1) !important;
+  padding: 2px;
+  border-radius: 5px;
+  
 }

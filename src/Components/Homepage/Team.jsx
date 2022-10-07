@@ -146,7 +146,7 @@ function Team() {
         <div className="team_member">
           <div>
             <h3 className="uppercase pt-10 pb-1 text-green-500">
-              executive commitee
+              executive committee
             </h3>
           </div>
           <div className="d-flex flex-wrap justify-evenly">

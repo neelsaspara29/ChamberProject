@@ -5,9 +5,15 @@ import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import { ApiPost } from "../../Helper/API/Apidata";
+import axios from "axios";
 function Gallery() {
   const [data, setData] = useState([]);
   const fetchData = async () => {
+    await axios
+      .post(
+        "http://chamber-env.eba-2jmsfvkk.ap-south-1.elasticbeanstalk.com/admin/gallaryEvent/get"
+      )
+      .then((data) => console.log(data));
     await ApiPost("/gallaryEvent/get")
       .then((data) => {
         console.log("res-", data);

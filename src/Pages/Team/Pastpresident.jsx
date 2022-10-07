@@ -1,3 +1,4 @@
+import moment from "moment/moment";
 import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import Header1 from "../../Components/Header/Header1";
@@ -7,9 +8,12 @@ function Pastpresident() {
   const [data, setData] = useState([]);
   const fetchData = async () => {
     await ApiGet("/team/fullTeam")
-      .then((data) => {
+      .then(async (data) => {
         console.log("res-", data.data.data);
-        setData(data?.data?.data?.executivecommitees);
+        let arr = data?.data?.data?.pastPresidents;
+        arr = await arr.sort((data1, data2) => data1.number - data2.number);
+        console.log(arr);
+        setData(arr);
       })
       .catch((err) => console.log(err));
   };
@@ -20,7 +24,7 @@ function Pastpresident() {
     <>
       <Header1 />
       {/* <div className="text-danger text-center mt-10 uppercase">
-        <h1>executive commitee</h1>
+        <h1>executive committee</h1>
       </div>
       <div className="w-3/5 m-auto mt-5">
         <div className="team_member">
@@ -77,8 +81,8 @@ function Pastpresident() {
               <h1 class="title2 text-danger text-center mb-3 uppercase">
                 Past Presidents
               </h1>
-              <div className="lg:w-4/5 lg:m-auto">
-                {data.map((item) => {
+              <div className="lg:w-4/5 lg:m-auto capitalize">
+                {data?.map((item) => {
                   return (
                     <div class="listerItem">
                       <div class="thumbnail">
@@ -91,16 +95,19 @@ function Pastpresident() {
                       <h2>
                         <a>{item?.name}</a>
                       </h2>
-                      <h3>{item?.role}</h3>
+                      <h3>{item?.compneyName}</h3>
+
+                      <div class="email">
+                        <h4>
+                          {moment(item?.termStart).format(" MMMM Do YYYY") +
+                            " -" +
+                            moment(item?.termEnd).format(" MMMM Do YYYY")}
+                        </h4>
+                      </div>
                       <div class="phone">
                         <a href={"tel:" + item?.mobile}>
                           <span class="fa fa-phone-square"></span>{" "}
                           {item?.mobile}
-                        </a>
-                      </div>
-                      <div class="email">
-                        <a href={"mailto:" + item?.email}>
-                          <span class="fa fa-envelope"></span> {item?.email}
                         </a>
                       </div>
                       <div class="clear"></div>

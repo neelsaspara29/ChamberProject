@@ -35,14 +35,23 @@ function Events() {
               </Link>
             </div>
             <div className="m-2">
-              <Link to="/associative">
+              <Link to="/membersdirectory">
                 <div style={{ width: "18em" }}>
                   <button class="slide_1 w-100 uppercase p-2">
-                    associations
+                    members directory
                   </button>
                 </div>
               </Link>
             </div>
+          </div>
+          <div>
+            <Link to="/associative">
+              <div className="slide2" style={{ width: "37em" }}>
+                <button class="slide_2  w-100 uppercase p-2">
+                  associated Association with scci
+                </button>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

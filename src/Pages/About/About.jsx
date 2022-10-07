@@ -19,7 +19,7 @@ const About = () => {
   }, []);
 
   return (
-    <>
+  <>
       <Header1 />
       <div id="interior_content">
         <div

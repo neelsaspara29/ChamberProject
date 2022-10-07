@@ -23,7 +23,7 @@ function Services() {
                 style={{ marginTop: "6px", fontSize: "14px" }}
                 className="text-green-600"
               >
-                Certification Of Origin
+                certificate Of Origin
               </div>
             </Link>
           </div>

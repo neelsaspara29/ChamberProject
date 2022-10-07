@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 import Header1 from "../../Components/Header/Header1";
 import { ApiGet } from "../../Helper/API/Apidata";
 
-function ExecutiveCommitee() {
+function Executivecommittee() {
   const [data, setData] = useState([]);
   const fetchData = async () => {
     await ApiGet("/team/fullTeam")
@@ -20,7 +20,7 @@ function ExecutiveCommitee() {
     <>
       <Header1 />
       {/* <div className="text-danger text-center mt-10 uppercase">
-        <h1>executive commitee</h1>
+        <h1>executive committee</h1>
       </div>
       <div className="w-3/5 m-auto mt-5">
         <div className="team_member">
@@ -78,7 +78,7 @@ function ExecutiveCommitee() {
                 Executive Committee
               </h1>
               <div className="lg:w-4/5 lg:m-auto">
-                {data.map((item) => {
+                {data?.map((item) => {
                   return (
                     <div class="listerItem">
                       <div class="thumbnail">
@@ -116,4 +116,4 @@ function ExecutiveCommitee() {
   );
 }
 
-export default ExecutiveCommitee;
+export default Executivecommittee;

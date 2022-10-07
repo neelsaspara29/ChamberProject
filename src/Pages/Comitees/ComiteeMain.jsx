@@ -25,12 +25,12 @@ function ComiteeMain() {
         <h2>Committees</h2>
       </div>
       <div
-        className="d-flex w-11/12 mx-auto  flex-wrap commitee_main "
+        className="d-flex w-11/12 mx-auto  flex-wrap committee_main "
         style={{ marginTop: "3rem" }}
       >
         {data?.map((single) => {
           return (
-            <div className="commitee_one">
+            <div className="committee_one">
               <div className="border-1 border-zinc-500 border p-2">
                 <div className="uppercase text-center text-green-500   border-bottom border-black">
                   <h3> {single.name}</h3>
@@ -47,14 +47,14 @@ function ComiteeMain() {
                       />
                     ) : (
                       <img
-                        src="/Assets/commitee/man/man.jpg"
+                        src="/Assets/committee/man/man.jpg"
                         height={300}
                         // style={{ borderRadius: "50%" }}
                         className="w-full"
                       />
                     )}
                   </div>
-                  <div className="commitee_details text-gray-600 w-4/5 ">
+                  <div className="committee_details text-gray-600 w-4/5 ">
                     <div className="">
                       <div className=" top-5 right-0 ">Chairman :</div>
                       <div className=" top-5 right-0 ">Email :</div>

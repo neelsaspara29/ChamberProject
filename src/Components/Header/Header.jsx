@@ -24,7 +24,7 @@ function Header() {
           <div id="main_menu">
             <ul className="main_menu">
               <li className="item1 ">
-                About
+                About US
                 <ul className="">
                   <li className="item1 ">
                     <Link className="first " to="/about" onClick={handleClose}>
@@ -38,7 +38,7 @@ function Header() {
                   </li>
                   <li className="item1 ">
                     <Link className="first " to="/messageChairman">
-                      Message From the Chairman
+                      Message From the Chair
                     </Link>
                   </li>
                   <li className="item1 ">
@@ -57,8 +57,8 @@ function Header() {
                     </Link>
                   </li>
                   <li className="item2">
-                    <Link className="first " to="/executiveCommitee">
-                      Executive Commitee
+                    <Link className="first " to="/executivecommittee">
+                      Executive committee
                     </Link>
                   </li>
                   <li className="item2">
@@ -66,21 +66,21 @@ function Header() {
                       Past President
                     </Link>
                   </li>
+                  <li className="item1">
+                    <Link className="first" to="/comiteemain">
+                      Working committees
+                    </Link>
+                  </li>
                   <li className="item1 ">
                     <Link className="first " to="/secretaries">
                       Secretariat
-                    </Link>
-                  </li>
-                  <li className="item1">
-                    <Link className="first" to="/comiteemain">
-                      Commitees
                     </Link>
                   </li>
                 </ul>
               </li>
 
               <li className="item4 ">
-                Publication
+                Publications
                 <ul className="">
                   <li className="item1">
                     <Link className="first" to="/bulletin">
@@ -91,7 +91,7 @@ function Header() {
                     <Link to="/industrialdirectory">Industrial Directory</Link>
                   </li>
                   <li className="item3">
-                    <Link to="/otherpublication">Other Publication </Link>
+                    <Link to="/otherpublication">Other Publications </Link>
                   </li>
                 </ul>
               </li>
@@ -126,7 +126,7 @@ function Header() {
                 <ul className="">
                   <li className="item1">
                     <Link className="first" to="/certificateoforigin">
-                      Certification Of Origin
+                      certificate Of Origin
                     </Link>
                   </li>
                   <li className="item1">
@@ -146,16 +146,7 @@ function Header() {
                   </li>
                 </ul>
               </li>
-              <li className="item7 ">
-                Members Directory
-                <ul className="">
-                  <li className="item1">
-                    <Link className="first" to="/membersdirectory">
-                      Members
-                    </Link>
-                  </li>
-                </ul>
-              </li>
+              <li className="item7 cursor-pointer ">Membership Renewal</li>
             </ul>
           </div>
           <div id="has_it_logo"></div>
@@ -220,7 +211,7 @@ function Header() {
             <Offcanvas.Body>
               <ul className="main_menu main_menu_responsive uppercase">
                 <li className="item1 ">
-                  About
+                  About Us
                   <ul className="">
                     <li className="item1 ">
                       <Link
@@ -246,7 +237,7 @@ function Header() {
                         className="first "
                         to="/messageChairman"
                       >
-                        Message From the Chairman
+                        Message From the Chair
                       </Link>
                     </li>
                     <li className="item1 ">
@@ -276,9 +267,9 @@ function Header() {
                       <Link
                         onclick={handleClose}
                         className="first "
-                        to="/executiveCommitee"
+                        to="/executivecommittee"
                       >
-                        Executive Commitee
+                        Executive committee
                       </Link>
                     </li>
                     <li className="item2">
@@ -290,6 +281,15 @@ function Header() {
                         Past President
                       </Link>
                     </li>
+                    <li className="item1">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/secretaries"
+                      >
+                        Working committees
+                      </Link>
+                    </li>
                     <li className="item1 ">
                       <Link
                         onclick={handleClose}
@@ -297,15 +297,6 @@ function Header() {
                         to="/secretaries"
                       >
                         Secretariat
-                      </Link>
-                    </li>
-                    <li className="item1">
-                      <Link
-                        onclick={handleClose}
-                        className="first "
-                        to="/secretaries"
-                      >
-                        Commitees
                       </Link>
                     </li>
                     <li className="item1 "></li>
@@ -372,7 +363,7 @@ function Header() {
                   </ul>
                 </li>
                 <li className="item4 ">
-                  Publication
+                  Publications
                   <ul className="">
                     <li className="item1">
                       <Link
@@ -390,7 +381,7 @@ function Header() {
                     </li>
                     <li className="item3">
                       <Link onclick={handleClose} to="/otherpublication">
-                        Other Publication{" "}
+                        Other Publications
                       </Link>
                     </li>
                   </ul>
@@ -442,25 +433,12 @@ function Header() {
                         className="first"
                         to="/comiteemain"
                       >
-                        Commitees
+                        Working committees
                       </Link>
                     </li>
                   </ul>
                 </li>
-                <li className="item7 ">
-                  Members Directory
-                  <ul className="">
-                    <li className="item1">
-                      <Link
-                        onclick={handleClose}
-                        className="first"
-                        to="/membersdirectory"
-                      >
-                        Members
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
+                <li className="item7 ">Membership Renewal</li>
               </ul>
             </Offcanvas.Body>
           </Offcanvas>

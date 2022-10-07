@@ -113,7 +113,7 @@ function Courusel() {
         <Offcanvas.Body>
           <ul className="main_menu main_menu_responsive uppercase">
             <li className="item1 ">
-              About
+              About Us
               <ul className="">
                 <li className="item1 ">
                   <Link className="first " to="/about">
@@ -127,7 +127,7 @@ function Courusel() {
                 </li>
                 <li className="item1 ">
                   <Link className="first " to="/messageChairman">
-                    Message From the Chairman
+                    Message From the Chair
                   </Link>
                 </li>
                 <li className="item1 ">
@@ -146,8 +146,8 @@ function Courusel() {
                   </Link>
                 </li>
                 <li className="item2">
-                  <Link className="first " to="/executiveCommitee">
-                    Executive Commitee
+                  <Link className="first " to="/executivecommittee">
+                    Executive committee
                   </Link>
                 </li>
                 <li className="item2">
@@ -155,9 +155,18 @@ function Courusel() {
                     Past President
                   </Link>
                 </li>
-                <li className="item1 ">
-                  <Link className="first " to="/secretaries">
-                    Secretaries
+                <li className="item1">
+                  <Link className="first" to="/comiteemain">
+                    Working committees
+                  </Link>
+                </li>
+                <li className="item1">
+                  <Link
+                    onclick={handleClose}
+                    className="first "
+                    to="/secretaries"
+                  >
+                    Secretariat
                   </Link>
                 </li>
               </ul>
@@ -207,7 +216,7 @@ function Courusel() {
               </ul>
             </li>
             <li className="item4 ">
-              Publication
+              Publications
               <ul className="">
                 <li className="item1">
                   <Link className="first" to="/bulletin">
@@ -218,7 +227,7 @@ function Courusel() {
                   <Link to="/industrialdirectory">Industrial Directory</Link>
                 </li>
                 <li className="item3">
-                  <Link to="/otherpublication">Other Publication </Link>
+                  <Link to="/otherpublication">Other Publications </Link>
                 </li>
               </ul>
             </li>
@@ -253,20 +262,13 @@ function Courusel() {
               <ul className="">
                 <li className="item1">
                   <Link className="first" to="/comiteemain">
-                    Commitees
+                    Working committees
                   </Link>
                 </li>
               </ul>
             </li>
-            <li className="item7 ">
-              Members Directory
-              <ul className="">
-                <li className="item1">
-                  <Link className="first" to="/membersdirectory">
-                    Members
-                  </Link>
-                </li>
-              </ul>
+            <li className="item7 shine bg-blue-500 membership_renewal text-blue-100">
+              Membership Renewal
             </li>
           </ul>
         </Offcanvas.Body>
