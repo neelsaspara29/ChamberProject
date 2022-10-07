@@ -79,7 +79,7 @@ function Bearear() {
                 {" "}
                 Office Bearers
               </h1>
-              <div className="lg:w-4/5 lg:m-auto">
+              <div className=" lg:m-auto">
                 {data.map((item) => {
                   return (
                     <div class="listerItem">
