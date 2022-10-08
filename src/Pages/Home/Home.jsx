@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Carousel } from "react-bootstrap";
 import Courusel from "../../Components/Homepage/Courusel";
 import Events from "../../Components/Homepage/Events";
@@ -17,11 +17,32 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Logocourosel from "../../Components/Homepage/Logocourosel";
+import { ApiGet } from "../../Helper/API/Apidata";
 
 function Home() {
+  const [cdata, setCdata] = useState([]);
+  const [advData, setAdvData] = useState([]);
+
+  const fetchData = async (page, limit) => {
+    await ApiGet("/adv_main/get", {
+      page: page,
+      limit: limit,
+    })
+      .then((data) => {
+        console.log("res-", data.data);
+        setCdata(data?.data?.data[0]?.main_images);
+        setAdvData(data?.data?.data[0]?.adv_images);
+        console.log(data?.data?.data[0]?.adv_images);
+      })
+      .catch((err) => console.log(err));
+  };
+
+  useEffect(() => {
+    fetchData(1, 10);
+  }, []);
   return (
     <>
-      <Courusel />
+      <Courusel cdata={cdata} />
       <Events />
       <div
         className="w-5/6 pub mx-auto  lg:px-8 lg:pt-10 flow-root my-4"
@@ -59,48 +80,18 @@ function Home() {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
         >
-          <SwiperSlide>
-            <img
-              className="d-block w-100"
-              src={
-                "https://t4.ftcdn.net/jpg/02/30/80/55/240_F_230805549_zIJjS9BaESGVXlTMEihQlbp2hlCfHiR7.jpg"
-              }
-              alt="Third slide"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              className="d-block w-100"
-              src={
-                "https://media.istockphoto.com/photos/stage-mock-up-3d-rendering-empty-wall-screen-template-picture-id889218716?k=20&m=889218716&s=612x612&w=0&h=4eiLQFLDUzXmcC0uwi5JP-6YashlAw7KeAM95wYGXJ8="
-              }
-              alt="Third slide"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            {" "}
-            <img
-              className="d-block w-100"
-              src={"https://images7.alphacoders.com/693/thumb-1920-693484.jpg"}
-              alt="Third slide"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              className="d-block w-100"
-              src={
-                "https://media.istockphoto.com/photos/empty-red-armchairs-of-a-theater-ready-for-a-show-picture-id1295114854?b=1&k=20&m=1295114854&s=170667a&w=0&h=W9ZbN674554Jsamxo5AfoO3DrSm_7qYS1EnANgusi9o="
-              }
-              alt="First slide"
-            />
-          </SwiperSlide>
+          {advData?.map((single) => (
+            <SwiperSlide>
+              <img className="d-block w-100" src={single} alt="Third slide" />
+            </SwiperSlide>
+          ))}
           ...
         </Swiper>
       </div>
 
       <Membership />
       <Services />
-      {/* <Logocourosel /> */}
+      <Logocourosel />
     </>
   );
 }

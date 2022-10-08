@@ -620,12 +620,12 @@ p.copyright a {
 }
 @media only screen and (max-width: 400px) {
   .staffModule .thumbnail{
-    margin-right: 4px  !important;
+    margin-right: 6px  !important;
     margin-bottom: 50px !important;
   }
   .team_img{
     height: 80px !important;
-    width: 60px !important;
+    width: 70px !important;
   }
   .gallery_responsive td{
     display: inline  !important;
@@ -745,5 +745,8 @@ border-radius: 12px;
 
 }
 ::-webkit-scrollbar {
+  display: none;
+}
+.swiper-horizontal>.swiper-scrollbar{
   display: none;
 }

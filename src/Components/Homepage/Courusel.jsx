@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Offcanvas } from "react-bootstrap";
 
-function Courusel() {
+function Courusel({ cdata }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -37,71 +37,15 @@ function Courusel() {
       </div>
       <div className="slider  relative">
         <Carousel pause="hover" indicators={false}>
-          <Carousel.Item className="h-100">
-            <img
-              className="d-block w-100"
-              src="/Assets/Slider/fourth.jpg"
-              alt="First slide"
-            />
-            {/* <Carousel.Caption>
+          {cdata?.map((single) => (
+            <Carousel.Item className="h-100">
+              <img className="d-block w-100" src={single} alt="First slide" />
+              {/* <Carousel.Caption>
               <h3>First slide label</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption> */}
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="/Assets/Slider/fifth.jpg"
-              alt="Second slide"
-            />
-
-            {/* <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption> */}
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="/Assets/Slider/sixth.jpg"
-              alt="Third slide"
-            />
-
-            {/* <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption> */}
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="/Assets/Slider/third.jpg"
-              alt="Third slide"
-            />
-
-            {/* <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption> */}
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="/Assets/Slider/second.jpg"
-              alt="Third slide"
-            />
-
-            {/* <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption> */}
-          </Carousel.Item>
+            </Carousel.Item>
+          ))}
         </Carousel>
       </div>
       <Offcanvas show={show} onHide={handleClose}>

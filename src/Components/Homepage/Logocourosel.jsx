@@ -8,57 +8,96 @@ import { Carousel } from "react-bootstrap";
 function Logocourosel() {
   return (
     <>
-      <Carousel
+      <Swiper
+        // install Swiper modules
+
+        modules={[Autoplay]}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+        spaceBetween={25}
+        loop={true}
+        breakpoints={{
+          // when window width is >= 640px
+          640: {
+            width: 300,
+            slidesPerView: 2,
+          },
+          540: {
+            width: 640,
+            slidesPerView: 1,
+          },
+          // when window width is >= 768px
+          768: {
+            height: 180,
+            width: 600,
+            slidesPerView: 3,
+          },
+        }}
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log("slide change")}
+        className="mx-auto mt-5"
+        style={{ width: "85%" }}
+      >
+        <SwiperSlide className="my-auto">
+          {" "}
+          <img
+            className="d-block"
+            src={"/Assets/logo_courosol/gcci1.png"}
+            alt="Third slide"
+          />
+        </SwiperSlide>
+        <SwiperSlide className="my-auto">
+          <img
+            className="d-block "
+            src={"/Assets/logo_courosol/aaaci.png"}
+            alt="Third slide"
+          />
+        </SwiperSlide>
+        <SwiperSlide className="my-auto">
+          <img
+            className="d-block "
+            style={{ height: "155px" }}
+            src={"/Assets/logo_courosol/ficci1.png"}
+            alt="Third slide"
+          />
+        </SwiperSlide>
+      </Swiper>
+      {/* <Carousel
         pause="hover"
-        style={{ width: "30%", height: "30% !important" }}
         indicators={false}
-        className="mx-auto"
+        className="mx-auto bg-gray-500"
         dura
       >
         <Carousel.Item>
           <img
             className="d-block "
-            width={100}
-            height={100}
-            src={"/Assets/logo_courosol/aaaci-logo.png"}
+            src={"/Assets/logo_courosol/aaaci.png"}
             alt="First slide"
           />
-          {/* <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption> */}
+          
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block"
-            width={100}
-            height={100}
-            src={"/Assets/logo_courosol/ficci.png"}
+            src={"/Assets/logo_courosol/ficci1.png"}
             alt="Second slide"
           />
 
-          {/* <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption> */}
+      
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block"
-            src={"/Assets/logo_courosol/gcci.png"}
+            src={"/Assets/logo_courosol/gcci1.png"}
             alt="Third slide"
-            width={100}
-            height={100}
           />
 
-          {/* <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption> */}
         </Carousel.Item>
-      </Carousel>
+      </Carousel> */}
     </>
   );
 }

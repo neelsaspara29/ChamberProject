@@ -10,9 +10,13 @@ import vd1 from "../../Helper/video/vd1.mp4";
 import Header1 from "../../Components/Header/Header1";
 import { ApiPost } from "../../Helper/API/Apidata";
 import { BiShowAlt } from "react-icons/bi";
+import Gallery from "./Gallery";
+import { useNavigate } from "react-router-dom";
 function Galleries() {
   const [data, setData] = useState([]);
   const [id, setId] = useState(-1);
+  const navigation = useNavigate();
+
   const fetchData = async () => {
     await ApiPost("/gallaryEvent/get")
       .then((data) => {
@@ -46,7 +50,7 @@ function Galleries() {
             <thead>
               <tr>
                 <th scope="col">Event </th>
-                <th scope="col">Deep Dive In Event</th>
+                <th scope="col">View</th>
               </tr>
             </thead>
             <tbody>
@@ -56,7 +60,7 @@ function Galleries() {
                   <td>
                     <BiShowAlt
                       className="inline text-center text-3xl cursor-pointer text-blue-500"
-                      onClick={() => setId(idx)}
+                      onClick={() => navigation("/gallery?id=" + item._id)}
                     />
                   </td>
                 </tr>
@@ -66,7 +70,7 @@ function Galleries() {
         </div>
       </div>
 
-      {id >= 0 && data[id] && (
+      {/* {id >= 0 && data[id] && (
         <h3 className="text-center mt-5 uppercase">Vedio Gallery</h3>
       )}
       <div className="w-4/5 vedio_display d-flex flex-wrap mx-auto mt-2 justify-center overflow-x-scroll">
@@ -97,7 +101,7 @@ function Galleries() {
               </div>
             </>
           ))}
-      </div>
+      </div> */}
     </>
   );
 }
