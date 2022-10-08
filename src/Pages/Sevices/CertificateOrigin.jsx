@@ -6,7 +6,7 @@ function CertificateOrigin() {
   return (
     <>
       <Header1 />
-      <div className="w-2/3 m-auto mt-4">
+      <div className="w-2/3 m-auto mt-4 pub">
         <div>
           <h2 className="text-center title2 text-danger uppercase">
             Certificate Of Origin
@@ -18,10 +18,13 @@ function CertificateOrigin() {
             consectetur ipsam deserunt, neque rem molestiae alias reiciendis
             placeat magni.
           </p>
-          <p className="text-blue-400 hover:text-blue-900">
+          <p className="text-blue-400 hover:text-blue-900 d-flex justify-content-center">
             <Link to="/">APPLY IN OUR DGFT SERVICE</Link>
           </p>
-          <button className="btn btn-primary"> DOWNLOAD PDF</button>
+          <div className="d-flex justify-content-center">
+
+          <button className="btn btn-primary "> DOWNLOAD PDF</button>
+          </div>
         </div>
       </div>
     </>

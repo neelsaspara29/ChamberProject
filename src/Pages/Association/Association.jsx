@@ -59,7 +59,7 @@ function Association() {
                   <tr> 
                     <td data-label="Serial Number">{item?.sNumber}</td>
                     <td data-label="Name">{item?.name}</td>
-                    <td data-label="Address">{item?.address}</td>
+                    <td data-label="Address"><div className="td_as">{item?.address}</div></td>
                     <td data-label="Contact-1">{item?.contact1}</td>
                     <td data-label="Contact-2">{item?.contact2}</td>
                   </tr>

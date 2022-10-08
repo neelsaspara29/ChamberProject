@@ -16,7 +16,7 @@ function Gallery() {
         });
         for (let i = 0; i < temp.length; i++) {
           temp[i].videos = temp[i].videos.map((item) =>
-            item.replace("watch?v=", "embed/")
+          `https://www.youtube.com/embed/${item}`
           );
         }
         console.log(temp);
