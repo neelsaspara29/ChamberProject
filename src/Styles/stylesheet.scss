@@ -21,7 +21,7 @@ body {
 #header {
   font-family: "Concert One", sans-serif !important;
   font-size: large;
-  height: 10em;
+  height: 8em;
   width: 100%;
   background: #fff;
   position: static;
@@ -145,7 +145,7 @@ body {
 #main_menu > ul > li {
   display: inline-block;
   text-align: center;
-  padding: 72px 17px 58px;
+  padding: 72px 17px 72px;
   height: 30px;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
@@ -196,7 +196,7 @@ body {
 }
 #main_menu > ul > li > ul {
   position: absolute;
-  top: 130px;
+  top: 8em;
   left: 0px;
   width: 250px;
   padding: 8px 0px;
