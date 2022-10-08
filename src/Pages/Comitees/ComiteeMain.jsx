@@ -78,14 +78,14 @@ function ComiteeMain() {
         {/* <div id="interior_header_banner"><span id="bnrinst_2_450"><img src="cache/sql/fba/fs_450.jpg" width="1439" height="300" style="border:0" alt=""  /></span>
             
         </div> */}
-        <div class="wrapper">
+        <div class="wrapper capitalize">
           <div id="content" class="rightpad pb-1">
             <div class="staffModule moduleLister ">
-              <h1 class="title2 text-center text-danger mb-3">
+              <h1 class="title2 text-center text-danger mb-3 uppercase">
                 {" "}
                 Various Committee
               </h1>
-              <div className=" lg:w-4/5 lg:m-auto">
+              <div className="uppercase">
                 {data.map((item) => {
                   return (
                     <div class="listerItem">
@@ -105,9 +105,9 @@ function ComiteeMain() {
                           <span class="fa fa-phone-square"></span> {item?.phone}
                         </a>
                       </div>
-                      <div class="email">
+                      <div class="email lowercase">
                         <a href={"mailto:" + item?.email}>
-                          <span class="fa fa-envelope"></span> {item?.email}
+                          <span class="fa fa-envelope "></span> {item?.email}
                         </a>
                       </div>
                       <div class="clear"></div>

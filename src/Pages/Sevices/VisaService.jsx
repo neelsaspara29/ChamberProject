@@ -13,7 +13,7 @@ function VisaService() {
           </h2>
         </div>
         <div className="mt-3" style={{ fontSize: "16px" }}>
-          <p>
+          <p className="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
             consequuntur magnam. A dolor neque quisquam. Aut recusandae
             reprehenderit, quia modi inventore esse tempore ad ipsam saepe eos

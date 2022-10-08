@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   MDBFooter,
   MDBContainer,
@@ -6,8 +6,24 @@ import {
   MDBCol,
   MDBIcon,
 } from "mdb-react-ui-kit";
+import { ApiGet } from "../../Helper/API/Apidata";
 
 export default function Footer() {
+  const [data, setData] = useState([]);
+  const fetchData = async () => {
+    await ApiGet("/contactUs/get", {
+      page: 1,
+      limit: 10,
+    })
+      .then((data) => {
+        console.log("cres-", data.data.data);
+        setData(data?.data?.data);
+      })
+      .catch((err) => console.log(err));
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <div className="position-absolute top-100 w-100">
       <MDBFooter
@@ -60,37 +76,35 @@ export default function Footer() {
               <MDBCol md="4" lg="3" xl="6" className="mx-auto mb-md-0 mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Contact Us</h6>
                 <p>
-                  <MDBIcon icon="home" className="me-2" />
-                  315, Sagar Complex, Near Jashonath Circle, Nakubaug, Bhavnagar
-                  – 364001.
+                  <MDBIcon icon="home" className="me-3" />
+                  {data?.address}
                 </p>
                 <p>
                   <MDBIcon icon="envelope" className="me-3" />
-                  <a href="mailto:scci.bhavnagar@gmail.com">
-                    scci.bhavnagar@gmail.com
-                  </a>
+                  <a href="mailto:scci.bhavnagar@gmail.com">{data?.email}</a>
                 </p>
                 <p>
                   <MDBIcon icon="calendar" className="me-3" />
-                  11:00 am To 06:00 pm
-                </p>
-                <p>
-                  <MDBIcon icon="phone" className="me-3" /> 0278-2424279
+                  {data?.workingHours}
                 </p>
                 <p>
                   <MDBIcon icon="phone" className="me-3" />
-                  0278-2430040
+                  {data?.phone1}
                 </p>
                 <p>
-                  <MDBIcon icon="whatsapp" className="me-2" />
-                  +91-9408 80 7980
+                  <MDBIcon icon="phone" className="me-3" />
+                  {data?.phone2}
+                </p>
+                <p>
+                  <MDBIcon icon="whatsapp" className="me-3" />
+                  {data?.whp}
                 </p>
               </MDBCol>
             </MDBRow>
           </MDBContainer>
         </section>
         <div
-          className="cursor-pointer  mx-auto text-center mb-1"
+          className="cursor-pointer  mx-auto text-center mb-1 p-2"
           style={{
             backgroundColor: "rgba(0, 0, 0, 0.05)",
             maxWidth: "30vw",

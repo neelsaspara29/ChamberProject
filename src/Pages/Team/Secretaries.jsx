@@ -71,7 +71,7 @@ function Secretaries() {
         {/* <div id="interior_header_banner"><span id="bnrinst_2_450"><img src="cache/sql/fba/fs_450.jpg" width="1439" height="300" style="border:0" alt=""  /></span>
             
         </div> */}
-        <div class="wrapper">
+        <div class="wrapper uppercase">
           <div id="content" class="rightpad pb-1">
             <div class="staffModule moduleLister ">
               <h1 class="title2 text-danger text-center mb-3 uppercase">
@@ -88,22 +88,65 @@ function Secretaries() {
                           src={item?.image}
                         />
                       </div>
-                      <h2>
-                        <a>{item?.name}</a>
-                      </h2>
-                      <h3>{item?.role}</h3>
-                      <div class="phone">
-                        <a href={"tel:" + item?.mobile}>
-                          <span class="fa fa-phone-square"></span>{" "}
-                          {item?.mobile}
-                        </a>
-                      </div>
-                      <div class="email">
-                        <a href={"mailto:" + item?.email}>
-                          <span class="fa fa-envelope"></span> {item?.email}
-                        </a>
-                      </div>
-                      <div class="clear"></div>
+                      {window.innerWidth < 500 ? (
+                        <>
+                          <div>
+                            <h4>
+                              <a>{item?.name}</a>
+                            </h4>
+                            <h5 style={{ color: "#00945e" }}>{item?.role}</h5>
+                            <h6 class="phone">
+                              <a href={"tel:" + item?.mobile}>
+                                <span class="fa fa-building-o"></span>{" "}
+                                {item?.compneyName}
+                              </a>
+                            </h6>
+                            <div class="phone">
+                              <a href={"tel:" + item?.mobile}>
+                                <span class="fa fa-phone-square"></span>{" "}
+                                {item?.mobile}
+                              </a>
+                            </div>
+                            <div class="email lowercase">
+                              <a
+                                href={"mailto:" + item?.email}
+                                className="d-flex "
+                              >
+                                <div>
+                                  <span class="fa fa-envelope"></span>{" "}
+                                </div>
+                                <div>{item?.email}</div>
+                              </a>
+                            </div>
+                            <div class="clear"></div>
+                          </div>
+                        </>
+                      ) : (
+                        <div>
+                          <h2>
+                            <a>{item?.name}</a>
+                          </h2>
+                          <h3>{item?.role}</h3>
+                          <div class="phone">
+                            <a href={"tel:" + item?.mobile}>
+                              <span class="fa fa-building-o"></span>{" "}
+                              {item?.compneyName}
+                            </a>
+                          </div>
+                          <div class="phone">
+                            <a href={"tel:" + item?.mobile}>
+                              <span class="fa fa-phone-square"></span>{" "}
+                              {item?.mobile}
+                            </a>
+                          </div>
+                          <div class="email lowercase">
+                            <a href={"mailto:" + item?.email}>
+                              <span class="fa fa-envelope"></span> {item?.email}
+                            </a>
+                          </div>
+                          <div class="clear"></div>
+                        </div>
+                      )}
                     </div>
                   );
                 })}

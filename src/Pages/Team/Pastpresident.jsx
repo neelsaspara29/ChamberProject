@@ -81,8 +81,8 @@ function Pastpresident() {
               <h1 class="title2 text-danger text-center mb-3 uppercase">
                 Past Presidents
               </h1>
-              <div className="  capitalize">
-                {data?.map((item) => {
+              <div className="  uppercase">
+                {data.map((item) => {
                   return (
                     <div class="listerItem">
                       <div class="thumbnail">
@@ -92,25 +92,73 @@ function Pastpresident() {
                           src={item?.image}
                         />
                       </div>
-                      <h2>
-                        <a>{item?.name}</a>
-                      </h2>
-                      <h3>{item?.compneyName}</h3>
-
-                      <div class="email">
-                        <h4>
-                          {moment(item?.termStart).format(" MMMM Do YYYY") +
-                            " -" +
-                            moment(item?.termEnd).format(" MMMM Do YYYY")}
-                        </h4>
-                      </div>
-                      <div class="phone">
-                        <a href={"tel:" + item?.mobile}>
-                          <span class="fa fa-phone-square"></span>{" "}
-                          {item?.mobile}
-                        </a>
-                      </div>
-                      <div class="clear"></div>
+                      {window.innerWidth < 500 ? (
+                        <>
+                          <div>
+                            <h4>
+                              <a>{item?.name}</a>
+                            </h4>
+                            <h6 style={{ color: "#00945e" }}>
+                              {moment(item?.termStart).format(" MMMM Do YYYY") +
+                                " -" +
+                                moment(item?.termEnd).format(" MMMM Do YYYY")}
+                            </h6>
+                            <h6 class="phone">
+                              <a href={"tel:" + item?.mobile}>
+                                <span class="fa fa-building-o"></span>{" "}
+                                {item?.compneyName}
+                              </a>
+                            </h6>
+                            <div class="phone">
+                              <a href={"tel:" + item?.mobile}>
+                                <span class="fa fa-phone-square"></span>{" "}
+                                {item?.mobile}
+                              </a>
+                            </div>
+                            <div class="email lowercase">
+                              <a
+                                href={"mailto:" + item?.email}
+                                className="d-flex "
+                              >
+                                <div>
+                                  <span class="fa fa-envelope"></span>{" "}
+                                </div>
+                                <div>{item?.email}</div>
+                              </a>
+                            </div>
+                            <div class="clear"></div>
+                          </div>
+                        </>
+                      ) : (
+                        <div>
+                          <h2>
+                            <a>{item?.name}</a>
+                          </h2>
+                          <h6   style={{ color: "#00945e" }}>
+                            {moment(item?.termStart).format(" MMMM Do YYYY") +
+                              " -" +
+                              moment(item?.termEnd).format(" MMMM Do YYYY")}
+                          </h6>
+                          <div class="phone">
+                            <a href={"tel:" + item?.mobile}>
+                              <span class="fa fa-building-o"></span>{" "}
+                              {item?.compneyName}
+                            </a>
+                          </div>
+                          <div class="phone">
+                            <a href={"tel:" + item?.mobile}>
+                              <span class="fa fa-phone-square"></span>{" "}
+                              {item?.mobile}
+                            </a>
+                          </div>
+                          <div class="email lowercase ">
+                            <a href={"mailto:" + item?.email}>
+                              <span class="fa fa-envelope"></span> {item?.email}
+                            </a>
+                          </div>
+                          <div class="clear"></div>
+                        </div>
+                      )}
                     </div>
                   );
                 })}

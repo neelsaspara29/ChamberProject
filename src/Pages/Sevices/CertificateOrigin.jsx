@@ -13,7 +13,7 @@ function CertificateOrigin() {
           </h2>
         </div>
         <div className="mt-5" style={{ fontSize: "16px" }}>
-          <p>
+          <p className="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam
             consectetur ipsam deserunt, neque rem molestiae alias reiciendis
             placeat magni.

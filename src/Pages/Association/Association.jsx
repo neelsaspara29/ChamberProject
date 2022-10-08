@@ -56,7 +56,7 @@ function Association() {
             <tbody>
               {data.map((item) => {
                 return (
-                  <tr>
+                  <tr> 
                     <td data-label="Serial Number">{item?.sNumber}</td>
                     <td data-label="Name">{item?.name}</td>
                     <td data-label="Address">{item?.address}</td>

@@ -15,7 +15,7 @@ function Header() {
             <Link id="logo" to="/">
               <img
                 src="/Assets/sccilogo.png"
-                style={{ width: "10em", height: "8em" }}
+                style={{ width: "9em", height: "7em" }}
                 alt=""
               />
             </Link>

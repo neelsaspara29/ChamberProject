@@ -29,7 +29,7 @@ function Gallery() {
   }, []);
   return (
     <>
-      <h3 className="text-center mt-5 uppercase">Vedio Gallery</h3>
+      <h3 className="text-center mt-5 uppercase">Video Gallery</h3>
       <div className="w-4/5 vedio_display d-flex flex-wrap mx-auto mt-2 justify-center overflow-x-scroll">
         {data &&
           data?.videos &&

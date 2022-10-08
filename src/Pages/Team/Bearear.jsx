@@ -81,10 +81,10 @@ function Bearear() {
                 {" "}
                 Office Bearers
               </h1>
-              <div className=" lg:m-auto">
+              <div className="">
                 {data.map((item) => {
                   return (
-                    <div class="listerItem">
+                    <div class="listerItem capitalize">
                       <div class="thumbnail">
                         <img
                           className="team_img"
@@ -98,7 +98,7 @@ function Bearear() {
                             <h4>
                               <a>{item?.name}</a>
                             </h4>
-                            <h5>{item?.role}</h5>
+                            <h5 style={{ color: "#00945e" }}>{item?.role}</h5>
                             <h6 class="phone">
                               <a href={"tel:" + item?.mobile}>
                                 <span class="fa fa-building-o"></span>{" "}
@@ -111,7 +111,7 @@ function Bearear() {
                                 {item?.mobile}
                               </a>
                             </div>
-                            <div class="email" style={{ fontSize: "3px" }}>
+                            <div class="email lowercase">
                               <a
                                 href={"mailto:" + item?.email}
                                 className="d-flex "
