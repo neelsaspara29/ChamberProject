@@ -168,7 +168,7 @@ function Auditoriam() {
                     <span>{item},&nbsp;</span>
                   ))}
                 </td>
-                <td data-label="Capacity">30,000</td>
+                <td data-label="Capacity">150 person </td>
                 <td data-label="Rent">&#8377;{data[0]?.rent}/day</td>
               </tr>
             </tbody>

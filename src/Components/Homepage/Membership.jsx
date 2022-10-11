@@ -2,6 +2,7 @@ import React from "react";
 // import { CheckIcon } from "@heroicons/react/outline";
 
 import Forms from "../Utility/Form";
+import pdf from "../../Helper/pdf/membership.pdf";
 
 function Membership() {
   return (
@@ -16,18 +17,21 @@ function Membership() {
               <b> Overview</b>
             </h3>
             <p className="mt-3  mx-auto capitalize text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              aliquid alias facere deserunt commodi maiores voluptates error ex.
-              Voluptate repellendus earum reprehenderit! Officia rem eos non
-              tempora facere. Recusandae eum ratione pariatur explicabo culpa, a
-              soluta deserunt doloribus distinctio, vel excepturi. Ullam
-              aspernatur debitis totam alias minus autem commodi optio nulla,
-              soluta ducimus ipsam quaerat praesentium reiciendis vitae
-              blanditiis, dolorum odio nostrum id qui, maxime quisquam animi
-              asperiores porro! At provident molestias repellat numquam deserunt
-              voluptas vel veritatis explicabo quam, illo nostrum magni eveniet
-              earum hic possimus accusamus, qui voluptatem. Exercitationem quam
-              repudiandae iusto eius, explicabo magnam illum eum impedit.
+              Saurashtra Chembar Of Commerce and Industry is one of the most
+              reputed and oldest Chamber established in 1943 i.e before
+              independence having more than 1000 + Direct members and 7000 +
+              indirect members from 54 different trade associations and local
+              chambers . <br /> <br /> &nbsp; For more than <b> 79 years </b>{" "}
+              SCCI is engaged in development journey of the state of Gujarat by
+              closely working with the District and State Level Administration.
+              The issues related to trade and industry are represented at
+              appropriate level and efforts are made to get optimum result. SCCI
+              also take initiative on the matter related to public grievances.
+              Apart from it SCCI is fully active in circulating latest
+              information, notification, developments, schemes issued by the
+              Government departments to its members . Seminars ,Webinars,
+              Conferences, trade show, industrial fare etc are arranged on
+              regular basis.
             </p>
           </section>
           <section>
@@ -38,29 +42,24 @@ function Membership() {
                 </h3>
               </section>
               <ul className="benefit list-none d-flex flex-col justify-start p-0">
-                <li>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
-                  aut mollitia voluptatum inventore minus nostrum?
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  dolor voluptatem doloremque nemo voluptatum sed corporis ex
-                  est tenetur impedit!
-                </li>
-                <li>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt culpa ducimus aspernatur rem.
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur illum culpa voluptatem repellat ratione obcaecati
-                  vitae sunt? Nostrum.
-                </li>
+                Any organization involve in business activity can become the
+                member of the Chamber and take all advantages as mentioned
+                above. The details of membership is as under.
               </ul>
             </div>
             <div className="d-flex justify-center  ">
               {" "}
-              <div className="btn btn-primary p-2  "> Download </div>
+              <div className="btn btn-primary p-2  ">
+                {" "}
+                <a
+                  href={pdf}
+                  className="hover:text-white"
+                  target="_blank"
+                  // download
+                >
+                  Download{" "}
+                </a>{" "}
+              </div>
             </div>
           </section>
         </section>

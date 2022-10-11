@@ -73,7 +73,7 @@ export default function Footer() {
                 <p>Unity Is Strengh</p>
               </MDBCol>
 
-              <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
+              <MDBCol md="4" lg="3" xl="4" className="mx-auto mb-md-0 mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Contact Us</h6>
                 <p>
                   <MDBIcon icon="home" className="me-3" />
@@ -103,7 +103,7 @@ export default function Footer() {
               <MDBCol
                 md="4"
                 lg="3"
-                xl="4"
+                xl="3"
                 className="mx-auto mb-md-0 mb-4 capitalize"
               >
                 <h6 className="text-uppercase fw-bold mb-4">bank details</h6>
