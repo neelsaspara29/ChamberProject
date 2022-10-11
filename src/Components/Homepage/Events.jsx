@@ -6,6 +6,15 @@ function Events() {
     <>
       <div className="w-4/5 m-auto mt-5 home_second ">
         <div className="d-flex align-items-center flex-col">
+          <div>
+            <Link to="/upcomingevents">
+              <div className="slide2" style={{ width: "37em" }}>
+                <button class="slide_2  w-100 uppercase p-2">
+                  Upcoming Events
+                </button>
+              </div>
+            </Link>
+          </div>
           <div className="d-flex flex-wrap events_responsive">
             <div className="m-2">
               <Link to="/statecirculer">

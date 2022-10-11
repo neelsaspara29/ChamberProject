@@ -52,7 +52,7 @@ export default function Footer() {
               <MDBIcon icon="linkedin" />
             </a>
             <a href="" className="me-4 text-reset">
-              <MDBIcon icon="github" />
+              <MDBIcon icon="youtube" />
             </a>
           </div>
         </section>
@@ -63,7 +63,7 @@ export default function Footer() {
               <MDBCol
                 md="3"
                 lg="4"
-                xl="6"
+                xl="5"
                 className="mx-auto p-0 mb-4 text-center"
               >
                 <h6 className="text-uppercase fw-bold mb-4">
@@ -73,7 +73,7 @@ export default function Footer() {
                 <p>Unity Is Strengh</p>
               </MDBCol>
 
-              <MDBCol md="4" lg="3" xl="6" className="mx-auto mb-md-0 mb-4">
+              <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Contact Us</h6>
                 <p>
                   <MDBIcon icon="home" className="me-3" />
@@ -98,6 +98,42 @@ export default function Footer() {
                 <p>
                   <MDBIcon icon="whatsapp" className="me-3" />
                   {data?.whp}
+                </p>
+              </MDBCol>
+              <MDBCol
+                md="4"
+                lg="3"
+                xl="4"
+                className="mx-auto mb-md-0 mb-4 capitalize"
+              >
+                <h6 className="text-uppercase fw-bold mb-4">bank details</h6>
+                <p>
+                  <MDBIcon icon="bank" className="me-3" />
+                  State bank of india
+                </p>
+                <p>
+                  <MDBIcon icon="map" className="me-3" />
+                  Kalanala, Bhavnagar
+                </p>
+                <p>
+                  <span style={{ fontWeight: "bold" }}> A/C No.</span>{" "}
+                  <span className="text-gray-600"> 56008013041</span>
+                </p>
+                <p>
+                  <span style={{ fontWeight: "bold" }}>IFSC Code. </span>
+                  <span className="text-gray-600">SBIN0060008</span>
+                </p>
+                <p>
+                  <span style={{ fontWeight: "bold" }}>A/C Type. </span>
+                  <span className="text-gray-600"> Saving Bank Account </span>
+                </p>
+                <p>
+                  <MDBIcon icon="phone" className="me-3" />
+                  +91 9408807980
+                </p>
+                <p>
+                  Note: After Succesfully Payment Share Details with us for
+                  contribution
                 </p>
               </MDBCol>
             </MDBRow>

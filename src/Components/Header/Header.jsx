@@ -32,7 +32,7 @@ function Header() {
                   </li>
                   <li className="item1 ">
                     <Link className="first " to="/mission">
-                      Visson&Mission
+                      Vision & Mission
                     </Link>
                   </li>
                   <li className="item1 ">
@@ -43,6 +43,15 @@ function Header() {
                   <li className="item1 ">
                     <Link className="first " to="/bhavnagar">
                       About Bhavnagar
+                    </Link>
+                  </li>
+                  <li className="item1 ">
+                    <Link
+                      onclick={handleClose}
+                      className="first "
+                      to="/sccitrust"
+                    >
+                      saurashtra chamber trust
                     </Link>
                   </li>
                 </ul>
@@ -146,6 +155,11 @@ function Header() {
                       Conference Hall
                     </Link>
                   </li>
+                  <li className="item1">
+                    <Link className="first" to="/jobportal">
+                      Job Portal
+                    </Link>
+                  </li>
                 </ul>
               </li>
               <li className="item7 cursor-pointer ">Membership Renewal</li>
@@ -221,7 +235,7 @@ function Header() {
                         className="first "
                         to="/about"
                       >
-                        SCCI At a Glance
+                        <h6>SCCI At a Glance</h6>
                       </Link>
                     </li>
                     <li className="item1 ">
@@ -230,7 +244,7 @@ function Header() {
                         className="first "
                         to="/mission"
                       >
-                        Visson&Mission
+                        <h6> vision&Mission</h6>
                       </Link>
                     </li>
                     <li className="item1 ">
@@ -239,7 +253,7 @@ function Header() {
                         className="first "
                         to="/messageChairman"
                       >
-                        Message From the Chair
+                        <h6> Message From the Chair</h6>
                       </Link>
                     </li>
                     <li className="item1 ">
@@ -248,7 +262,16 @@ function Header() {
                         className="first "
                         to="/bhavnagar"
                       >
-                        About Bhavnagar
+                        <h6> About Bhavnagar</h6>
+                      </Link>
+                    </li>
+                    <li className="item1 ">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/sccitrust"
+                      >
+                        <h6> saurashtra chamber trust</h6>
                       </Link>
                     </li>
                   </ul>
@@ -262,7 +285,7 @@ function Header() {
                         className="first "
                         to="/officebearear"
                       >
-                        Office Bearers
+                        <h6> Office Bearers</h6>
                       </Link>
                     </li>
                     <li className="item2">
@@ -271,7 +294,7 @@ function Header() {
                         className="first "
                         to="/executivecommittee"
                       >
-                        Executive committee
+                        <h6> Executive committee</h6>
                       </Link>
                     </li>
                     <li className="item2">
@@ -280,7 +303,7 @@ function Header() {
                         className="first "
                         to="/pastpresident"
                       >
-                        Past President
+                        <h6> Past President</h6>
                       </Link>
                     </li>
                     <li className="item1">
@@ -289,7 +312,7 @@ function Header() {
                         className="first "
                         to="/secretaries"
                       >
-                        Working committees
+                        <h6> Working committees</h6>
                       </Link>
                     </li>
                     <li className="item1 ">
@@ -298,10 +321,9 @@ function Header() {
                         className="first "
                         to="/secretaries"
                       >
-                        Secretariat
+                        <h6> Secretariat</h6>
                       </Link>
                     </li>
-                    <li className="item1 "></li>
                   </ul>
                 </li>
                 <li className="item3">
@@ -313,7 +335,7 @@ function Header() {
                         className="first "
                         to="/certificateoforigin"
                       >
-                        Certificate of origin
+                        <h6> Certificate of origin</h6>
                       </Link>
                     </li>
                     <li className="item2">
@@ -322,7 +344,7 @@ function Header() {
                         className="first "
                         to="/visarecomandation"
                       >
-                        Visa Recomandation
+                        <h6> Visa Recomandation</h6>
                       </Link>
                     </li>
                     <li className="item1 ">
@@ -331,7 +353,7 @@ function Header() {
                         className="first "
                         to="/auditorium"
                       >
-                        Auditorium
+                        <h6> Auditorium</h6>
                       </Link>
                     </li>
                     <li className="item1 ">
@@ -340,7 +362,16 @@ function Header() {
                         className="first "
                         to="/conference"
                       >
-                        Conference Hall
+                        <h6> Conference Hall</h6>
+                      </Link>
+                    </li>
+                    <li className="item1">
+                      <Link
+                        onclick={handleClose}
+                        className="first"
+                        to="/jobportal"
+                      >
+                        <h6> Job Portal</h6>
                       </Link>
                     </li>
                   </ul>
@@ -354,12 +385,12 @@ function Header() {
                         to="/upcomingevents"
                         onclick={handleClose}
                       >
-                        Upcoming Events
+                        <h6> Upcoming Events</h6>
                       </Link>
                     </li>
                     <li className="item2">
                       <Link to="/pastevents" onclick={handleClose}>
-                        Past Events
+                        <h6> Past Events</h6>
                       </Link>
                     </li>
                   </ul>
@@ -373,17 +404,17 @@ function Header() {
                         className="first"
                         to="/bulletin"
                       >
-                        Bio-monthly Bulletin
+                        <h6> Bio-monthly Bulletin</h6>
                       </Link>
                     </li>
                     <li className="item2">
                       <Link onclick={handleClose} to="/industrialdirectory">
-                        Industrial Directory
+                        <h6> Industrial Directory</h6>
                       </Link>
                     </li>
                     <li className="item3">
                       <Link onclick={handleClose} to="/otherpublication">
-                        Other Publications
+                        <h6> Other Publications</h6>
                       </Link>
                     </li>
                   </ul>
@@ -397,12 +428,12 @@ function Header() {
                         className="first"
                         to="/aboutcoo"
                       >
-                        About Coo
+                        <h6> About Coo</h6>
                       </Link>
                     </li>
                     <li className="item2">
                       <Link onclick={handleClose} to="/procedure">
-                        Procedure of coo
+                        <h6> Procedure of coo</h6>
                       </Link>
                     </li>
                   </ul>
@@ -416,12 +447,12 @@ function Header() {
                         className="first"
                         to="/statecirculer"
                       >
-                        State Govt. Circulares
+                        <h6> State Govt. Circulares</h6>
                       </Link>
                     </li>
                     <li className="item2">
                       <Link onclick={handleClose} to="/govcirculer">
-                        Central Govt. Circulares
+                        <h6> Central Govt. Circulares</h6>
                       </Link>
                     </li>
                   </ul>

@@ -61,22 +61,27 @@ function Courusel({ cdata }) {
               <ul className="">
                 <li className="item1 ">
                   <Link className="first " to="/about">
-                    SCCI At a Glance
+                    <h6> SCCI At a Glance</h6>
                   </Link>
                 </li>
                 <li className="item1 ">
                   <Link className="first " to="/mission">
-                    Visson&nbsp;&&nbsp;Mission
+                    <h6> vision&nbsp;&&nbsp;Mission</h6>
                   </Link>
                 </li>
                 <li className="item1 ">
                   <Link className="first " to="/messageChairman">
-                    Message From the Chair
+                    <h6> Message From the Chair</h6>
                   </Link>
                 </li>
                 <li className="item1 ">
                   <Link className="first " to="/bhavnagar">
-                    About Bhavnagar
+                    <h6> About Bhavnagar</h6>
+                  </Link>
+                </li>
+                <li className="item1 ">
+                  <Link className="first " to="/sccitrust">
+                    <h6> saurashtra chamber trust</h6>
                   </Link>
                 </li>
               </ul>
@@ -86,22 +91,22 @@ function Courusel({ cdata }) {
               <ul className="">
                 <li className="item1 ">
                   <Link className="first " to="/officebearear">
-                    Office Bearers
+                    <h6> Office Bearers</h6>
                   </Link>
                 </li>
                 <li className="item2">
                   <Link className="first " to="/executivecommittee">
-                    Executive committee
+                    <h6> Executive committee</h6>
                   </Link>
                 </li>
                 <li className="item2">
                   <Link className="first " to="/pastpresident">
-                    Past President
+                    <h6> Past President</h6>
                   </Link>
                 </li>
                 <li className="item1">
                   <Link className="first" to="/comiteemain">
-                    Working committees
+                    <h6> Working committees</h6>
                   </Link>
                 </li>
                 <li className="item1">
@@ -110,7 +115,7 @@ function Courusel({ cdata }) {
                     className="first "
                     to="/secretaries"
                   >
-                    Secretariat
+                    <h6> Secretariat</h6>
                   </Link>
                 </li>
               </ul>
@@ -120,22 +125,27 @@ function Courusel({ cdata }) {
               <ul className="">
                 <li className="item1 ">
                   <Link className="first " to="/certificateoforigin">
-                    Certificate of origin
+                    <h6> Certificate of origin</h6>
                   </Link>
                 </li>
                 <li className="item2">
                   <Link className="first " to="/visarecomandation">
-                    Visa Recomandation
+                    <h6> Visa Recomandation</h6>
                   </Link>
                 </li>
                 <li className="item1 ">
                   <Link className="first " to="/auditorium">
-                    Auditorium
+                    <h6> Auditorium</h6>
                   </Link>
                 </li>
                 <li className="item1 ">
                   <Link className="first " to="/conference">
-                    Conference Hall
+                    <h6> Conference Hall</h6>
+                  </Link>
+                </li>
+                <li className="item1">
+                  <Link className="first" to="/jobportal">
+                    <h6> Job Portal</h6>
                   </Link>
                 </li>
               </ul>
@@ -149,12 +159,12 @@ function Courusel({ cdata }) {
                     to="/upcomingevents"
                     onclick={handleClose}
                   >
-                    Upcoming Events
+                    <h6> Upcoming Events</h6>
                   </Link>
                 </li>
                 <li className="item2">
                   <Link to="/pastevents" onclick={handleClose}>
-                    Past Events
+                    <h6> Past Events</h6>
                   </Link>
                 </li>
               </ul>
@@ -164,14 +174,22 @@ function Courusel({ cdata }) {
               <ul className="">
                 <li className="item1">
                   <Link className="first" to="/bulletin">
-                    Bio-monthly Bulletin
+                    <h6> Bio-monthly Bulletin</h6>
                   </Link>
                 </li>
                 <li className="item2">
-                  <Link to="/industrialdirectory">Industrial Directory</Link>
+                  <h6> </h6>
+                  <Link to="/industrialdirectory">
+                    {" "}
+                    <h6>Industrial Directory</h6>
+                  </Link>
                 </li>
                 <li className="item3">
-                  <Link to="/otherpublication">Other Publications </Link>
+                  <h6> </h6>
+                  <Link to="/otherpublication">
+                    {" "}
+                    <h6>Other Publications </h6>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -180,11 +198,13 @@ function Courusel({ cdata }) {
               <ul className="">
                 <li className="item1">
                   <Link className="first" to="/aboutcoo">
-                    About Coo
+                    <h6> About Coo</h6>
                   </Link>
                 </li>
                 <li className="item2">
-                  <Link to="/procedure">Procedure of coo</Link>
+                  <Link to="/procedure">
+                    <h6> Procedure of coo </h6>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -193,11 +213,13 @@ function Courusel({ cdata }) {
               <ul className="">
                 <li className="item1">
                   <Link className="first" to="/statecirculer">
-                    State Govt. Circulares
+                    <h6> State Govt. Circulares</h6>
                   </Link>
                 </li>
                 <li className="item2">
-                  <Link to="/govcirculer">Central Govt. Circulares</Link>
+                  <Link to="/govcirculer">
+                    <h6> Central Govt. Circulares </h6>
+                  </Link>
                 </li>
               </ul>
             </li>

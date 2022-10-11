@@ -32,6 +32,8 @@ import Header1 from "./Components/Header/Header1";
 import Pastpresident from "./Pages/Team/Pastpresident";
 import PressRelease from "./Pages/Publications/PressRelease";
 import Gallery from "./Pages/Gallery/Gallery";
+import Jobportal from "./Pages/Sevices/Jobportal";
+import ScciTrust from "./Pages/About/ScciTrust";
 function App() {
   return (
     <>
@@ -48,12 +50,14 @@ function App() {
         <Route path="/about" element={<About />} ></Route>
         <Route path="/messageChairman" element={<MessageChairman />} ></Route>
         <Route path="/mission" element={<MissionVision />} ></Route>
+        <Route path="/sccitrust" element={<ScciTrust />} ></Route>
         <Route path="/statecirculer" element={<GovCerculler />}></Route>
         <Route path="/govcirculer" element={<StateCirculer />}></Route>
         <Route path="/certificateoforigin" element={<CertificateOrigin />}></Route>
         <Route path="/visarecomandation" element={<VisaService />}></Route>
         <Route path="/auditorium" element={<Auditoriam />}></Route>
         <Route path="/conference" element={<Conference />}></Route>
+        <Route path="/jobportal" element={<Jobportal />}></Route>
         <Route path="/bulletin" element={<Bulletin />}></Route>
         <Route path="/industrialdirectory" element={<Industry />}></Route>
         <Route path="/otherpublication" element={<Publications />}></Route>

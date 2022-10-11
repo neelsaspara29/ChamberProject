@@ -33,7 +33,7 @@ function Header1() {
                   </li>
                   <li className="item1 ">
                     <Link className="first " to="/mission">
-                      Visson&Mission
+                      vision&Mission
                     </Link>
                   </li>
                   <li className="item1 ">
@@ -44,6 +44,11 @@ function Header1() {
                   <li className="item1 ">
                     <Link className="first " to="/bhavnagar">
                       About Bhavnagar
+                    </Link>
+                  </li>
+                  <li className="item1 ">
+                    <Link className="first " to="/sccitrust">
+                      saurashtra chamber trust
                     </Link>
                   </li>
                 </ul>
@@ -173,7 +178,9 @@ function Header1() {
           <Offcanvas show={show} onHide={handleClose}>
             <Offcanvas.Header closeButton>
               <Offcanvas.Title>
-                SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY - BHAVNAGAR
+                <Link to="/">
+                  SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY - BHAVNAGAR{" "}
+                </Link>
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
@@ -184,8 +191,7 @@ function Header1() {
                     <li className="item1 " onclick={handleClose}>
                       <Link className="first " to="/about">
                         <span onclick={() => handleClose()}>
-                          {" "}
-                          SCCI At a Glance
+                          <h6> SCCI At a Glance</h6>
                         </span>
                       </Link>
                     </li>
@@ -195,7 +201,7 @@ function Header1() {
                         className="first "
                         to="/mission"
                       >
-                        Visson&Mission
+                        <h6> vision & Mission</h6>
                       </Link>
                     </li>
                     <li className="item1 ">
@@ -204,7 +210,7 @@ function Header1() {
                         className="first "
                         to="/messageChairman"
                       >
-                        Message From the Chair
+                        <h6> Message From the Chair</h6>
                       </Link>
                     </li>
                     <li className="item1 ">
@@ -213,7 +219,16 @@ function Header1() {
                         className="first "
                         to="/bhavnagar"
                       >
-                        About Bhavnagar
+                        <h6> About Bhavnagar</h6>
+                      </Link>
+                    </li>
+                    <li className="item1 ">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/sccitrust"
+                      >
+                        <h6> saurashtra chamber trust</h6>
                       </Link>
                     </li>
                   </ul>
@@ -227,7 +242,7 @@ function Header1() {
                         className="first "
                         to="/officebearear"
                       >
-                        Office Bearers
+                        <h6> Office Bearers</h6>
                       </Link>
                     </li>
                     <li className="item2">
@@ -236,17 +251,17 @@ function Header1() {
                         className="first "
                         to="/executivecommittee"
                       >
-                        Executive committee
+                        <h6> Executive committee</h6>
                       </Link>
                     </li>
                     <li className="item2">
                       <Link className="first " to="/pastpresident">
-                        Past President
+                        <h6> Past President</h6>
                       </Link>
                     </li>
                     <li className="item1">
                       <Link className="first " to="/comiteemain">
-                        Working committees
+                        <h6> Working committees</h6>
                       </Link>
                     </li>
                     <li className="item1 ">
@@ -255,7 +270,7 @@ function Header1() {
                         className="first "
                         to="/secretaries"
                       >
-                        Secretariat
+                        <h6> Secretariat</h6>
                       </Link>
                     </li>
                   </ul>
@@ -269,7 +284,7 @@ function Header1() {
                         className="first "
                         to="/certificateoforigin"
                       >
-                        Certificate of origin
+                        <h6> Certificate of origin</h6>
                       </Link>
                     </li>
                     <li className="item2">
@@ -278,7 +293,7 @@ function Header1() {
                         className="first "
                         to="/visarecomandation"
                       >
-                        Visa Recomandation
+                        <h6> Visa Recomandation</h6>
                       </Link>
                     </li>
                     <li className="item1 ">
@@ -287,7 +302,7 @@ function Header1() {
                         className="first "
                         to="/auditorium"
                       >
-                        Auditorium
+                        <h6> Auditorium</h6>
                       </Link>
                     </li>
                     <li className="item1 ">
@@ -296,7 +311,16 @@ function Header1() {
                         className="first "
                         to="/conference"
                       >
-                        Conference Hall
+                        <h6> Conference Hall</h6>
+                      </Link>
+                    </li>
+                    <li className="item1">
+                      <Link
+                        onclick={handleClose}
+                        className="first"
+                        to="/jobportal"
+                      >
+                        <h6> Job Portal</h6>
                       </Link>
                     </li>
                   </ul>
@@ -310,12 +334,12 @@ function Header1() {
                         to="/upcomingevents"
                         onclick={handleClose}
                       >
-                        Upcoming Events
+                        <h6> Upcoming Events</h6>
                       </Link>
                     </li>
                     <li className="item2">
                       <Link to="/pastevents" onclick={handleClose}>
-                        Past Events
+                        <h6> Past Events</h6>
                       </Link>
                     </li>
                   </ul>
@@ -329,17 +353,17 @@ function Header1() {
                         className="first"
                         to="/bulletin"
                       >
-                        Bio-monthly Bulletin
+                        <h6> Bio-monthly Bulletin</h6>
                       </Link>
                     </li>
                     <li className="item2">
                       <Link onclick={handleClose} to="/industrialdirectory">
-                        Industrial Directory
+                        <h6> Industrial Directory</h6>
                       </Link>
                     </li>
                     <li className="item3">
                       <Link onclick={handleClose} to="/otherpublication">
-                        Other Publications{" "}
+                        <h6> Other Publications </h6>
                       </Link>
                     </li>
                   </ul>
@@ -353,12 +377,12 @@ function Header1() {
                         className="first"
                         to="/aboutcoo"
                       >
-                        About Coo
+                        <h6> About Coo</h6>
                       </Link>
                     </li>
                     <li className="item2">
                       <Link onclick={handleClose} to="/procedure">
-                        Procedure of coo
+                        <h6> Procedure of coo</h6>
                       </Link>
                     </li>
                   </ul>
@@ -372,12 +396,12 @@ function Header1() {
                         className="first"
                         to="/statecirculer"
                       >
-                        State Govt. circulars
+                        <h6> State Govt. circulars</h6>
                       </Link>
                     </li>
                     <li className="item2">
                       <Link onclick={handleClose} to="/govcirculer">
-                        Central Govt. circulars
+                        <h6> Central Govt. circulars</h6>
                       </Link>
                     </li>
                   </ul>

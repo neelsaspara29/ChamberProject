@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
+import Header1 from "../../Components/Header/Header1";
 import { ApiPost } from "../../Helper/API/Apidata";
 
 function Gallery() {
@@ -29,6 +30,7 @@ function Gallery() {
   }, []);
   return (
     <>
+      <Header1 />
       <h3 className="text-center mt-5 uppercase">Video Gallery</h3>
       <div className="w-4/5 vedio_display d-flex flex-wrap mx-auto mt-2 justify-center overflow-x-scroll">
         {data &&
