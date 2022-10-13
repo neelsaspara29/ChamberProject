@@ -19,21 +19,29 @@ function Header1() {
                 style={{ width: "50px", height: "50px" }}
                 alt=""
               />
+              {/* <span className="text-primary" style={{ width: "30%" }}> */}{" "}
+              {/* <h6> */}{" "}
+              <h6 style={{ color: "#0071b9" }}>
+                {" "}
+                SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY{" "}
+              </h6>
+              {/* </h6> */}
+              {/* </span> */}
             </Link>
           </div>
           <div id="main_menu">
             <ul className="main_menu">
               <li className="item1 ">
-                About Us
+                About US
                 <ul className="">
                   <li className="item1 ">
-                    <Link className="first " to="/about">
+                    <Link className="first " to="/about" onClick={handleClose}>
                       SCCI At a Glance
                     </Link>
                   </li>
                   <li className="item1 ">
                     <Link className="first " to="/mission">
-                      vision&Mission
+                      Vision & Mission
                     </Link>
                   </li>
                   <li className="item1 ">
@@ -47,7 +55,11 @@ function Header1() {
                     </Link>
                   </li>
                   <li className="item1 ">
-                    <Link className="first " to="/sccitrust">
+                    <Link
+                      onclick={handleClose}
+                      className="first "
+                      to="/sccitrust"
+                    >
                       saurashtra chamber trust
                     </Link>
                   </li>
@@ -71,6 +83,11 @@ function Header1() {
                       Past President
                     </Link>
                   </li>
+                  <li className="item1">
+                    <Link className="first" to="/comiteemain">
+                      Working committees
+                    </Link>
+                  </li>
                   <li className="item1 ">
                     <Link className="first " to="/secretaries">
                       Secretariat
@@ -89,6 +106,9 @@ function Header1() {
                   </li>
                   <li className="item2">
                     <Link to="/industrialdirectory">Industrial Directory</Link>
+                  </li>
+                  <li className="item2">
+                    <Link to="/pressrelease">Press Release</Link>
                   </li>
                   <li className="item3">
                     <Link to="/otherpublication">Other Publications </Link>
@@ -109,19 +129,48 @@ function Header1() {
                 </ul>
               </li>
               <li className="item6 ">
-                GOVT. Cercullers
+                Events
                 <ul className="">
                   <li className="item1">
-                    <Link className="first" to="/statecirculer">
-                      State Govt. Cercullers
+                    <Link className="first" to="/upcomingevents">
+                      Upcoming Events
                     </Link>
                   </li>
                   <li className="item2">
-                    <Link to="/govcirculer">Central Govt. Cercullers</Link>
+                    <Link to="/pastevents">Past Events</Link>
                   </li>
                 </ul>
               </li>
-
+              <li className="item7  ">
+                Services
+                <ul className="">
+                  <li className="item1">
+                    <Link className="first" to="/certificateoforigin">
+                      certificate Of Origin
+                    </Link>
+                  </li>
+                  <li className="item1">
+                    <Link className="first" to="/visarecomandation">
+                      Visa Recomandation
+                    </Link>
+                  </li>
+                  <li className="item1">
+                    <Link className="first" to="/auditorium">
+                      Auditorium
+                    </Link>
+                  </li>
+                  <li className="item1">
+                    <Link className="first" to="/conference">
+                      Conference Hall
+                    </Link>
+                  </li>
+                  <li className="item1">
+                    <Link className="first" to="/jobportal">
+                      Placement Services
+                    </Link>
+                  </li>
+                </ul>
+              </li>
               <li className="item7 cursor-pointer ">Membership Renewal</li>
             </ul>
           </div>
@@ -129,35 +178,35 @@ function Header1() {
           <div id="social_header">
             <Link
               className="facebook"
-              to="https://www.facebook.com/ftlchamber/"
+              to="https://www.facebook.com/scci.bhavnagar"
               target="_blank"
             >
               <span className="fa fa-facebook"></span>
             </Link>
             <Link
               className="twitter"
-              to="https://twitter.com/ftlchamber"
+              to="https://www.facebook.com/scci.bhavnagar"
               target="_blank"
             >
               <span className="fa fa-twitter"></span>
             </Link>
             <Link
               className="linkedin"
-              to="https://www.linkedin.com/groups/855347"
+              to="https://api.whatsapp.com/send/?phone=919408807980&text&type=phone_number&app_absent=0"
               target="_blank"
             >
-              <span className="fa fa-linkedin"></span>
+              <span className="fa fa-whatsapp"></span>
             </Link>
             <Link
               className="instagram"
-              to="https://www.instagram.com/ftlchamber/"
+              to="https://www.facebook.com/scci.bhavnagar"
               target="_blank"
             >
               <span className="fa fa-instagram"></span>
             </Link>
             <Link
               className="youtube"
-              to="https://www.youtube.com/channel/UC6poMQbbx9lT8ltWGlRU2eA?view_as=subscriber"
+              to="https://www.facebook.com/scci.bhavnagar"
             >
               <span className="fa fa-youtube"></span>
             </Link>
@@ -320,7 +369,7 @@ function Header1() {
                         className="first"
                         to="/jobportal"
                       >
-                        <h6> Job Portal</h6>
+                        <h6> Placement Services</h6>
                       </Link>
                     </li>
                   </ul>

@@ -145,7 +145,7 @@ function Courusel({ cdata }) {
                 </li>
                 <li className="item1">
                   <Link className="first" to="/jobportal">
-                    <h6> Job Portal</h6>
+                    <h6> Placement Services</h6>
                   </Link>
                 </li>
               </ul>

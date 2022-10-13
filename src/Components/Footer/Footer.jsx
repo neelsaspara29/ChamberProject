@@ -36,22 +36,46 @@ export default function Footer() {
           </div> */}
 
           <div className="mx-auto">
-            <a href="" className="me-4 text-reset">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/scci.bhavnagar"
+              className="me-4 text-reset"
+            >
               <MDBIcon icon="facebook-f" />
             </a>
-            <a href="" className="me-4 text-reset">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/scci.bhavnagar"
+              className="me-4 text-reset"
+            >
               <MDBIcon icon="twitter" />
             </a>
-            <a href="" className="me-4 text-reset">
-              <MDBIcon icon="google" />
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send/?phone=919408807980&text&type=phone_number&app_absent=0"
+              className="me-4 text-reset"
+            >
+              <MDBIcon icon="whatsapp" />
             </a>
-            <a href="" className="me-4 text-reset">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/scci.bhavnagar"
+              className="me-4 text-reset"
+            >
               <MDBIcon icon="instagram" />
             </a>
-            <a href="" className="me-4 text-reset">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/scci.bhavnagar"
+              className="me-4 text-reset"
+            >
               <MDBIcon icon="linkedin" />
             </a>
-            <a href="" className="me-4 text-reset">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/scci.bhavnagar"
+              className="me-4 text-reset"
+            >
               <MDBIcon icon="youtube" />
             </a>
           </div>
@@ -106,7 +130,9 @@ export default function Footer() {
                 xl="3"
                 className="mx-auto mb-md-0 mb-4 capitalize"
               >
-                <h6 className="text-uppercase fw-bold mb-4">bank details</h6>
+                <h6 className="text-uppercase fw-bold mb-4">
+                  bank details of scci
+                </h6>
                 <p>
                   <MDBIcon icon="bank" className="me-3" />
                   State bank of india
@@ -133,7 +159,7 @@ export default function Footer() {
                 </p>
                 <p>
                   Note: After Succesfully Payment Share Details with us for
-                  contribution
+                  Confirmation
                 </p>
               </MDBCol>
             </MDBRow>

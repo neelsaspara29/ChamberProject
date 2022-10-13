@@ -15,9 +15,13 @@ function Header() {
             <Link id="logo" to="/">
               <img
                 src="/Assets/sccilogo.png"
-                style={{ width: "9em", height: "7em" }}
+                style={{ width: "9em", height: "6.5em" }}
                 alt=""
               />
+              <span className="" style={{ width: "30%", color: "#0071b9" }}>
+                {" "}
+                SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY
+              </span>
             </Link>
           </div>
           <div id="main_menu">
@@ -157,7 +161,7 @@ function Header() {
                   </li>
                   <li className="item1">
                     <Link className="first" to="/jobportal">
-                      Job Portal
+                      Placement Services
                     </Link>
                   </li>
                 </ul>
@@ -169,35 +173,35 @@ function Header() {
           <div id="social_header">
             <Link
               className="facebook"
-              to="https://www.facebook.com/ftlchamber/"
+              to="https://www.facebook.com/scci.bhavnagar"
               target="_blank"
             >
               <span className="fa fa-facebook"></span>
             </Link>
             <Link
               className="twitter"
-              to="https://twitter.com/ftlchamber"
+              to="https://www.facebook.com/scci.bhavnagar"
               target="_blank"
             >
               <span className="fa fa-twitter"></span>
             </Link>
             <Link
               className="linkedin"
-              to="https://www.linkedin.com/groups/855347"
+              to="https://api.whatsapp.com/send/?phone=919408807980&text&type=phone_number&app_absent=0"
               target="_blank"
             >
-              <span className="fa fa-linkedin"></span>
+              <span className="fa fa-whatsapp"></span>
             </Link>
             <Link
               className="instagram"
-              to="https://www.instagram.com/ftlchamber/"
+              to="https://www.facebook.com/scci.bhavnagar"
               target="_blank"
             >
               <span className="fa fa-instagram"></span>
             </Link>
             <Link
               className="youtube"
-              to="https://www.youtube.com/channel/UC6poMQbbx9lT8ltWGlRU2eA?view_as=subscriber"
+              to="https://www.facebook.com/scci.bhavnagar"
             >
               <span className="fa fa-youtube"></span>
             </Link>
@@ -371,7 +375,7 @@ function Header() {
                         className="first"
                         to="/jobportal"
                       >
-                        <h6> Job Portal</h6>
+                        <h6>Placement Services</h6>
                       </Link>
                     </li>
                   </ul>

@@ -640,8 +640,12 @@ p.copyright a {
     text-align: start;
 
   }
+  .wrapper a{
+    width: 180px  !important;
+    font-size: .5em !important;
+  }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   #logo img {
     max-width: 180px;
     width: 140px;

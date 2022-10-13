@@ -167,7 +167,9 @@ function Conference() {
                     <span>{item},&nbsp;</span>
                   ))}
                 </td>
-                <td data-label="Capacity">30,000</td>
+                <td data-label="Capacity">
+                  40 person + 1 whiteboard + 2 Tables{" "}
+                </td>
                 <td data-label="Rent">&#8377;{data[0]?.rent}/day</td>
               </tr>
             </tbody>

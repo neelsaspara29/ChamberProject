@@ -99,7 +99,7 @@ function ScciTrust() {
       </div>
       <div>
         <h1 className="text-danger title2  text-center mt-12 uppercase">
-          contribution under sogrcsr
+          contribution under 80g & csr
         </h1>
       </div>
       <div className="w-3/4 mt-2     mx-auto pub" style={{ fontSize: "16px" }}>
@@ -120,7 +120,7 @@ function ScciTrust() {
       <div className="w-100 d-flex  scci_certificate     justify-center">
         <div>
           <h4 className="uppercase text-center text-primary">
-            sog certificate
+            80g certificate
           </h4>
           <div className="p-2">
             <img src="/Assets/Events/event1.jpg" alt="" srcset="" />

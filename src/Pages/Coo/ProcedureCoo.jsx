@@ -1,6 +1,8 @@
 import React from "react";
 import Header1 from "../../Components/Header/Header1";
-
+import er from "../../Helper/pdf/COO/ER.pdf";
+import em from "../../Helper/pdf/COO/EM.pdf";
+import faq from "../../Helper/pdf/COO/FAQ.pdf";
 function ProcedureCoo() {
   return (
     <>
@@ -8,52 +10,83 @@ function ProcedureCoo() {
       <div className="text-danger text-center my-4 uppercase">
         <h2 className="title2">Procedure</h2>
       </div>
-      <div
-        className="w-3/4  m-auto pub text-center"
-        style={{ fontSize: "16px" }}
-      >
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quaerat
-        quia aspernatur voluptatum repudiandae, iste soluta earum est nobis,
-        officiis fugiat vel blanditiis ut ea nemo tenetur repellat dolore
-        deserunt modi ullam? Rem, quidem?Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Aut provident quibusdam quia exercitationem itaque,
-        alias nihil sequi impedit harum excepturi aliquid quasi tempora quae ea
-        est accusantium. Maiores architecto perferendis alias, id placeat cum
-        tempora amet esse dignissimos, temporibus magni. Non, in recusandae?
-        Ullam eius magnam eveniet vitae maiores, temporibus hic asperiores at
-        cumque magni amet, rerum accusantium! Illo quasi sunt exercitationem qui
-        id corrupti quibusdam ad nam cumque amet temporibus ratione aspernatur
-        impedit expedita dolores voluptatibus numquam, est at vero quod
-        reiciendis saepe eveniet! Autem ex hic recusandae. Accusamus error
-        dolore, sequi soluta quia impedit dignissimos reiciendis consectetur
-        cupiditate?
+      <div className="w-3/4  m-auto pub text" style={{ fontSize: "16px" }}>
+        <b>
+          {" "}
+          Dear Member's, <br />
+          Greetings from Saurashtra Chamber of Commerce and Industry !!!{" "}
+        </b>
+        <br />
+        <br /> As you know, the units doing export operations require
+        Certificate of Origin this Certificate of Origin is issued by the
+        authorized local Chamber of Commerce. Apart from Bhavnagar, Saurashtra
+        Chamber of Commerce and Industry has been authorized by the department
+        of the Directorate General of Foreign Trade (DGFT), Ministry of Commerce
+        & Industry, Government of India to issue Certificate of Origin
+        (Non-Preferential) to units exporting from Bhavnagar and Saurashtra
+        Region. Presently, as parts of e-Governance of the Government of India
+        Directorate General of Foreign Trade (DGFT) are making all operations of
+        Certificate of Origin (Non-Preferential) is compulsorily online w.e.f.
+        01.04.2022 through the authorized common portal coo.dgtf.gov.in. In
+        which the exporters have to select Saurashtra Chamber of Commerce and
+        Industry-Bhavnagar in the issuing agency while making the online
+        application. Hence, the units doing export operations have to do their
+        one-time registration on the above authorized common portal for issuance
+        of Certificate of Origin (Non-Preferential). Exporter Registration
+        Manual and Exporter Application Manual are enclosed herewith for all
+        process information on registration and online application on this
+        online portal. If you need any other information or guidance in this
+        matter, you can contact our chamber's employee Mr. Jignesh Bhatt on the
+        official mobile number of the Chamber at +91-9408 80 7980 during office
+        hours.
       </div>
       <table className="w-3/4 mt-3 mx-auto ">
         {/* <caption>Statement Summary</caption> */}
         <thead>
           <tr>
-            <th scope="col">PDF1</th>
-            <th scope="col">PDF2</th>
-            <th scope="col">PDF3</th>
+            <th scope="col">Exporter Manual</th>
+            <th scope="col">Exporter Registratoin</th>
+            <th scope="col">FAQs</th>
             <th scope="col">PDF4</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td data-label="PFD1">
-              <div className="btn btn-primary px-2 py-1  inline pub_text">
-                Download
-              </div>
+            <td data-label="Exporter Manual">
+              <a
+                href={em}
+                className="hover:text-white"
+                target="_blank"
+                // download
+              >
+                <div className="btn btn-primary px-2 py-1  inline pub_text">
+                  Download
+                </div>
+              </a>
             </td>
-            <td data-label="PDF2">
-              <div className="btn btn-primary px-2 py-1  inline pub_text">
-                Download
-              </div>
+            <td data-label="Exporter Registratoin">
+              <a
+                href={er}
+                className="hover:text-white"
+                target="_blank"
+                // download
+              >
+                <div className="btn btn-primary px-2 py-1  inline pub_text">
+                  Download
+                </div>
+              </a>
             </td>
-            <td data-label="PDF3">
-              <div className="btn btn-primary px-2 py-1  inline pub_text">
-                Download
-              </div>
+            <td data-label="FAQs">
+              <a
+                href={faq}
+                className="hover:text-white"
+                target="_blank"
+                // download
+              >
+                <div className="btn btn-primary px-2 py-1  inline pub_text">
+                  Download
+                </div>
+              </a>
             </td>
             <td data-label="PDF4">
               <div className="btn btn-primary px-2 py-1  inline pub_text">
@@ -65,20 +98,11 @@ function ProcedureCoo() {
       </table>
       <div className="d-flex mx-auto mt-10 w-3/4 justify-start">
         <div className="procedure_coo">
-          <div className="text-green-500">
-            <h3 className="title2 text-primary">
-              Following Are Steps You Have to Follow
-            </h3>
-          </div>
-
           <div>
-            <ol type="1" className="capitalize" style={{ padding: "0" }}>
-              <li>1. Download PDF</li>
-              <li>2. Fill Form</li>
-              <li>3. Send Us</li>
-            </ol>
             <p className="text-primary " style={{ fontSize: "12px" }}>
-              <a href="http://">click hear to fill form</a>
+              <a href="https://coo.dgft.gov.in/" target="_blank">
+                click hear to apply in our dgft
+              </a>
             </p>
           </div>
         </div>

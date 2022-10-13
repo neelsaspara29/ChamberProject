@@ -9,7 +9,7 @@ function Jobportal() {
       <div className="w-2/3 m-auto mt-4 pub">
         <div>
           <h2 className="text-center title2 text-danger uppercase">
-            Job portal
+            Placement Services
           </h2>
         </div>
         <div className="mt-5" style={{ fontSize: "16px" }}>

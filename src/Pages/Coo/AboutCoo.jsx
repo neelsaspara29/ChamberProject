@@ -11,18 +11,35 @@ function AboutCoo() {
         </h1>
       </div>
       <div className="w-3/4 m-auto pub" style={{ fontSize: "16px" }}>
-        <p className="text-center">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
-          qui. Cumque, amet deserunt quisquam dolore eius tempore quo nam
-          eligendi nemo quae! Doloremque aliquid laboriosam tenetur soluta
-          voluptatem deleniti ipsum quo? Enim quis labore reiciendis modi,
-          veniam, ipsam at nihil fuga autem porro, beatae facere ad voluptas
-          ipsum quidem fugiat excepturi natus sapiente illum velit aperiam
-          repellat esse blanditiis. Quo. Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Laborum itaque quia quos. Cum soluta facilis
-          doloribus nihil porro non nam ducimus quod labore modi ut magni
-          incidunt harum vel totam, quam mollitia reprehenderit culpa amet eos!
-          Libero nulla dignissimos molestiae.
+        <p className="text">
+          <b>
+            {" "}
+            Dear Member's, <br />
+            Greetings from Saurashtra Chamber of Commerce and Industry !!!{" "}
+          </b>
+          <br />
+          <br /> As you know, the units doing export operations require
+          Certificate of Origin this Certificate of Origin is issued by the
+          authorized local Chamber of Commerce. Apart from Bhavnagar, Saurashtra
+          Chamber of Commerce and Industry has been authorized by the department
+          of the Directorate General of Foreign Trade (DGFT), Ministry of
+          Commerce & Industry, Government of India to issue Certificate of
+          Origin (Non-Preferential) to units exporting from Bhavnagar and
+          Saurashtra Region. Presently, as parts of e-Governance of the
+          Government of India Directorate General of Foreign Trade (DGFT) are
+          making all operations of Certificate of Origin (Non-Preferential) is
+          compulsorily online w.e.f. 01.04.2022 through the authorized common
+          portal coo.dgtf.gov.in. In which the exporters have to select
+          Saurashtra Chamber of Commerce and Industry-Bhavnagar in the issuing
+          agency while making the online application. Hence, the units doing
+          export operations have to do their one-time registration on the above
+          authorized common portal for issuance of Certificate of Origin
+          (Non-Preferential). Exporter Registration Manual and Exporter
+          Application Manual are enclosed herewith for all process information
+          on registration and online application on this online portal. If you
+          need any other information or guidance in this matter, you can contact
+          our chamber's employee Mr. Jignesh Bhatt on the official mobile number
+          of the Chamber at +91-9408 80 7980 during office hours.
         </p>
       </div>
     </>
