@@ -18,10 +18,6 @@ function Header() {
                 style={{ width: "9em", height: "6.5em" }}
                 alt=""
               />
-              <span className="" style={{ width: "30%", color: "#0071b9" }}>
-                {" "}
-                SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY
-              </span>
             </Link>
           </div>
           <div id="main_menu">
@@ -170,6 +166,9 @@ function Header() {
             </ul>
           </div>
           <div id="has_it_logo"></div>
+          <div className="trut_name">
+            <h5> SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY</h5>
+          </div>
           <div id="social_header">
             <Link
               className="facebook"

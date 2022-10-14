@@ -68,7 +68,12 @@ body {
   top: 5px;
   bottom: 5px;
 }
-
+.trut_name{
+  position: absolute;
+  left: 36%;
+  top: 22px;
+  color: #0071b9;
+}
 #header.scrolled #social_header,
 #header.scrolled #has_it_logo {
   display: none;

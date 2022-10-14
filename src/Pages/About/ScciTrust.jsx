@@ -37,7 +37,7 @@ function ScciTrust() {
         </h1>
       </div>
       <div className="w-3/4 mx-auto mt-12 pub" style={{ fontSize: "16px" }}>
-        <p className="text-center text-red-500">
+        <p className="text-center ">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
           qui. Cumque, amet deserunt quisquam dolore eius tempore quo nam
           eligendi nemo quae! Doloremque aliquid laboriosam tenetur soluta
@@ -74,7 +74,10 @@ function ScciTrust() {
       <div className="w-4/5 mt-16 mx-auto pub flow-root">
         {data?.map((single, idx) => {
           return (
-            <div class={(idx + 1) % 2 == 0 ? "city-box2" : "city-box1"}>
+            <div
+              style={{ textAlign: (idx + 1) % 2 == 0 ? "right" : "left" }}
+              class={(idx + 1) % 2 == 0 ? "city-box2" : "city-box1"}
+            >
               <img src={single.photo} alt="Surat By Road" />
               {/* <h3 className="text-primary title2">Activity Name: </h3> */}
               <p>{single.description}</p>
@@ -117,21 +120,21 @@ function ScciTrust() {
           Libero nulla dignissimos molestiae.
         </p>
       </div>
-      <div className="w-100 d-flex  scci_certificate     justify-center">
+      <div className="w-100 d-flex gap-1 scci_certificate     justify-center">
         <div>
           <h4 className="uppercase text-center text-primary">
             80g certificate
           </h4>
-          <div className="p-2">
-            <img src="/Assets/Events/event1.jpg" alt="" srcset="" />
+          <div className="p-2 border border-1">
+            <img src="/Assets/trutdoc/80G .jpg" alt="" srcset="" />
           </div>
         </div>
         <div>
           <h4 className="uppercase text-center text-primary">
             csr certificate
           </h4>
-          <div className="p-2">
-            <img src="/Assets/Events/event1.jpg" alt="" srcset="" />
+          <div className="p-2  border border-1">
+            <img src="/Assets/trutdoc/CSR .jpg" alt="" srcset="" />
           </div>
         </div>
       </div>

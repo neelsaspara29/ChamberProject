@@ -16,15 +16,15 @@ function Header1() {
             <Link id="logo" to="/">
               <img
                 src="/Assets/sccilogo.png"
-                style={{ width: "50px", height: "50px" }}
+                style={{ width: "60px", height: "50px" }}
                 alt=""
               />
               {/* <span className="text-primary" style={{ width: "30%" }}> */}{" "}
               {/* <h6> */}{" "}
-              <h6 style={{ color: "#0071b9" }}>
+              {/* <h6 style={{ color: "#0071b9" }}>
                 {" "}
                 SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY{" "}
-              </h6>
+              </h6> */}
               {/* </h6> */}
               {/* </span> */}
             </Link>
@@ -175,6 +175,9 @@ function Header1() {
             </ul>
           </div>
           <div id="has_it_logo"></div>
+          {/* <div className="trut_name">
+            <h5> SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY</h5>
+          </div> */}
           <div id="social_header">
             <Link
               className="facebook"

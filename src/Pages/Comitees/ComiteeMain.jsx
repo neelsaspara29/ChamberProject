@@ -11,7 +11,10 @@ function ComiteeMain() {
     })
       .then((data) => {
         console.log("res-", data.data.data);
-        setData(data?.data?.data);
+        let tempdata = data?.data?.data;
+        tempdata = tempdata.sort((data1, data2) => data1.number - data2.number);
+        console.log(tempdata);
+        setData(tempdata);
       })
       .catch((err) => console.log(err));
   };

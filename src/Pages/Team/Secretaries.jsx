@@ -9,7 +9,10 @@ function Secretaries() {
     await ApiGet("/team/fullTeam")
       .then((data) => {
         console.log("res-", data.data.data);
-        setData(data?.data?.data?.secretariats);
+        let tempdata = data?.data?.data?.secretariats;
+        tempdata = tempdata.sort((data1, data2) => data1.number - data2.number);
+        console.log(tempdata);
+        setData(tempdata); 
       })
       .catch((err) => console.log(err));
   };

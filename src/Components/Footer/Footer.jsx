@@ -165,16 +165,23 @@ export default function Footer() {
             </MDBRow>
           </MDBContainer>
         </section>
-        <div
-          className="cursor-pointer  mx-auto text-center mb-1 p-2"
-          style={{
-            backgroundColor: "rgba(0, 0, 0, 0.05)",
-            maxWidth: "30vw",
-            borderRadius: "4px",
-          }}
+        <a
+          href={data?.listOfHolidays}
+          // className="hover:text-white"
+          target="_blank"
+          // download
         >
-          Download List Of Holidays
-        </div>
+          <div
+            className="cursor-pointer  mx-auto text-center mb-1 p-2"
+            style={{
+              backgroundColor: "rgba(0, 0, 0, 0.05)",
+              maxWidth: "30vw",
+              borderRadius: "4px",
+            }}
+          >
+            Download List Of Holidays
+          </div>
+        </a>
         <div
           className="text-center p-4"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}

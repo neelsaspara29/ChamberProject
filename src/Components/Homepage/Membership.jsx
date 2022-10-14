@@ -10,7 +10,7 @@ function Membership() {
       <article className="bg-white membership m-auto w-5/6 pub ">
         <section className=" lg:pt-10 bg-white">
           <section className="text-center">
-            <h1 className="text-danger title2"> About MemberShip</h1>
+            <h1 className="text-danger title2 uppercase"> About MemberShip</h1>
           </section>
           <section className="overview ">
             <h3 className="text-green-500 member_responsive text-center">

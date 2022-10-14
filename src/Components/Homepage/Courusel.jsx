@@ -19,7 +19,7 @@ function Courusel({ cdata }) {
             <img
               src="/Assets/sccilogo.png"
               alt="SCCI"
-              style={{ width: "49px", height: "49px", borderRadius: "50%" }}
+              style={{ width: "55px", height: "50px", borderRadius: "50%" }}
               className="bg-transparent inline"
               srcset=""
             />

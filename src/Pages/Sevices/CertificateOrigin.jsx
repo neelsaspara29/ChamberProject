@@ -19,11 +19,13 @@ function CertificateOrigin() {
             placeat magni.
           </p>
           <p className="text-blue-400 hover:text-blue-900 d-flex justify-content-center">
-            <Link to="/">APPLY IN OUR DGFT SERVICE</Link>
+            <a href="https://coo.dgft.gov.in/" target="_blank">
+              {" "}
+              APPLY IN OUR DGFT SERVICE{" "}
+            </a>
           </p>
           <div className="d-flex justify-content-center">
-
-          <button className="btn btn-primary "> DOWNLOAD PDF</button>
+            <button className="btn btn-primary "> DOWNLOAD PDF</button>
           </div>
         </div>
       </div>
