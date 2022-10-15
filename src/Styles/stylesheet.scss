@@ -70,9 +70,11 @@ body {
 }
 .trut_name{
   position: absolute;
-  left: 36%;
-  top: 20px;
+  left: 23%;
+  top: 15px;
   color: #0071b9;
+  text-align: center;
+  width: 49%;
 }
 #header.scrolled #social_header,
 #header.scrolled #has_it_logo {
@@ -265,11 +267,11 @@ body {
 }
 
 #social_header a.instagram:hover {
-  background: #125688 !important;
+  background:  radial-gradient(circle at 60% 107%, #fdf497 0%, #fdf497 8%, #fd5949 48%,#d6249f 63%,#285AEB 92%) !important;
 }
 
-#social_header a.pinterest:hover {
-  background: #cb2027 !important;
+#social_header a.whatsapp:hover {
+  background: #37c547 !important;
 }
 
 #social_header a.google:hover {
@@ -277,11 +279,12 @@ body {
 }
 
 #social_header a.youtube:hover {
-  background: #ed1c24 !important;
+  background: #cc3035 !important;
 }
 a:-webkit-any-link {
   text-decoration: none;
   color: inherit;
+  margin: auto;
 }
 #logo {
   display: flex;
@@ -765,3 +768,25 @@ border-radius: 12px;
 .swiper-horizontal>.swiper-scrollbar{
   display: none;
 }
+.twitter{
+  background-color: #00aced !important;
+}
+.whatsapp{
+  background-color: 	#4FCE5D !important;
+}
+.instagram{
+  background:  radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
+}
+
+.youtube{
+  background-color: #ed1c24 !important;
+}
+@media screen and (max-width: 400px) {
+    .pub1{
+      height: 25em !important;
+      width: 95% !important;
+    }
+  .pub1 img{
+    object-fit: fill;
+  }
+    }

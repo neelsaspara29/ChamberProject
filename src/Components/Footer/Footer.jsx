@@ -36,47 +36,48 @@ export default function Footer() {
           </div> */}
 
           <div className="mx-auto">
+            <b> FOLOW US ON </b>&nbsp; &nbsp; &nbsp;
             <a
               target="_blank"
               href="https://www.facebook.com/scci.bhavnagar"
               className="me-4 text-reset"
             >
-              <MDBIcon icon="facebook-f" />
+              <MDBIcon icon="facebook-f" className="text-blue-600" />
             </a>
             <a
               target="_blank"
               href="https://www.facebook.com/scci.bhavnagar"
               className="me-4 text-reset"
             >
-              <MDBIcon icon="twitter" />
+              <MDBIcon icon="twitter" className="text-blue-400" />
             </a>
             <a
               target="_blank"
               href="https://api.whatsapp.com/send/?phone=919408807980&text&type=phone_number&app_absent=0"
               className="me-4 text-reset"
             >
-              <MDBIcon icon="whatsapp" />
+              <MDBIcon icon="whatsapp" className="text-green-500" />
             </a>
             <a
               target="_blank"
               href="https://www.facebook.com/scci.bhavnagar"
               className="me-4 text-reset"
             >
-              <MDBIcon icon="instagram" />
+              <MDBIcon icon="instagram" className="text-red-600" />
             </a>
             <a
               target="_blank"
               href="https://www.facebook.com/scci.bhavnagar"
               className="me-4 text-reset"
             >
-              <MDBIcon icon="linkedin" />
+              <MDBIcon icon="linkedin" className="text-blue-800" />
             </a>
             <a
               target="_blank"
               href="https://www.facebook.com/scci.bhavnagar"
               className="me-4 text-reset"
             >
-              <MDBIcon icon="youtube" />
+              <MDBIcon icon="youtube" className="text-red-700" />
             </a>
           </div>
         </section>
@@ -165,23 +166,23 @@ export default function Footer() {
             </MDBRow>
           </MDBContainer>
         </section>
-        <a
-          href={data?.listOfHolidays}
-          // className="hover:text-white"
-          target="_blank"
-          // download
+        <div
+          className="cursor-pointer  mx-auto text-center block mb-1 p-2"
+          style={{
+            backgroundColor: "rgba(0, 0, 0, 0.05)",
+            maxWidth: "30%",
+            borderRadius: "4px",
+          }}
         >
-          <div
-            className="cursor-pointer  mx-auto text-center mb-1 p-2"
-            style={{
-              backgroundColor: "rgba(0, 0, 0, 0.05)",
-              maxWidth: "30vw",
-              borderRadius: "4px",
-            }}
+          <a
+            href={data?.listOfHolidays}
+            className="block"
+            target="_blank"
+            // download
           >
             Download List Of Holidays
-          </div>
-        </a>
+          </a>
+        </div>
         <div
           className="text-center p-4"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}

@@ -81,7 +81,7 @@ function ScciTrust() {
             >
               <img src={single.photo} alt="Surat By Road" />
               {/* <h3 className="text-primary title2">Activity Name: </h3> */}
-              <p>{single.description}</p>
+              <p className="text-gray-600 font-serif">{single.description}</p>
             </div>
           );
         })}

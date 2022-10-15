@@ -1504,8 +1504,8 @@ table th {
 .city-box1 img {
   float: left;
   margin-right: 10px;
-  height: 235px;
-  width: 260px;
+  height: 240px;
+  width: 270px;
   border-radius: 5px;
 }
 
@@ -1534,17 +1534,24 @@ table th {
   // text-align: justify;
   margin-top: 12px;
   vertical-align: middle;
+  
 }
 
 .city-box2 img {
   float: right;
   margin-left: 10px;
-  height: 200px;
-  width: 200px;
+  height: 240px;
+  width: 270px;
   border-radius: 5px;
 }
 
 .swiper-button-next,
 .swiper-button-prev{
     visibility: hidden;
+  }
+  @media screen and (max-width: 800px) {
+.city-box1,.city-box2 p{
+  text-align: justify;
+}
+
   }

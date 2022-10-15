@@ -45,8 +45,8 @@ function Home() {
       <Courusel cdata={cdata} />
       <Events />
       <div
-        className="w-5/6 pub mx-auto  lg:px-8 lg:pt-10 flow-root my-4 pub"
-        style={{ height: "400px" }}
+        className="w-11/12 pub mx-auto  lg:px-8 lg:pt-10 flow-root my-4 pub1"
+        style={{ height: "48em" }}
       >
         {/* <Gallery /> */}
         <Swiper
@@ -58,7 +58,6 @@ function Home() {
           }}
           spaceBetween={10}
           loop={true}
-          
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}

@@ -157,7 +157,7 @@ function Header() {
                   </li>
                   <li className="item1 ">
                     <Link className="first " to="/dinninghall">
-                      <h6> Dinnig Hall</h6>
+                      Dinnig Hall
                     </Link>
                   </li>
                   <li className="item1">
@@ -190,7 +190,7 @@ function Header() {
               <span className="fa fa-twitter"></span>
             </Link>
             <Link
-              className="linkedin"
+              className="whatsapp"
               to="https://api.whatsapp.com/send/?phone=919408807980&text&type=phone_number&app_absent=0"
               target="_blank"
             >
@@ -379,7 +379,7 @@ function Header() {
                         className="first "
                         to="/dinnighall"
                       >
-                        <h6> Dinnig Hall</h6>
+                        Dinnig Hall
                       </Link>
                     </li>
                     <li className="item1">

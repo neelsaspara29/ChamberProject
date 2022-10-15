@@ -14,7 +14,7 @@ function Logocourosel() {
             SCCI associated with leading business organizations
           </small>
         ) : (
-          <h6 className="text-red-400 text-center uppercase">
+          <h6 className="text-red-900 text-center uppercase">
             SCCI associated with leading business organizations
           </h6>
         )}
@@ -79,7 +79,7 @@ function Logocourosel() {
       </Swiper> */}
       <div
         className={`${
-          window.innerWidth < 500 ? " w-5/6" : "w-2/3"
+          window.innerWidth < 500 ? " w-5/6" : "w-5/6"
         } mt-6 mx-auto`}
       >
         <div className="d-flex gap-2 justify-around align-item-center">

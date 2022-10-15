@@ -27,7 +27,7 @@ function Dinninghall() {
   return (
     <>
       <Header1 />
-      <div className="slider ">
+      <div className="slider  relative ">
         <Carousel pause="hover" indicators={false}>
           <Carousel.Item>
             <img
