@@ -155,6 +155,11 @@ function Header() {
                       Conference Hall
                     </Link>
                   </li>
+                  <li className="item1 ">
+                    <Link className="first " to="/dinninghall">
+                      <h6> Dinnig Hall</h6>
+                    </Link>
+                  </li>
                   <li className="item1">
                     <Link className="first" to="/jobportal">
                       Placement Services
@@ -167,7 +172,7 @@ function Header() {
           </div>
           <div id="has_it_logo"></div>
           <div className="trut_name">
-            <h5> SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY</h5>
+            <h3> SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY</h3>
           </div>
           <div id="social_header">
             <Link
@@ -366,6 +371,15 @@ function Header() {
                         to="/conference"
                       >
                         <h6> Conference Hall</h6>
+                      </Link>
+                    </li>
+                    <li className="item1 ">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/dinnighall"
+                      >
+                        <h6> Dinnig Hall</h6>
                       </Link>
                     </li>
                     <li className="item1">

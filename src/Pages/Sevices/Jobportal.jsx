@@ -12,8 +12,11 @@ function Jobportal() {
             Placement Services
           </h2>
         </div>
-        <div className="mt-5" style={{ fontSize: "16px" }}>
-          <p className="text-center">
+        <div
+          className="mt-5"
+          style={{ fontSize: "16px", textAlign: "justify" }}
+        >
+          <p className="  ">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
             sunt sit magni dicta quos consectetur ab nulla nemo eligendi,
             doloribus quasi, eaque tempore nihil quisquam laudantium beatae

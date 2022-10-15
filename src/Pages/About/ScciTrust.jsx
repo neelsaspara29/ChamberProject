@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Pagination } from "react-bootstrap";
 import Header1 from "../../Components/Header/Header1";
 import { ApiPost } from "../../Helper/API/Apidata";
+import { FcDownload } from "react-icons/fc";
 
 function ScciTrust() {
   const [data, setData] = useState([]);
@@ -37,7 +38,7 @@ function ScciTrust() {
         </h1>
       </div>
       <div className="w-3/4 mx-auto mt-12 pub" style={{ fontSize: "16px" }}>
-        <p className="text-center ">
+        <p style={{ textAlign: "justify" }}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
           qui. Cumque, amet deserunt quisquam dolore eius tempore quo nam
           eligendi nemo quae! Doloremque aliquid laboriosam tenetur soluta
@@ -56,7 +57,7 @@ function ScciTrust() {
           Activities
         </h1>
         <div className="w-3/4 mx-auto  pub" style={{ fontSize: "16px" }}>
-          <p className="text-center ">
+          <p style={{ textAlign: "justify" }}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
             qui. Cumque, amet deserunt quisquam dolore eius tempore quo nam
             eligendi nemo quae! Doloremque aliquid laboriosam tenetur soluta
@@ -106,7 +107,7 @@ function ScciTrust() {
         </h1>
       </div>
       <div className="w-3/4 mt-2     mx-auto pub" style={{ fontSize: "16px" }}>
-        <p className="text-center">
+        <p className="" style={{ textAlign: "justify" }}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
           qui. Cumque, amet deserunt quisquam dolore eius tempore quo nam
           eligendi nemo quae! Doloremque aliquid laboriosam tenetur soluta
@@ -124,6 +125,13 @@ function ScciTrust() {
         <div>
           <h4 className="uppercase text-center text-primary">
             80g certificate
+            <a href="/Assets/trutdoc/80G .jpg" download>
+              {" "}
+              <FcDownload
+                className="inline bg-blue-200 p-1 text-3xl relative "
+                style={{ top: "-2" }}
+              />
+            </a>
           </h4>
           <div className="p-2 border border-1">
             <img src="/Assets/trutdoc/80G .jpg" alt="" srcset="" />
@@ -132,6 +140,13 @@ function ScciTrust() {
         <div>
           <h4 className="uppercase text-center text-primary">
             csr certificate
+            <a href="/Assets/trutdoc/CSR .jpg" download>
+              {" "}
+              <FcDownload
+                className="inline bg-blue-200 p-1 text-3xl relative "
+                style={{ top: "-2" }}
+              />
+            </a>
           </h4>
           <div className="p-2  border border-1">
             <img src="/Assets/trutdoc/CSR .jpg" alt="" srcset="" />

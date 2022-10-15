@@ -34,6 +34,7 @@ import PressRelease from "./Pages/Publications/PressRelease";
 import Gallery from "./Pages/Gallery/Gallery";
 import Jobportal from "./Pages/Sevices/Jobportal";
 import ScciTrust from "./Pages/About/ScciTrust";
+import Dinninghall from "./Pages/Sevices/Dinninghall";
 function App() {
   return (
     <>
@@ -57,6 +58,7 @@ function App() {
         <Route path="/visarecomandation" element={<VisaService />}></Route>
         <Route path="/auditorium" element={<Auditoriam />}></Route>
         <Route path="/conference" element={<Conference />}></Route>
+        <Route path="/dinninghall" element={<Dinninghall />}></Route>
         <Route path="/jobportal" element={<Jobportal />}></Route>
         <Route path="/bulletin" element={<Bulletin />}></Route>
         <Route path="/industrialdirectory" element={<Industry />}></Route>

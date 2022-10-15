@@ -24,7 +24,7 @@ function MembersDirectory() {
          <h2 className="text-center text-danger title2">Members Directory </h2>
        </div>
        <div className="mt-3">
-         <p className="text-center">{data?.intro}</p>
+         <p style={{ textAlign: "justify" }}>{data?.intro}</p>
        </div>
 
        <div>

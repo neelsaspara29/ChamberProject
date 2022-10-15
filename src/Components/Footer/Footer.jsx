@@ -28,7 +28,7 @@ export default function Footer() {
     <div className="position-absolute top-100 w-100">
       <MDBFooter
         bgColor="light"
-        className="text-center text-lg-start text-muted mt-5  bottom-0"
+        className="text-center text-lg-start text-muted mt-4  bottom-0"
       >
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           {/* <div className="me-5 d-none d-lg-block">

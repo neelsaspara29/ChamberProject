@@ -22,7 +22,10 @@ function VisaService() {
           </b>
           <br />
         </p>
-        <div className="mt-3" style={{ fontSize: "16px" }}>
+        <div
+          className="mt-3"
+          style={{ fontSize: "16px", textAlign: "justify" }}
+        >
           <p className="">
             In order for the trade and industry of Bhavnagar district to connect
             with global trade, the businessmen, traders or their staff has to

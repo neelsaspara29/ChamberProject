@@ -32,9 +32,7 @@ function Auditoriam() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={
-                "https://media.istockphoto.com/photos/empty-red-armchairs-of-a-theater-ready-for-a-show-picture-id1295114854?b=1&k=20&m=1295114854&s=170667a&w=0&h=W9ZbN674554Jsamxo5AfoO3DrSm_7qYS1EnANgusi9o="
-              }
+              src={"/Assets/auditorium/p1.jpg"}
               alt="First slide"
             />
             {/* <Carousel.Caption>
@@ -45,61 +43,13 @@ function Auditoriam() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={
-                "https://images.unsplash.com/photo-1596522354195-e84ae3c98731?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXVkaXRvcml1bXxlbnwwfHwwfHw%3D&w=1000&q=80"
-              }
+              src={"/Assets/auditorium/p2.jpg"}
               alt="Second slide"
             />
 
             {/* <Carousel.Caption>
               <h3>Second slide label</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption> */}
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={"https://images7.alphacoders.com/693/thumb-1920-693484.jpg"}
-              alt="Third slide"
-            />
-
-            {/* <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption> */}
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={
-                "https://media.istockphoto.com/photos/stage-mock-up-3d-rendering-empty-wall-screen-template-picture-id889218716?k=20&m=889218716&s=612x612&w=0&h=4eiLQFLDUzXmcC0uwi5JP-6YashlAw7KeAM95wYGXJ8="
-              }
-              alt="Third slide"
-            />
-
-            {/* <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption> */}
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={
-                "https://t4.ftcdn.net/jpg/02/30/80/55/240_F_230805549_zIJjS9BaESGVXlTMEihQlbp2hlCfHiR7.jpg"
-              }
-              alt="Third slide"
-            />
-
-            {/* <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
             </Carousel.Caption> */}
           </Carousel.Item>
         </Carousel>
@@ -110,7 +60,10 @@ function Auditoriam() {
             Auditoriam
           </h2>
         </div>
-        <div className="w-2/3 m-auto mt-3 pub" style={{ fontSize: "16px" }}>
+        <div
+          className="w-2/3 m-auto mt-3 pub"
+          style={{ fontSize: "16px", textAlign: "justify" }}
+        >
           <p className="text-center">{data[0]?.intro}</p>
         </div>
 
@@ -155,7 +108,7 @@ function Auditoriam() {
             {/* <caption>Statement Summary</caption> */}
             <thead>
               <tr>
-                <th scope="col">Fecilities</th>
+                <th scope="col">Facilities</th>
                 <th scope="col">Capacity</th>
                 <th scope="col">Rent</th>
                 {/* <th scope="col"></th> */}
@@ -164,9 +117,16 @@ function Auditoriam() {
             <tbody>
               <tr>
                 <td data-label="Facilities">
-                  {data[0]?.facilities.map((item) => (
+                  {/* {data[0]?.facilities.map((item) => (
                     <span>{item},&nbsp;</span>
-                  ))}
+                  ))} */}
+                  <ul>
+                    <li>Fully Air-conditioned</li>
+                    <li>4 Tables Dies</li>
+                    <li>Good Quality Sound System</li>
+                    <li>160 Chairs</li>
+                    <li>Anchor's Podium</li>
+                  </ul>
                 </td>
                 <td data-label="Capacity">150 person </td>
                 <td data-label="Rent">&#8377;{data[0]?.rent}/day</td>

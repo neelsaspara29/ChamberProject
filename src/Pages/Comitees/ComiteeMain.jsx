@@ -86,7 +86,7 @@ function ComiteeMain() {
             <div class="staffModule moduleLister ">
               <h1 class="title2 text-center text-danger mb-3 uppercase">
                 {" "}
-                Various Committee
+                Working Committees
               </h1>
               <div className="uppercase">
                 {data.map((item) => {

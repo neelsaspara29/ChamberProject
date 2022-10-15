@@ -100,8 +100,8 @@ function Executivecommittee() {
                               </h4>
                               <h5 style={{ color: "#00945e" }}>{item?.role}</h5>
                               <h6 class="phone">
-                                <a href={"tel:" + item?.mobile}>
-                                  <span class="fa fa-building-o"></span>{" "}
+                                <a href="#">
+                                  <span class="fa fa-building-o"></span>
                                   {item?.compneyName}
                                 </a>
                               </h6>
@@ -132,21 +132,33 @@ function Executivecommittee() {
                             </h2>
                             <h3>{item?.role}</h3>
                             <div class="phone">
-                              <a href={"tel:" + item?.mobile}>
-                                <span class="fa fa-building-o"></span>{" "}
-                                {item?.compneyName}
+                              <a href={"#"}>
+                                {item?.compneyName && (
+                                  <>
+                                    <span class="fa fa-building-o"></span>{" "}
+                                    {item?.compneyName}
+                                  </>
+                                )}
                               </a>
                             </div>
                             <div class="phone">
                               <a href={"tel:" + item?.mobile}>
-                                <span class="fa fa-phone-square"></span>{" "}
-                                {item?.mobile}
+                                {item?.mobile && (
+                                  <>
+                                    <span class="fa fa-phone-square"></span>{" "}
+                                    {item?.mobile}
+                                  </>
+                                )}
                               </a>
                             </div>
                             <div class="email lowercase">
                               <a href={"mailto:" + item?.email}>
-                                <span class="fa fa-envelope"></span>{" "}
-                                {item?.email}
+                                {item?.email && (
+                                  <>
+                                    <span class="fa fa-envelope"></span>
+                                    {item?.email}
+                                  </>
+                                )}
                               </a>
                             </div>
                             <div class="clear"></div>

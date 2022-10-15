@@ -8,7 +8,18 @@ import { Carousel } from "react-bootstrap";
 function Logocourosel() {
   return (
     <>
-      <Swiper
+      <div className="mt-20 text-danger text-center">
+        {window.innerWidth < 500 ? (
+          <small className="capitalize">
+            SCCI associated with leading business organizations
+          </small>
+        ) : (
+          <h6 className="text-red-400 text-center uppercase">
+            SCCI associated with leading business organizations
+          </h6>
+        )}
+      </div>
+      {/* <Swiper
         // install Swiper modules
 
         modules={[Autoplay]}
@@ -17,7 +28,7 @@ function Logocourosel() {
           disableOnInteraction: false,
         }}
         spaceBetween={25}
-        loop={true}
+        // loop={true}
         breakpoints={{
           // when window width is >= 640px
           640: {
@@ -65,7 +76,24 @@ function Logocourosel() {
             alt="Third slide"
           />
         </SwiperSlide>
-      </Swiper>
+      </Swiper> */}
+      <div
+        className={`${
+          window.innerWidth < 500 ? " w-5/6" : "w-2/3"
+        } mt-6 mx-auto`}
+      >
+        <div className="d-flex gap-2 justify-around align-item-center">
+          <div>
+            <img src="/Assets/logo_courosol/aaaci.png" width={150} alt="" />
+          </div>
+          <div className="my-auto">
+            <img src="/Assets/logo_courosol/ficci.png" width={200} alt="" />
+          </div>
+          <div>
+            <img src="/Assets/logo_courosol/gcci.png" width={150} alt="" />
+          </div>
+        </div>
+      </div>
       {/* <Carousel
         pause="hover"
         indicators={false}

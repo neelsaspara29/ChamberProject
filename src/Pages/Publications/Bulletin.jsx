@@ -37,7 +37,7 @@ function Bulletin() {
             className=" uppercase title2 text-danger"
             style={{ fontWeight: "700" }}
           >
-            Bulletins
+            BIO-MONTHLY Bulletin
           </h2>
         </div>
         <div className="w-2/3 m-auto mt-4 pub">

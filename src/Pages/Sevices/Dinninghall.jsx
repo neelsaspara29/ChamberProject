@@ -3,21 +3,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Carousel, Table } from "react-bootstrap";
+import { Table } from "react-bootstrap";
 import { ApiPost } from "../../Helper/API/Apidata";
+import Carousel from "react-bootstrap/Carousel";
 import Header1 from "../../Components/Header/Header1";
 
-function Conference() {
+function Dinninghall() {
   const [data, setData] = useState([]);
   const fetchData = async () => {
     await ApiPost("/service/get", {
-      type: "0",
+      type: "1",
     })
       .then((data) => {
         console.log("res-", data);
         setData(data?.data?.data);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log("err", err));
   };
   useEffect(() => {
     fetchData();
@@ -31,7 +32,7 @@ function Conference() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={"/Assets/Conference/p1.jpg"}
+              src={"/Assets/Dinning/1.jpg"}
               alt="First slide"
             />
             {/* <Carousel.Caption>
@@ -39,27 +40,18 @@ function Conference() {
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption> */}
           </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={"/Assets/Conference/p2.jpg"}
-              alt="Second slide"
-            />
-
-            {/* <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption> */}
-          </Carousel.Item>
         </Carousel>
       </div>
       <div className=" mt-2 ">
         <div>
-          <h2 className=" w-2/3 m-auto text-center title2 text-danger uppercase">
-            Conference Hall
+          <h2 className=" w-2/3 m-auto text-center text-danger title2 uppercase">
+            Dinning Hall
           </h2>
         </div>
-        <div className="w-2/3 m-auto mt-3 pub" style={{ fontSize: "16px", textAlign: "justify" }}>
+        <div
+          className="w-2/3 m-auto mt-3 pub"
+          style={{ fontSize: "16px", textAlign: "justify" }}
+        >
           <p className="text-center">{data[0]?.intro}</p>
         </div>
 
@@ -117,13 +109,12 @@ function Conference() {
                     <span>{item},&nbsp;</span>
                   ))} */}
                   <ul>
-                    <li>Fully air-conditioned</li>
-                    <li>White Board</li>
-                    <li>2 Tables</li>
-                    <li>42 Chairs</li>
+                    <li>Kitchen Area</li>
+                    <li>4 Tables </li>
+                    {/* <li>Buffet  Area</li> */}
                   </ul>
                 </td>
-                <td data-label="Capacity">40 Person</td>
+                <td data-label="Capacity">60 Person at a Time </td>
                 <td data-label="Rent">&#8377;{data[0]?.rent}/day</td>
               </tr>
             </tbody>
@@ -152,4 +143,4 @@ function Conference() {
   );
 }
 
-export default Conference;
+export default Dinninghall;
