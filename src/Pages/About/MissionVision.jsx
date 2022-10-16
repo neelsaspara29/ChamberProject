@@ -34,11 +34,15 @@ const MissionVision = () => {
         </div>
         <div class="wrapper">
           <div id="content" class="rightpad">
-            <h1 class="gendocsPageTitle text-center title2 text-danger">Mission</h1>
-            <p className="text-center">{mission}</p>
+            <h1 class="gendocsPageTitle text-center title2 text-danger">
+              Mission
+            </h1>
+            <p className="text-justify">{mission}</p>
             <hr />
-            <h1 class="gendocsPageTitle text-center title2 text-primary">Vision</h1>
-            <p className="text-center">{vision}</p>
+            <h1 class="gendocsPageTitle text-center title2 text-primary">
+              Vision
+            </h1>
+            <p className="text-justify  ">{vision}</p>
           </div>
         </div>
       </div>

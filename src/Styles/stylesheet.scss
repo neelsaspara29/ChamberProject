@@ -782,11 +782,28 @@ border-radius: 12px;
   background-color: #ed1c24 !important;
 }
 @media screen and (max-width: 400px) {
-    .pub1{
-      height: 25em !important;
-      width: 95% !important;
-    }
+  .pub1{
+    height: 25em !important;
+    width: 95% !important;
+  }
   .pub1 img{
     object-fit: fill;
   }
-    }
+}
+#content .email a{
+  margin: 0 !important;
+}
+@media screen and (max-width: 400px) {
+
+  .footer_top{
+    display: block  !important;
+  }
+}
+@media screen and (max-width: 420px) {
+
+  .activity_pub img{
+    width: 100% !important;
+    height: 260px !important;
+  }
+}
+

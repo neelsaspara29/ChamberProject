@@ -36,7 +36,11 @@ export default function Footer() {
           </div> */}
 
           <div className="mx-auto">
-            <b> FOLOW US ON </b>&nbsp; &nbsp; &nbsp;
+            <p className="inline footer_top">
+              {" "}
+              <b> FOLOW US ON </b>
+            </p>
+            &nbsp; &nbsp; &nbsp;
             <a
               target="_blank"
               href="https://www.facebook.com/scci.bhavnagar"

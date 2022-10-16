@@ -37,7 +37,7 @@ function ScciTrust() {
           saurashtra chamber trust
         </h1>
       </div>
-      <div className="w-3/4 mx-auto mt-12 pub" style={{ fontSize: "16px" }}>
+      <div className="w-4/5 mx-auto mt-12 pub" style={{ fontSize: "16px" }}>
         <p style={{ textAlign: "justify" }}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
           qui. Cumque, amet deserunt quisquam dolore eius tempore quo nam
@@ -56,7 +56,7 @@ function ScciTrust() {
         <h1 className="text-primary title2  text-center mt-12 uppercase">
           Activities
         </h1>
-        <div className="w-3/4 mx-auto  pub" style={{ fontSize: "16px" }}>
+        <div className="w-4/5 mx-auto  pub" style={{ fontSize: "16px" }}>
           <p style={{ textAlign: "justify" }}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
             qui. Cumque, amet deserunt quisquam dolore eius tempore quo nam
@@ -72,7 +72,7 @@ function ScciTrust() {
           </p>
         </div>
       </div>
-      <div className="w-4/5 mt-16 mx-auto pub flow-root">
+      <div className="w-4/5 mt-16 mx-auto activity_pub pub flow-root">
         {data?.map((single, idx) => {
           return (
             <div
@@ -106,7 +106,7 @@ function ScciTrust() {
           contribution under 80g & csr
         </h1>
       </div>
-      <div className="w-3/4 mt-2     mx-auto pub" style={{ fontSize: "16px" }}>
+      <div className="w-4/5 mt-2     mx-auto pub" style={{ fontSize: "16px" }}>
         <p className="" style={{ textAlign: "justify" }}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
           qui. Cumque, amet deserunt quisquam dolore eius tempore quo nam
@@ -121,7 +121,10 @@ function ScciTrust() {
           Libero nulla dignissimos molestiae.
         </p>
       </div>
-      <div className="w-100 d-flex gap-1 scci_certificate     justify-center">
+      <div
+        className=" d-flex gap-1 scci_certificate     justify-center"
+        style={{ width: "95%" }}
+      >
         <div>
           <h4 className="uppercase text-center text-primary">
             80g certificate
@@ -133,7 +136,7 @@ function ScciTrust() {
               />
             </a>
           </h4>
-          <div className="p-2 border border-1">
+          <div className="p-2 m-1 border border-1">
             <img src="/Assets/trutdoc/80G .jpg" alt="" srcset="" />
           </div>
         </div>
@@ -148,7 +151,7 @@ function ScciTrust() {
               />
             </a>
           </h4>
-          <div className="p-2  border border-1">
+          <div className="p-2 m-1  border border-1 ">
             <img src="/Assets/trutdoc/CSR .jpg" alt="" srcset="" />
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { hover } from "@testing-library/user-event/dist/hover";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Carousel } from "react-bootstrap";
@@ -45,10 +46,10 @@ const About = () => {
             <h1 class="gendocsPageTitle text-center text-danger title2">
               SCCI AT A GLANCE
             </h1>
-            <p className="text-center">{data} </p>
+            <p className="text-justify">{data} </p>
           </div>
-          <div className="slider ">
-            <Carousel pause="hover" indicators={false}>
+          <div className="slider relative ">
+            <Carousel indicators={false} pause={"hover"} interval={1500}>
               <Carousel.Item className="border border-1">
                 <img
                   style={{ height: "100vh !important" }}
