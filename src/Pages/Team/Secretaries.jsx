@@ -98,10 +98,14 @@ function Secretaries() {
                               <a>{item?.name}</a>
                             </h4>
                             <h5 style={{ color: "#00945e" }}>{item?.role}</h5>
-                            <h6 class="phone">
+                            <h6 class="phone" style={{ marginBottom: "1px" }}>
                               <a href={"tel:" + item?.mobile}>
-                                <span class="fa fa-building-o"></span>{" "}
-                                {item?.compneyName}
+                                {item?.compneyName && (
+                                  <>
+                                    <span class="fa fa-building-o"></span>{" "}
+                                    {item?.compneyName}
+                                  </>
+                                )}
                               </a>
                             </h6>
                             <div class="phone">
@@ -115,10 +119,14 @@ function Secretaries() {
                                 href={"mailto:" + item?.email}
                                 className="d-flex "
                               >
-                                <div>
-                                  <span class="fa fa-envelope"></span>{" "}
-                                </div>
-                                <div>{item?.email}</div>
+                                {item?.email && (
+                                  <>
+                                    <div>
+                                      <span class="fa fa-envelope"></span>{" "}
+                                    </div>
+                                    <div>{item?.email}</div>
+                                  </>
+                                )}
                               </a>
                             </div>
                             <div class="clear"></div>
@@ -132,8 +140,12 @@ function Secretaries() {
                           <h3>{item?.role}</h3>
                           <div class="phone">
                             <a href={"tel:" + item?.mobile}>
-                              <span class="fa fa-building-o"></span>{" "}
-                              {item?.compneyName}
+                              {item?.compneyName && (
+                                <>
+                                  <span class="fa fa-building-o"></span>{" "}
+                                  {item?.compneyName}
+                                </>
+                              )}
                             </a>
                           </div>
                           <div class="phone">
@@ -143,8 +155,28 @@ function Secretaries() {
                             </a>
                           </div>
                           <div class="email lowercase">
+                            <a
+                              href={"mailto:" + item?.email}
+                              className="d-flex "
+                            >
+                              {item?.email && (
+                                <>
+                                  <div>
+                                    <span class="fa fa-envelope"></span>{" "}
+                                  </div>
+                                  <div>{item?.email}</div>
+                                </>
+                              )}
+                            </a>
+                          </div>
+                          <div class="email lowercase">
                             <a href={"mailto:" + item?.email}>
-                              <span class="fa fa-envelope"></span> {item?.email}
+                              {item?.email && (
+                                <>
+                                  <span class="fa fa-envelope"></span>{" "}
+                                  {item?.email}
+                                </>
+                              )}
                             </a>
                           </div>
                           <div class="clear"></div>

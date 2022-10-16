@@ -102,10 +102,14 @@ function Bearear() {
                               <a>{item?.name}</a>
                             </h4>
                             <h5 style={{ color: "#00945e" }}>{item?.role}</h5>
-                            <h6 class="phone">
+                            <h6 class="phone" style={{ marginBottom: "1px" }}>
                               <a href="#">
-                                <span class="fa fa-building-o"></span>
-                                {item?.compneyName}
+                                {item?.compneyName && (
+                                  <>
+                                    <span class="fa fa-building-o"></span>{" "}
+                                    {item?.compneyName}
+                                  </>
+                                )}
                               </a>
                             </h6>
                             <div class="phone">
@@ -119,10 +123,14 @@ function Bearear() {
                                 href={"mailto:" + item?.email}
                                 className="d-flex "
                               >
-                                <div>
-                                  <span class="fa fa-envelope"></span>{" "}
-                                </div>
-                                <div>{item?.email}</div>
+                                {item?.email && (
+                                  <>
+                                    <div>
+                                      <span class="fa fa-envelope"></span>{" "}
+                                    </div>
+                                    <div>{item?.email}</div>
+                                  </>
+                                )}
                               </a>
                             </div>
                             <div class="clear"></div>

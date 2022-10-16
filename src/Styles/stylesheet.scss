@@ -633,8 +633,9 @@ p.copyright a {
 }
 @media only screen and (max-width: 400px) {
   .staffModule .thumbnail{
-    margin-right: 6px  !important;
-    margin-bottom: 50px !important;
+    margin-right: 10px  !important;
+    margin-bottom: 58px !important;
+    margin-top: 12px;
   }
   .team_img{
     height: 80px !important;
@@ -648,10 +649,10 @@ p.copyright a {
     text-align: start;
 
   }
-  .wrapper a{
-    width: 180px  !important;
-    font-size: .5em !important;
-  }
+  // .wrapper a{
+  //   width: 180px  !important;
+  //   font-size: .5em !important;
+  // }
 }
 @media only screen and (max-width: 600px) {
   #logo img {
