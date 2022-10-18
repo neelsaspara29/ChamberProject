@@ -51,7 +51,7 @@ function ProcedureCoo() {
         {/* <caption>Statement Summary</caption> */}
         <thead>
           <tr>
-            <th scope="col">Exporter Registratoin</th>
+            <th scope="col">Exporter Registration</th>
             <th scope="col">Exporter Manual</th>
             <th scope="col">FAQs</th>
             <th scope="col">Duplicate application steps</th>
@@ -59,7 +59,7 @@ function ProcedureCoo() {
         </thead>
         <tbody>
           <tr>
-            <td data-label="Exporter Registratoin">
+            <td data-label="Exporter Registration">
               <a
                 href={er}
                 className="hover:text-white"
@@ -96,7 +96,7 @@ function ProcedureCoo() {
                 </div>
               </a>
             </td>
-            <td data-label="FAQs">
+            <td data-label="DUPLICATE APPLICATION STEPS">
               <a
                 href={dup}
                 className="hover:text-white"

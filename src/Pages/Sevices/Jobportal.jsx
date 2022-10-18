@@ -17,19 +17,26 @@ function Jobportal() {
           style={{ fontSize: "16px", textAlign: "justify" }}
         >
           <p className="  ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            sunt sit magni dicta quos consectetur ab nulla nemo eligendi,
-            doloribus quasi, eaque tempore nihil quisquam laudantium beatae
-            officia quod asperiores perferendis iusto delectus mollitia!
-            Voluptatem consequuntur excepturi cum esse. Placeat tenetur quae
-            quibusdam sit labore ad obcaecati ab perspiciatis reiciendis,
-            sapiente sunt temporibus amet beatae enim earum molestias inventore
-            eius cumque possimus laborum a! Repudiandae officiis eligendi
-            facilis consectetur modi perferendis laborum necessitatibus aliquam
-            hic, fugit consequuntur, dolorem deleniti. Repellendus ab alias
-            labore nostrum recusandae distinctio neque veritatis corrupti
-            facilis dolore, provident cumque excepturi ex omnis et suscipit unde
-            veniam?
+            Saurashtra Chamber of Commerce and Industry works to increase
+            employment at Bhavnagar, stop the migration of students after
+            studies and help the members of the chamber to find suitable skilled
+            employees according to their business and become a bridge between
+            employees and employers an attempt to give placement services. This
+            effort of the Chamber will provide good employment opportunities to
+            the students/skilled workers while it will be easier for the
+            commercial or industrial houses to get the skilled workers as per
+            their requirement. This service launched by the Chamber is totally
+            free and limited to Bhavnagar City-District. Businessmen,
+            Industrialists and students of Bhavnagar City & District are
+            requested to take advantages from this service started by Saurashtra
+            Chamber. <br />
+            <br />
+            <b> Note::</b>
+            <br /> No student or employee will be recommended by the Chamber for
+            this service and businessmen-industries will have suggested having
+            to verify the candidate through face-to-face interview because the
+            Saurashtra Chamber of Commerce and Industry will not be responsible
+            for any kind of loss or compensation.
           </p>
           <p className="text-blue-400 hover:text-blue-900">
             <small>

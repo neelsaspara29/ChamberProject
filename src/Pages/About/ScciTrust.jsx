@@ -39,17 +39,24 @@ function ScciTrust() {
       </div>
       <div className="w-4/5 mx-auto mt-12 pub" style={{ fontSize: "16px" }}>
         <p style={{ textAlign: "justify" }}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
-          qui. Cumque, amet deserunt quisquam dolore eius tempore quo nam
-          eligendi nemo quae! Doloremque aliquid laboriosam tenetur soluta
-          voluptatem deleniti ipsum quo? Enim quis labore reiciendis modi,
-          veniam, ipsam at nihil fuga autem porro, beatae facere ad voluptas
-          ipsum quidem fugiat excepturi natus sapiente illum velit aperiam
-          repellat esse blanditiis. Quo. Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Laborum itaque quia quos. Cum soluta facilis
-          doloribus nihil porro non nam ducimus quod labore modi ut magni
-          incidunt harum vel totam, quam mollitia reprehenderit culpa amet eos!
-          Libero nulla dignissimos molestiae.
+          Saurashtra Chamber Trust is an organization registered under the
+          Trusts Act, 1950 under Trust Reg. No. F/650/Bhavnagar in operation
+          since 19.12.1995. Saurashtra Chamber Trust is an affiliate of
+          Saurashtra Chamber of Commerce and Industry. The main aims and
+          objectives of Saurashtra Chamber Trust are as follows. To open, run or
+          manage schools, colleges and hostels wherever deemed necessary for the
+          overall development of the society and to provide scholarships or
+          other assistance to bright and needy students, to construct clinics or
+          hospitals for social well-being, to provide all kinds of medical
+          facilities to the weak and financially weak people. To carry out such
+          activities as may be available at a rate or free of charge, to
+          establish the principles of justice and ethics in the business
+          industry of the society and to collect information for the overall
+          development of the business industry, to publish books, to run
+          libraries, to suggest proposals or amendments in new business and
+          industry laws. To support it and to promote research in business and
+          commerce activities and to carry out related activities and to do
+          relief work in natural calamities or man-made calamities etc.
         </p>
       </div>
       <div>
@@ -58,17 +65,13 @@ function ScciTrust() {
         </h1>
         <div className="w-4/5 mx-auto  pub" style={{ fontSize: "16px" }}>
           <p style={{ textAlign: "justify" }}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
-            qui. Cumque, amet deserunt quisquam dolore eius tempore quo nam
-            eligendi nemo quae! Doloremque aliquid laboriosam tenetur soluta
-            voluptatem deleniti ipsum quo? Enim quis labore reiciendis modi,
-            veniam, ipsam at nihil fuga autem porro, beatae facere ad voluptas
-            ipsum quidem fugiat excepturi natus sapiente illum velit aperiam
-            repellat esse blanditiis. Quo. Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Laborum itaque quia quos. Cum soluta
-            facilis doloribus nihil porro non nam ducimus quod labore modi ut
-            magni incidunt harum vel totam, quam mollitia reprehenderit culpa
-            amet eos! Libero nulla dignissimos molestiae.
+            Saurashtra Chamber Trust is continuously committed to fulfill its
+            above stated aims and objectives. The organization helps the society
+            in times of natural or man-made calamities, for development of
+            business activities, for growth of employment. In particular, social
+            and cultural activities are also carried out by the institution.
+            Services provided by this organization in various fields at a
+            glance..........
           </p>
         </div>
       </div>
@@ -108,17 +111,13 @@ function ScciTrust() {
       </div>
       <div className="w-4/5 mt-2     mx-auto pub" style={{ fontSize: "16px" }}>
         <p className="" style={{ textAlign: "justify" }}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam,
-          qui. Cumque, amet deserunt quisquam dolore eius tempore quo nam
-          eligendi nemo quae! Doloremque aliquid laboriosam tenetur soluta
-          voluptatem deleniti ipsum quo? Enim quis labore reiciendis modi,
-          veniam, ipsam at nihil fuga autem porro, beatae facere ad voluptas
-          ipsum quidem fugiat excepturi natus sapiente illum velit aperiam
-          repellat esse blanditiis. Quo. Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Laborum itaque quia quos. Cum soluta facilis
-          doloribus nihil porro non nam ducimus quod labore modi ut magni
-          incidunt harum vel totam, quam mollitia reprehenderit culpa amet eos!
-          Libero nulla dignissimos molestiae.
+          Donations to the Saurashtra Chamber Trust are tax exempted under
+          Section 80G of the Income Tax Act, 1961. Saurashtra Chamber Trust also
+          carries out various activities for the development of Business –
+          Commerce and Social works, for which a company or an industrial house
+          can contribute under CSR activities for its Company Social
+          Responsibility (CSR) fund and join with us for the social, cultural
+          and business activities.
         </p>
       </div>
       <div

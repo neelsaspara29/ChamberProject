@@ -49,7 +49,7 @@ function VisaService() {
               </thead>
               <tbody>
                 <tr>
-                  <td className="">
+                  <td className="vd">
                     Request letter as per format (on company letter head)
                   </td>
                 </tr>
