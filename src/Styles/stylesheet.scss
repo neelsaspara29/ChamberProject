@@ -70,7 +70,7 @@ body {
 }
 .trut_name{
   position: absolute;
-  left: 23%;
+  left: 20%;
   top: 15px;
   color: #0071b9;
   text-align: center;
@@ -90,7 +90,7 @@ body {
 .wrapper {
   margin: 0 auto;
   width: 97%;
-  max-width: 1270px;
+  max-width: 1370px;
   position: relative;
 }
 
@@ -380,7 +380,7 @@ a:-webkit-any-link {
 .wrapper {
   margin: 0 auto;
   width: 97%;
-  max-width: 1250px;
+  max-width: 92vw;
   position: relative;
 }
 #about_top {
@@ -634,7 +634,7 @@ p.copyright a {
 @media only screen and (max-width: 400px) {
   .staffModule .thumbnail{
     margin-right: 10px  !important;
-    margin-bottom: 58px !important;
+    margin-bottom: 70px !important;
     margin-top: 12px;
   }
   .team_img{
