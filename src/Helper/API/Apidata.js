@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BaseURL = "https://api.saurashtrachamber.org";
+const BaseURL = "https://api.saurashtrachamber.org/admin";
 export const ApiGet = (type) => {
   return new Promise((resolve, reject) => {
     axios
