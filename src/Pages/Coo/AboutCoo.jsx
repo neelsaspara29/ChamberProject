@@ -10,7 +10,10 @@ function AboutCoo() {
           About Coo
         </h1>
       </div>
-      <div className="w-3/4 m-auto pub" style={{ fontSize: "16px" }}>
+      <div
+        className="w-3/4 m-auto pub"
+        style={{ fontSize: "16px", textAlign: "justify" }}
+      >
         <p className="text">
           <b>
             {" "}

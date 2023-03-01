@@ -30,7 +30,7 @@ function Association() {
           </h4>
         </div>
         <div className="mt-3">
-          <p>
+          <p style={{ textAlign: "justify" }}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam
             consectetur ipsam deserunt, neque rem molestiae alias reiciendis
             placeat magni. Lorem ipsum dolor sit amet consectetur adipisicing
@@ -56,10 +56,12 @@ function Association() {
             <tbody>
               {data.map((item) => {
                 return (
-                  <tr> 
+                  <tr>
                     <td data-label="Serial Number">{item?.sNumber}</td>
                     <td data-label="Name">{item?.name}</td>
-                    <td data-label="Address"><div className="td_as">{item?.address}</div></td>
+                    <td data-label="Address">
+                      <div className="td_as">{item?.address}</div>
+                    </td>
                     <td data-label="Contact-1">{item?.contact1}</td>
                     <td data-label="Contact-2">{item?.contact2}</td>
                   </tr>

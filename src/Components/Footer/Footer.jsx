@@ -28,7 +28,7 @@ export default function Footer() {
     <div className="position-absolute top-100 w-100">
       <MDBFooter
         bgColor="light"
-        className="text-center text-lg-start text-muted mt-5  bottom-0"
+        className="text-center text-lg-start text-muted mt-4  bottom-0"
       >
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           {/* <div className="me-5 d-none d-lg-block">
@@ -36,47 +36,52 @@ export default function Footer() {
           </div> */}
 
           <div className="mx-auto">
+            <p className="inline footer_top">
+              {" "}
+              <b> FOLOW US ON </b>
+            </p>
+            &nbsp; &nbsp; &nbsp;
             <a
               target="_blank"
               href="https://www.facebook.com/scci.bhavnagar"
               className="me-4 text-reset"
             >
-              <MDBIcon icon="facebook-f" />
+              <MDBIcon icon="facebook-f" className="text-blue-600" />
             </a>
             <a
               target="_blank"
               href="https://www.facebook.com/scci.bhavnagar"
               className="me-4 text-reset"
             >
-              <MDBIcon icon="twitter" />
+              <MDBIcon icon="twitter" className="text-blue-400" />
             </a>
             <a
               target="_blank"
               href="https://api.whatsapp.com/send/?phone=919408807980&text&type=phone_number&app_absent=0"
               className="me-4 text-reset"
             >
-              <MDBIcon icon="whatsapp" />
+              <MDBIcon icon="whatsapp" className="text-green-500" />
             </a>
             <a
               target="_blank"
               href="https://www.facebook.com/scci.bhavnagar"
               className="me-4 text-reset"
             >
-              <MDBIcon icon="instagram" />
+              <MDBIcon icon="instagram" className="text-red-600" />
             </a>
             <a
               target="_blank"
               href="https://www.facebook.com/scci.bhavnagar"
               className="me-4 text-reset"
             >
-              <MDBIcon icon="linkedin" />
+              <MDBIcon icon="linkedin" className="text-blue-800" />
             </a>
             <a
               target="_blank"
               href="https://www.facebook.com/scci.bhavnagar"
               className="me-4 text-reset"
             >
-              <MDBIcon icon="youtube" />
+              <MDBIcon icon="youtube" className="text-red-700" />
             </a>
           </div>
         </section>
@@ -165,23 +170,23 @@ export default function Footer() {
             </MDBRow>
           </MDBContainer>
         </section>
-        <a
-          href={data?.listOfHolidays}
-          // className="hover:text-white"
-          target="_blank"
-          // download
+        <div
+          className="cursor-pointer  mx-auto text-center block mb-1 p-2"
+          style={{
+            backgroundColor: "rgba(0, 0, 0, 0.05)",
+            maxWidth: "30%",
+            borderRadius: "4px",
+          }}
         >
-          <div
-            className="cursor-pointer  mx-auto text-center mb-1 p-2"
-            style={{
-              backgroundColor: "rgba(0, 0, 0, 0.05)",
-              maxWidth: "30vw",
-              borderRadius: "4px",
-            }}
+          <a
+            href={data?.listOfHolidays}
+            className="block"
+            target="_blank"
+            // download
           >
             Download List Of Holidays
-          </div>
-        </a>
+          </a>
+        </div>
         <div
           className="text-center p-4"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}

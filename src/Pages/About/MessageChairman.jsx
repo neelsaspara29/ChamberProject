@@ -51,7 +51,7 @@ const MessageChairman = () => {
                   {data?.post}
                 </h3>
               </div>
-              <div class="bio text-center">
+              <div class="bio  mx-auto" style={{ textAlign: "justify" }}>
                 <p>{data?.text}</p>
               </div>
             </div>

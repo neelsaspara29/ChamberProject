@@ -3,6 +3,7 @@ import Header1 from "../../Components/Header/Header1";
 import er from "../../Helper/pdf/COO/ER.pdf";
 import em from "../../Helper/pdf/COO/EM.pdf";
 import faq from "../../Helper/pdf/COO/FAQ.pdf";
+import dup from "../../Helper/pdf/COO/duplicat.pdf";
 function ProcedureCoo() {
   return (
     <>
@@ -10,19 +11,24 @@ function ProcedureCoo() {
       <div className="text-danger text-center my-4 uppercase">
         <h2 className="title2">Procedure</h2>
       </div>
-      <div className="w-3/4  m-auto pub text" style={{ fontSize: "16px" }}>
+      <div
+        className="w-3/4  m-auto pub text"
+        style={{ fontSize: "16px", textAlign: "justify" }}
+      >
         <b>
           {" "}
           Dear Member's, <br />
           Greetings from Saurashtra Chamber of Commerce and Industry !!!{" "}
         </b>
         <br />
-        <br /> As you know, the units doing export operations require
-        Certificate of Origin this Certificate of Origin is issued by the
-        authorized local Chamber of Commerce. Apart from Bhavnagar, Saurashtra
-        Chamber of Commerce and Industry has been authorized by the department
-        of the Directorate General of Foreign Trade (DGFT), Ministry of Commerce
-        & Industry, Government of India to issue Certificate of Origin
+        <br />
+        {/* <p className="text-end"> */}
+        As you know, the units doing export operations require Certificate of
+        Origin this Certificate of Origin is issued by the authorized local
+        Chamber of Commerce. Apart from Bhavnagar, Saurashtra Chamber of
+        Commerce and Industry has been authorized by the department of the
+        Directorate General of Foreign Trade (DGFT), Ministry of Commerce &
+        Industry, Government of India to issue Certificate of Origin
         (Non-Preferential) to units exporting from Bhavnagar and Saurashtra
         Region. Presently, as parts of e-Governance of the Government of India
         Directorate General of Foreign Trade (DGFT) are making all operations of
@@ -39,19 +45,32 @@ function ProcedureCoo() {
         matter, you can contact our chamber's employee Mr. Jignesh Bhatt on the
         official mobile number of the Chamber at +91-9408 80 7980 during office
         hours.
+        {/* </p> */}
       </div>
-      <table className="w-3/4 mt-3 mx-auto ">
+      <table className="w-4/5 mt-3 mx-auto ">
         {/* <caption>Statement Summary</caption> */}
         <thead>
           <tr>
+            <th scope="col">Exporter Registration</th>
             <th scope="col">Exporter Manual</th>
-            <th scope="col">Exporter Registratoin</th>
             <th scope="col">FAQs</th>
-            <th scope="col">PDF4</th>
+            <th scope="col">Duplicate application steps</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td data-label="Exporter Registration">
+              <a
+                href={er}
+                className="hover:text-white"
+                target="_blank"
+                // download
+              >
+                <div className="btn btn-primary px-2 py-1  inline pub_text">
+                  Download
+                </div>
+              </a>
+            </td>
             <td data-label="Exporter Manual">
               <a
                 href={em}
@@ -64,18 +83,7 @@ function ProcedureCoo() {
                 </div>
               </a>
             </td>
-            <td data-label="Exporter Registratoin">
-              <a
-                href={er}
-                className="hover:text-white"
-                target="_blank"
-                // download
-              >
-                <div className="btn btn-primary px-2 py-1  inline pub_text">
-                  Download
-                </div>
-              </a>
-            </td>
+
             <td data-label="FAQs">
               <a
                 href={faq}
@@ -88,10 +96,17 @@ function ProcedureCoo() {
                 </div>
               </a>
             </td>
-            <td data-label="PDF4">
-              <div className="btn btn-primary px-2 py-1  inline pub_text">
-                Download
-              </div>
+            <td data-label="DUPLICATE APPLICATION STEPS">
+              <a
+                href={dup}
+                className="hover:text-white"
+                target="_blank"
+                // download
+              >
+                <div className="btn btn-primary px-2 py-1  inline pub_text">
+                  Download
+                </div>
+              </a>
             </td>
           </tr>
         </tbody>
@@ -101,7 +116,7 @@ function ProcedureCoo() {
           <div>
             <p className="text-primary " style={{ fontSize: "12px" }}>
               <a href="https://coo.dgft.gov.in/" target="_blank">
-                click hear to apply in our dgft
+                click hear to apply for COO
               </a>
             </p>
           </div>

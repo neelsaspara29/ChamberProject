@@ -164,6 +164,11 @@ function Header1() {
                       Conference Hall
                     </Link>
                   </li>
+                  <li className="item1 ">
+                    <Link className="first " to="/dinninghall">
+                      <h6> Dinnig Hall</h6>
+                    </Link>
+                  </li>
                   <li className="item1">
                     <Link className="first" to="/jobportal">
                       Placement Services
@@ -364,6 +369,15 @@ function Header1() {
                         to="/conference"
                       >
                         <h6> Conference Hall</h6>
+                      </Link>
+                    </li>
+                    <li className="item1 ">
+                      <Link
+                        className="first "
+                        to="/dinninghall"
+                        onclick={handleClose}
+                      >
+                        <h6> Dinnig Hall</h6>
                       </Link>
                     </li>
                     <li className="item1">

@@ -1,3 +1,4 @@
+import { hover } from "@testing-library/user-event/dist/hover";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Carousel } from "react-bootstrap";
@@ -22,33 +23,15 @@ const About = () => {
     <>
       <Header1 />
       <div id="interior_content">
-        <div
-          id="interior_header_banner"
-          style={{
-            background:
-              "background: url('" +
-              "/Assets/about/fs_453.jpg" +
-              "') 50% 50% no-repeat; background-size: cover;",
-          }}
-        >
-          <span id="bnrinst_2_453">
-            <img
-              src="/Assets/about/fs_453.jpg"
-              alt="Hello"
-              width="1439"
-              height="363"
-            />
-          </span>
-        </div>
         <div class="wrapper">
           <div id="content" class="rightpad">
             <h1 class="gendocsPageTitle text-center text-danger title2">
               SCCI AT A GLANCE
             </h1>
-            <p className="text-center">{data} </p>
+            <p className="text-justify">{data} </p>
           </div>
-          <div className="slider ">
-            <Carousel pause="hover" indicators={false}>
+          <div className="slider relative ">
+            <Carousel indicators={false} pause={"hover"} interval={1500}>
               <Carousel.Item className="border border-1">
                 <img
                   style={{ height: "100vh !important" }}

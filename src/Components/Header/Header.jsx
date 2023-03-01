@@ -155,6 +155,11 @@ function Header() {
                       Conference Hall
                     </Link>
                   </li>
+                  <li className="item1 ">
+                    <Link className="first " to="/dinninghall">
+                      Dinnig Hall
+                    </Link>
+                  </li>
                   <li className="item1">
                     <Link className="first" to="/jobportal">
                       Placement Services
@@ -167,7 +172,7 @@ function Header() {
           </div>
           <div id="has_it_logo"></div>
           <div className="trut_name">
-            <h5> SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY</h5>
+            <h3> SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY</h3>
           </div>
           <div id="social_header">
             <Link
@@ -185,7 +190,7 @@ function Header() {
               <span className="fa fa-twitter"></span>
             </Link>
             <Link
-              className="linkedin"
+              className="whatsapp"
               to="https://api.whatsapp.com/send/?phone=919408807980&text&type=phone_number&app_absent=0"
               target="_blank"
             >
@@ -366,6 +371,15 @@ function Header() {
                         to="/conference"
                       >
                         <h6> Conference Hall</h6>
+                      </Link>
+                    </li>
+                    <li className="item1 ">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/dinnighall"
+                      >
+                        Dinnig Hall
                       </Link>
                     </li>
                     <li className="item1">

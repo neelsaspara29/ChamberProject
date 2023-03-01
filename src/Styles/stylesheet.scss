@@ -70,9 +70,11 @@ body {
 }
 .trut_name{
   position: absolute;
-  left: 36%;
-  top: 22px;
+  left: 20%;
+  top: 15px;
   color: #0071b9;
+  text-align: center;
+  width: 49%;
 }
 #header.scrolled #social_header,
 #header.scrolled #has_it_logo {
@@ -88,7 +90,7 @@ body {
 .wrapper {
   margin: 0 auto;
   width: 97%;
-  max-width: 1270px;
+  max-width: 1370px;
   position: relative;
 }
 
@@ -265,11 +267,11 @@ body {
 }
 
 #social_header a.instagram:hover {
-  background: #125688 !important;
+  background:  radial-gradient(circle at 60% 107%, #fdf497 0%, #fdf497 8%, #fd5949 48%,#d6249f 63%,#285AEB 92%) !important;
 }
 
-#social_header a.pinterest:hover {
-  background: #cb2027 !important;
+#social_header a.whatsapp:hover {
+  background: #37c547 !important;
 }
 
 #social_header a.google:hover {
@@ -277,11 +279,12 @@ body {
 }
 
 #social_header a.youtube:hover {
-  background: #ed1c24 !important;
+  background: #cc3035 !important;
 }
 a:-webkit-any-link {
   text-decoration: none;
   color: inherit;
+  margin: auto;
 }
 #logo {
   display: flex;
@@ -377,7 +380,7 @@ a:-webkit-any-link {
 .wrapper {
   margin: 0 auto;
   width: 97%;
-  max-width: 1250px;
+  max-width: 92vw;
   position: relative;
 }
 #about_top {
@@ -630,8 +633,9 @@ p.copyright a {
 }
 @media only screen and (max-width: 400px) {
   .staffModule .thumbnail{
-    margin-right: 6px  !important;
-    margin-bottom: 50px !important;
+    margin-right: 10px  !important;
+    margin-bottom: 70px !important;
+    margin-top: 12px;
   }
   .team_img{
     height: 80px !important;
@@ -645,10 +649,10 @@ p.copyright a {
     text-align: start;
 
   }
-  .wrapper a{
-    width: 180px  !important;
-    font-size: .5em !important;
-  }
+  // .wrapper a{
+  //   width: 180px  !important;
+  //   font-size: .5em !important;
+  // }
 }
 @media only screen and (max-width: 600px) {
   #logo img {
@@ -765,3 +769,42 @@ border-radius: 12px;
 .swiper-horizontal>.swiper-scrollbar{
   display: none;
 }
+.twitter{
+  background-color: #00aced !important;
+}
+.whatsapp{
+  background-color: 	#4FCE5D !important;
+}
+.instagram{
+  background:  radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
+}
+
+.youtube{
+  background-color: #ed1c24 !important;
+}
+@media screen and (max-width: 400px) {
+  .pub1{
+    height: 25em !important;
+    width: 95% !important;
+  }
+  .pub1 img{
+    object-fit: fill;
+  }
+}
+#content .email a{
+  margin: 0 !important;
+}
+@media screen and (max-width: 400px) {
+
+  .footer_top{
+    display: block  !important;
+  }
+}
+@media screen and (max-width: 420px) {
+
+  .activity_pub img{
+    width: 100% !important;
+    height: 260px !important;
+  }
+}
+

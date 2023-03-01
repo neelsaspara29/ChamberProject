@@ -103,10 +103,14 @@ function Pastpresident() {
                                 " -" +
                                 moment(item?.termEnd).format(" MMMM Do YYYY")}
                             </h6>
-                            <h6 class="phone">
+                            <h6 class="phone" style={{ marginBottom: "1px" }}>
                               <a href={"tel:" + item?.mobile}>
-                                <span class="fa fa-building-o"></span>{" "}
-                                {item?.compneyName}
+                                {item?.compneyName && (
+                                  <>
+                                    <span class="fa fa-building-o"></span>{" "}
+                                    {item?.compneyName}
+                                  </>
+                                )}
                               </a>
                             </h6>
                             <div class="phone">
@@ -120,10 +124,14 @@ function Pastpresident() {
                                 href={"mailto:" + item?.email}
                                 className="d-flex "
                               >
-                                <div>
-                                  <span class="fa fa-envelope"></span>{" "}
-                                </div>
-                                <div>{item?.email}</div>
+                                {item?.email && (
+                                  <>
+                                    <div>
+                                      <span class="fa fa-envelope"></span>{" "}
+                                    </div>
+                                    <div>{item?.email}</div>
+                                  </>
+                                )}
                               </a>
                             </div>
                             <div class="clear"></div>
@@ -134,15 +142,19 @@ function Pastpresident() {
                           <h2>
                             <a>{item?.name}</a>
                           </h2>
-                          <h6   style={{ color: "#00945e" }}>
+                          <h6 style={{ color: "#00945e" }}>
                             {moment(item?.termStart).format(" MMMM Do YYYY") +
                               " -" +
                               moment(item?.termEnd).format(" MMMM Do YYYY")}
                           </h6>
                           <div class="phone">
                             <a href={"tel:" + item?.mobile}>
-                              <span class="fa fa-building-o"></span>{" "}
-                              {item?.compneyName}
+                              {item?.compneyName && (
+                                <>
+                                  <span class="fa fa-building-o"></span>{" "}
+                                  {item?.compneyName}
+                                </>
+                              )}
                             </a>
                           </div>
                           <div class="phone">

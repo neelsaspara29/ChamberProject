@@ -6,9 +6,11 @@ function Bhavnagar() {
     <>
       <Header1 />
       <div>
-        <h1 className="text-danger  text-center text-danger title2  my-4" >Bhavnagar</h1>
+        <h1 className="text-danger  text-center text-danger title2  my-4">
+          Bhavnagar
+        </h1>
       </div>
-      <div className="w-4/5 m-auto pub flow-root">
+      <div className="w-11/12  m-auto pub flow-root">
         <div class="city-box1">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLXu9bNsbC6WqRiox0sEfSzb-QBiXtrBFZGHO2CXac&s"
