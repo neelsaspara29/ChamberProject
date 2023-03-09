@@ -8,7 +8,7 @@ function Association() {
   const fetchData = async () => {
     await ApiPost("/ass_association/get", {
       page: 1,
-      limit: 10,
+      limit: 1000,
     })
       .then((data) => {
         console.log("res-", data);

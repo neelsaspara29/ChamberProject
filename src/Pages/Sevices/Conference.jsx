@@ -11,7 +11,7 @@ function Conference() {
   const [data, setData] = useState([]);
   const fetchData = async () => {
     await ApiPost("/service/get", {
-      type: "0",
+      type: 1,
     })
       .then((data) => {
         console.log("res-", data);
@@ -59,7 +59,10 @@ function Conference() {
             Conference Hall
           </h2>
         </div>
-        <div className="w-2/3 m-auto mt-3 pub" style={{ fontSize: "16px", textAlign: "justify" }}>
+        <div
+          className="w-2/3 m-auto mt-3 pub"
+          style={{ fontSize: "16px", textAlign: "justify" }}
+        >
           <p className="text-center">{data[0]?.intro}</p>
         </div>
 

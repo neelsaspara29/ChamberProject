@@ -116,7 +116,8 @@ export default function Footer() {
                   <MDBIcon icon="calendar" className="me-3" />
                   {data?.workingHours}
                 </p>
-                <p>
+                <p className="cursor-pointer">
+                  <a href={`tel:${data?.phone1}`}></a>
                   <MDBIcon icon="phone" className="me-3" />
                   {data?.phone1}
                 </p>
@@ -159,6 +160,7 @@ export default function Footer() {
                   <span className="text-gray-600"> Saving Bank Account </span>
                 </p>
                 <p>
+                  <a href="tel:+919408807980"></a>
                   <MDBIcon icon="phone" className="me-3" />
                   +91 9408807980
                 </p>

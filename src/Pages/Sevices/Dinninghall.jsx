@@ -12,7 +12,7 @@ function Dinninghall() {
   const [data, setData] = useState([]);
   const fetchData = async () => {
     await ApiPost("/service/get", {
-      type: "1",
+      type: 2,
     })
       .then((data) => {
         console.log("res-", data);

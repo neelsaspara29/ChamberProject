@@ -5,14 +5,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Table } from "react-bootstrap";
 import { ApiPost } from "../../Helper/API/Apidata";
-import Carousel from 'react-bootstrap/Carousel';
+import Carousel from "react-bootstrap/Carousel";
 import Header1 from "../../Components/Header/Header1";
 
 function Auditoriam() {
   const [data, setData] = useState([]);
   const fetchData = async () => {
     await ApiPost("/service/get", {
-      type: "1",
+      type: 0,
     })
       .then((data) => {
         console.log("res-", data);

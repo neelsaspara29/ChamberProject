@@ -143,9 +143,7 @@ function Pastpresident() {
                             <a>{item?.name}</a>
                           </h2>
                           <h6 style={{ color: "#00945e" }}>
-                            {moment(item?.termStart).format(" MMMM Do YYYY") +
-                              " -" +
-                              moment(item?.termEnd).format(" MMMM Do YYYY")}
+                            {item?.termStart}
                           </h6>
                           <div class="phone">
                             <a href={"tel:" + item?.mobile}>

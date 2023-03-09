@@ -175,40 +175,40 @@ function Header() {
             <h3> SAURASHTRA CHAMBER OF COMMERCE & INDUSTRY</h3>
           </div>
           <div id="social_header">
-            <Link
+            <a
               className="facebook"
-              to="https://www.facebook.com/scci.bhavnagar"
+              href="https://www.facebook.com/scci.bhavnagar"
               target="_blank"
             >
               <span className="fa fa-facebook"></span>
-            </Link>
-            <Link
+            </a>
+            <a
               className="twitter"
-              to="https://www.facebook.com/scci.bhavnagar"
+              href="https://www.facebook.com/scci.bhavnagar"
               target="_blank"
             >
               <span className="fa fa-twitter"></span>
-            </Link>
-            <Link
+            </a>
+            <a
               className="whatsapp"
-              to="https://api.whatsapp.com/send/?phone=919408807980&text&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=919408807980&text&type=phone_number&app_absent=0"
               target="_blank"
             >
               <span className="fa fa-whatsapp"></span>
-            </Link>
-            <Link
+            </a>
+            <a
               className="instagram"
-              to="https://www.facebook.com/scci.bhavnagar"
+              href="https://www.facebook.com/scci.bhavnagar"
               target="_blank"
             >
               <span className="fa fa-instagram"></span>
-            </Link>
-            <Link
+            </a>
+            <a
               className="youtube"
-              to="https://www.facebook.com/scci.bhavnagar"
+              href="https://www.facebook.com/scci.bhavnagar"
             >
               <span className="fa fa-youtube"></span>
-            </Link>
+            </a>
           </div>
           <div
             className="mobile_responsive absolute right-12 top-28 "

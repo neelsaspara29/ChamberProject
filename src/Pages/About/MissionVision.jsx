@@ -22,7 +22,7 @@ const MissionVision = () => {
     <>
       <Header1 />
       <div id="interior_content">
-        <div id="interior_header_banner">
+        {/* <div id="interior_header_banner">
           <span id="bnrinst_2_453">
             <img
               src="/Assets/about/fs_453.jpg"
@@ -31,7 +31,7 @@ const MissionVision = () => {
               height="363"
             />
           </span>
-        </div>
+        </div> */}
         <div class="wrapper">
           <div id="content" class="rightpad">
             <h1 class="gendocsPageTitle text-center title2 text-danger">

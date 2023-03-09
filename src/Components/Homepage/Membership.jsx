@@ -61,7 +61,7 @@ function Membership() {
                   href={pdf}
                   className="hover:text-white"
                   target="_blank"
-                  // download
+                  download
                 >
                   Download{" "}
                 </a>{" "}
