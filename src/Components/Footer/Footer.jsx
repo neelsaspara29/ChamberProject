@@ -43,14 +43,14 @@ export default function Footer() {
             &nbsp; &nbsp; &nbsp;
             <a
               target="_blank"
-              href="https://www.facebook.com/scci.bhavnagar"
+              href="https://www.facebook.com/scci.bhavnagar?mibextid=ZbWKwL"
               className="me-4 text-reset"
             >
               <MDBIcon icon="facebook-f" className="text-blue-600" />
             </a>
             <a
               target="_blank"
-              href="https://www.facebook.com/scci.bhavnagar"
+              href="https://twitter.com/SCCIBHAVNAGAR?t=llOeBdJK8ye_fGeMKgSl0g&s=09"
               className="me-4 text-reset"
             >
               <MDBIcon icon="twitter" className="text-blue-400" />
@@ -64,21 +64,21 @@ export default function Footer() {
             </a>
             <a
               target="_blank"
-              href="https://www.facebook.com/scci.bhavnagar"
+              href="https://instagram.com/saurashtrachamberof?igshid=ZDdkNTZiNTM="
               className="me-4 text-reset"
             >
               <MDBIcon icon="instagram" className="text-red-600" />
             </a>
             <a
               target="_blank"
-              href="https://www.facebook.com/scci.bhavnagar"
+              href="https://www.linkedin.com/in/saurashtra-chamber-of-commerce-and-industry-bhavnagar-b27051184"
               className="me-4 text-reset"
             >
               <MDBIcon icon="linkedin" className="text-blue-800" />
             </a>
             <a
               target="_blank"
-              href="https://www.facebook.com/scci.bhavnagar"
+              href="https://youtube.com/@saurashtrachamberofcommerc2348"
               className="me-4 text-reset"
             >
               <MDBIcon icon="youtube" className="text-red-700" />
@@ -117,18 +117,25 @@ export default function Footer() {
                   {data?.workingHours}
                 </p>
                 <p className="cursor-pointer">
-                  <a href={`tel:${data?.phone1}`}></a>
                   <MDBIcon icon="phone" className="me-3" />
-                  {data?.phone1}
+                  <a href={"tel:02782424279"}>{data?.phone1}</a>
                 </p>
-                <p>
+                <p className="cursor-pointer">
+                  <MDBIcon icon="phone" className="me-3" />
+                  <a href={"tel:02782430040"}>{data?.phone2}</a>
+                </p>
+                <p className="cursor-pointer">
+                  <MDBIcon icon="phone" className="me-3" />
+                  <a href={"tel:9408807980"}>{data?.whp}</a>
+                </p>
+                {/* <p>
                   <MDBIcon icon="phone" className="me-3" />
                   {data?.phone2}
-                </p>
-                <p>
+                </p> */}
+                {/* <p>
                   <MDBIcon icon="whatsapp" className="me-3" />
                   {data?.whp}
-                </p>
+                </p> */}
               </MDBCol>
               <MDBCol
                 md="4"

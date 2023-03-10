@@ -58,7 +58,9 @@ function Membership() {
               <div className="btn btn-primary p-2  ">
                 {" "}
                 <a
-                  href={pdf}
+                  href={
+                    "https://chamberlatest.s3.ap-south-1.amazonaws.com/undefined/file/1678430372401.pdf"
+                  }
                   className="hover:text-white"
                   target="_blank"
                   download

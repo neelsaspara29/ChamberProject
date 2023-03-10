@@ -177,14 +177,14 @@ function Header() {
           <div id="social_header">
             <a
               className="facebook"
-              href="https://www.facebook.com/scci.bhavnagar"
+              href="https://www.facebook.com/scci.bhavnagar?mibextid=ZbWKwL"
               target="_blank"
             >
               <span className="fa fa-facebook"></span>
             </a>
             <a
               className="twitter"
-              href="https://www.facebook.com/scci.bhavnagar"
+              href="https://twitter.com/SCCIBHAVNAGAR?t=llOeBdJK8ye_fGeMKgSl0g&s=09"
               target="_blank"
             >
               <span className="fa fa-twitter"></span>
@@ -198,20 +198,26 @@ function Header() {
             </a>
             <a
               className="instagram"
-              href="https://www.facebook.com/scci.bhavnagar"
+              href="https://instagram.com/saurashtrachamberof?igshid=ZDdkNTZiNTM="
               target="_blank"
             >
               <span className="fa fa-instagram"></span>
             </a>
             <a
               className="youtube"
-              href="https://www.facebook.com/scci.bhavnagar"
+              href="https://youtube.com/@saurashtrachamberofcommerc2348"
             >
               <span className="fa fa-youtube"></span>
             </a>
+            <a
+              className="facebook"
+              href="https://www.linkedin.com/in/saurashtra-chamber-of-commerce-and-industry-bhavnagar-b27051184"
+            >
+              <span className="fa fa-linkedin"></span>
+            </a>
           </div>
           <div
-            className="mobile_responsive absolute right-12 top-28 "
+            className="mobile_responsive absolute right-12 top-28"
             // style={{ display: "none" }}
           >
             <div onClick={handleShow}>
