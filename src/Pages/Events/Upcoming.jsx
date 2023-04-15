@@ -29,16 +29,18 @@ const days = [
 function Upcoming() {
   const [data, setData] = useState([]);
   const fetchData = async () => {
-    await ApiPost("/event/get", { type: "0" })
+    await ApiPost("/event/get", { type: "1" })
       .then((data) => {
-        console.log("res-", data.data.data);
-        let temp = data.data.data;
+        console.log("res-", data.data?.data);
+        let temp = data?.data?.data;
+        if(temp.length==0)
+        return
         let main_arr = [];
         let temp_arr = [temp[0]];
         for (let i = 1; i < temp.length; i++) {
           if (
-            new Date(temp[i].time).getMonth() ==
-            new Date(temp[i - 1].time).getMonth()
+            new Date(temp[i].createdAt).getMonth() ==
+            new Date(temp[i - 1].createdAt).getMonth()
           )
             temp_arr.push(temp[i]);
           else {
@@ -64,16 +66,16 @@ function Upcoming() {
         <h3 className="text-danger title2"> UPCOMING EVENTS </h3>
       </div>
       <div className=" w-2/3 m-auto upcoming_events">
-        {data?.map((arr) => {
+        {data?.length!=0 ?  data?.map((arr) => {
           return (
             <div className="event_one">
               <div className="" style={{ marginTop: "14px" }}>
                 <h4>
                   <b>
                     {" "}
-                    {monthNames[new Date(arr[0].time).getMonth()] +
+                    {monthNames[new Date(arr[0]?.createdAt)?.getMonth()] +
                       " " +
-                      new Date(arr[0].time).getFullYear()}
+                      new Date(arr[0]?.createdAt)?.getFullYear()}
                   </b>
                 </h4>
               </div>
@@ -81,9 +83,9 @@ function Upcoming() {
                 return (
                   <div className="d-flex flex-row-reverse flex-wrap mt-12 ml-3 individual_event">
                     <div>
-                      {single.image ? (
+                      {single?.image ? (
                         <img
-                          src={single.image}
+                          src={single?.image}
                           width={200}
                           height={200}
                           alt="Not Valid Image"
@@ -105,33 +107,33 @@ function Upcoming() {
                     >
                       <p style={{ paddingBottom: "4px" }}>
                         {" "}
-                        {moment(single.time).format("Do MMMM YYYY")}
+                        {moment(single?.time)?.format("Do MMMM YYYY")}
                       </p>
                       <p>
                         <h5>
-                          <b> {single.place} </b>
+                          <b> {single?.place} </b>
                         </h5>
                       </p>
                       <p style={{ paddingBottom: "10px" }}>
-                        <b> {single.name} </b>
+                        <b> {single?.name} </b>
                       </p>
 
-                      <p>{single.brifIntro}</p>
+                      <p>{single?.brifIntro}</p>
                     </div>
                     <div className="mr-2 text-center">
                       <p>
                         <b className="uppercase">
-                          {days[new Date(single.time).getDay()]}
+                          {days[new Date(single?.time).getDay()]}
                         </b>
                       </p>
-                      <p>{new Date(single.time).getDate()}</p>
+                      <p>{new Date(single?.time).getDate()}</p>
                     </div>
                   </div>
                 );
               })}
             </div>
           );
-        })}
+        }) : "No Upcoming Events"}
       </div>
     </>
   );

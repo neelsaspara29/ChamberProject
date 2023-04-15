@@ -30,11 +30,12 @@ function Past() {
   const [data, setData] = useState([]);
   const fetchData = async () => {
     await ApiPost("/event/get", {
-      type: "1",
+      type: "0",
     })
       .then((data) => {
         console.log("res-", data.data.data);
         let temp = data.data.data;
+        if (temp.length == 0) return;
         let main_arr = [];
         let temp_arr = [temp[0]];
         for (let i = 1; i < temp.length; i++) {
@@ -66,6 +67,9 @@ function Past() {
         <h3 className="text-danger title2"> PAST EVENTS </h3>
       </div>
       <div className=" w-2/3 m-auto upcoming_events">
+     {
+      data?.length==0 && <>No Past Events</>
+     }
         {data?.map((arr) => {
           return (
             <div>
