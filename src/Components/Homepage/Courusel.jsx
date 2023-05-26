@@ -230,7 +230,18 @@ function Courusel({ cdata }) {
             </li>
 
             <li className="item7 shine bg-blue-500 membership_renewal text-blue-100">
-              Membership Renewal
+              Membership Renewal 
+              <ul className="">
+                <li className="item1 ">
+                  <Link
+                    onclick={handleClose}
+                    className="first "
+                    to="/membership"
+                  >
+                    <h6> Membership</h6>
+                  </Link>
+                </li>
+              </ul>
             </li>
           </ul>
         </Offcanvas.Body>

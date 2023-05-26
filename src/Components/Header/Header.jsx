@@ -167,7 +167,15 @@ function Header() {
                   </li>
                 </ul>
               </li>
-              <li className="item7 cursor-pointer ">Membership Renewal</li>
+              <li className="item7 cursor-pointer ">Membership Renewal
+                <ul className="">
+                  <li className="item1">
+                    <Link className="first" to="/membership">
+                      Membership
+                    </Link>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
           <div id="has_it_logo"></div>
@@ -218,7 +226,7 @@ function Header() {
           </div>
           <div
             className="mobile_responsive absolute right-12 top-28"
-            // style={{ display: "none" }}
+          // style={{ display: "none" }}
           >
             <div onClick={handleShow}>
               <div className="mobile_res_toggle"></div>
@@ -481,7 +489,23 @@ function Header() {
                   </ul>
                 </li>
 
-                <li className="item7 ">Membership Renewal</li>
+
+
+                
+                <li className="item7">
+                  Membership Renewal
+                  <ul className="">
+                    <li className="item1 ">
+                      <Link
+                        onclick={handleClose}
+                        className="first "
+                        to="/membership"
+                      >
+                        <h6> Membership</h6>
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </Offcanvas.Body>
           </Offcanvas>

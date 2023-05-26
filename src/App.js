@@ -1,8 +1,8 @@
 import { Link, Route, Routes } from "react-router-dom";
-import Home from './Pages/Home/Home'
-import Header from './Components/Header/Header'
-import Upcoming from './Pages/Events/Upcoming'
-import Past from './Pages/Events/Past'
+import Home from "./Pages/Home/Home";
+import Header from "./Components/Header/Header";
+import Upcoming from "./Pages/Events/Upcoming";
+import Past from "./Pages/Events/Past";
 import Team from "./Components/Homepage/Team";
 import Footer from "./Components/Footer/Footer";
 import About from "./Pages/About/About";
@@ -35,26 +35,32 @@ import Gallery from "./Pages/Gallery/Gallery";
 import Jobportal from "./Pages/Sevices/Jobportal";
 import ScciTrust from "./Pages/About/ScciTrust";
 import Dinninghall from "./Pages/Sevices/Dinninghall";
+import Memberships from "./Pages/Membership/Memberships";
+import SuccessPage from "./Pages/Membership/PaymentStatus/SuccessPage ";
+import FailurePage from "./Pages/Membership/PaymentStatus/FailurePage ";
+// import Callback from "./Pages/Payment/Payments";
 function App() {
   return (
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} ></Route>  
-
+        <Route path="/" element={<Home />}></Route>
       </Routes>
-      
+
       <Routes>
-        <Route path="/upcomingevents" element={<Upcoming />} ></Route>
-        <Route path="/pastevents" element={<Past />} ></Route>
-        <Route path="/scciteam" element={<Team />} ></Route>
-        <Route path="/about" element={<About />} ></Route>
-        <Route path="/messageChairman" element={<MessageChairman />} ></Route>
-        <Route path="/mission" element={<MissionVision />} ></Route>
-        <Route path="/sccitrust" element={<ScciTrust />} ></Route>
+        <Route path="/upcomingevents" element={<Upcoming />}></Route>
+        <Route path="/pastevents" element={<Past />}></Route>
+        <Route path="/scciteam" element={<Team />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/messageChairman" element={<MessageChairman />}></Route>
+        <Route path="/mission" element={<MissionVision />}></Route>
+        <Route path="/sccitrust" element={<ScciTrust />}></Route>
         <Route path="/statecirculer" element={<GovCerculler />}></Route>
         <Route path="/govcirculer" element={<StateCirculer />}></Route>
-        <Route path="/certificateoforigin" element={<CertificateOrigin />}></Route>
+        <Route
+          path="/certificateoforigin"
+          element={<CertificateOrigin />}
+        ></Route>
         <Route path="/visarecomandation" element={<VisaService />}></Route>
         <Route path="/auditorium" element={<Auditoriam />}></Route>
         <Route path="/conference" element={<Conference />}></Route>
@@ -71,14 +77,17 @@ function App() {
         <Route path="/associative" element={<Association />}></Route>
         <Route path="/bhavnagar" element={<Bhavnagar />}></Route>
         <Route path="/officebearear" element={<Bearear />}></Route>
-        <Route path="/executivecommittee" element={<Executivecommitee />}></Route>
+        <Route
+          path="/executivecommittee"
+          element={<Executivecommitee />}
+        ></Route>
         <Route path="/secretaries" element={<Secretaries />}></Route>
         <Route path="/galleries" element={<Galleries />}></Route>
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/pastpresident" element={<Pastpresident />}></Route>
-
-
-
+        <Route path="/membership" element={<Memberships />}></Route>
+        <Route path="/success" element={<SuccessPage />}></Route>
+        <Route path="/failure" element={<FailurePage />}></Route>
       </Routes>
       <Footer />
     </>

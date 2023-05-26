@@ -176,7 +176,9 @@ function Header1() {
                   </li>
                 </ul>
               </li>
-              <li className="item7 cursor-pointer ">Membership Renewal</li>
+              <li className="item7 cursor-pointer ">Membership Renewal
+
+              </li>
             </ul>
           </div>
           <div id="has_it_logo"></div>
@@ -473,8 +475,20 @@ function Header1() {
                   </ul>
                 </li>
 
-                <li className="item7 bg-blue-500 membership_renewal ">
+
+                <li className="item7 bg-blue-500 membership_renewal">
                   Membership Renewal
+                  <ul className="">
+                    <li className="item1 ">
+                      <Link
+                        onclick={handleClose} className="first"
+                        to="/membership"
+                      >
+                        <h6> Membership</h6>
+                      </Link>
+
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </Offcanvas.Body>
