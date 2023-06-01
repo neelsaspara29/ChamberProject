@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// const BaseURL = "https://api.saurashtrachamber.org/admin";
-const BaseURL = "http://192.168.29.178:2500/admin";
+const BaseURL = "https://api.saurashtrachamber.org/admin";
+// const BaseURL = "http://192.168.29.178:2500/admin";
 const defaultHeaders = {
   isAuth: true,
   AdditionalParams: {},
